@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			body { background-color: #FFD9A8; }
+				form { background-color: #FCF9DB;
+					border: 2px solid #A32B2E; } 
+		</style>
+	</head>
+
+	<body>
+		<h1>Non Textual Input Types</h1>
+		<form style="border: 2px solid red;">     
+		<!-- The radio type -->
+			<label for="iradio">Music Style:</label><br>
+			<input type="radio" id="rock" name="iradio" value="rock">
+			<label for="rock">Rock</label><br>
+			<input type="radio" id="POP" name="iradio" value="pop">
+			<label for="POP">Pop</label><br>
+                <input type="radio" id="country" name="iradio" value="country">
+                <label for="country">Country</label><br>
+			<input type="radio" id="other" name="iradio" value="other">
+			<label for="other">Other</label><br><br>
+
+		<!-- The range type -->
+			<label for="irange">How much you like it (0 to 10):</label><br>
+			<input type="range" id="irange" name="irange" min="0" max="10"><br><br>
+
+		<!-- The checkbox type -->
+			<input type="checkbox" id="icheck1" name="icheck1" value="YouTube">
+			<label for="icheck1">I heard on YouTube</label><br>
+			<input type="checkbox" id="icheck2" name="icheck2" value="Stream Services">
+			<label for="icheck2">Stream Services</label><br><br>
+
+		<!-- The color type -->
+			<label for="icolor">Select a color for your song:</label>
+			<input type="color" id="icolor" name="icolor"><br><br>
+
+		<!-- The file type -->
+			<label for="ifile">Select a music file:</label>
+			<input type="file" id="ifile" name="ifile">
+		</form>
+	</body>
+</html>

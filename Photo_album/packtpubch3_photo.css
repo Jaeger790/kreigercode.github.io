@@ -1,0 +1,86 @@
+h1{
+    font-family: serif;
+    text-align: center;
+    position: relative; top: 50%;
+    
+    
+    
+    
+}
+
+.headercontainer{
+    position: relative; top: 0%;
+    background-color: forestgreen;
+    width: 100%;
+    padding: 40px;
+    color: tan;
+    font-size: larger;
+    
+
+}
+
+
+.picture {   
+    width:200px;   
+    height:130px;   
+    border:5px solid white;  
+    margin-left:25px;   
+    margin-top:40px; 
+} 
+
+.entry {   
+width:600px;   
+margin:0 auto; 
+display: block;
+
+} 
+
+.picturebox {  background-color:teal;   
+    margin-top: 20px;
+    color:white;    
+    width:270px;   
+    height:230px;   
+    text-align:center;   
+    vertical-align:middle;
+    float:left;   
+    border-bottom:1px solid #FFDEAD; } 
+
+.textbox {   
+    margin-top: 20px;
+    background-color:teal;   
+    color:white;    
+    width:250px;   
+    height:180px;   
+    padding:40px 40px 10px 10px;   
+    float:left;   
+    border-bottom:1px solid #FFDEAD;   
+    text-align:left; 
+    font-family: sans-serif;
+    overflow: scroll;
+    
+}
+
+#lake-stats{
+    color: #ffffff; 
+    vertical-align: top; 
+    width: 220px; 
+    white-space: nowrap;
+}
+
+.textbox::-webkit-scrollbar {
+    width: 0px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: orange;        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: blue;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid orange;  /* creates padding around scroll thumb */
+  }
+
+  translate3d(0,100%,0);
+    transform: translate3d(0px, 100%, 0px);
+transform: translate3d(0,100%,0);
