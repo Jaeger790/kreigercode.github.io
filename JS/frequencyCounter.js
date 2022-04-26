@@ -1,4 +1,4 @@
-function validAnagram(string1, string2) {
+function anagramCheck(string1, string2) {
     //checks that both strings are the same length
     if (string1.length !== string2.length) {
         return false;
