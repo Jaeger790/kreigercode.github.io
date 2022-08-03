@@ -1,0 +1,281 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: whitesmoke;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.1rem;
+    text-align: center;
+   
+}
+
+/*
+    ! Navbar Section 
+*/
+
+.navBar{
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 15px;
+    background-color: rgb(221, 221, 221); 
+    box-shadow: 5px 5px 10px black;
+    display: block;
+    z-index: 1;
+    
+    
+}
+.navBar a{
+    text-decoration: none;
+}
+
+.active{
+    background-color: blue;
+}
+
+.navButton{
+    margin-right: 1rem;
+    float: left;
+    padding: 10px;
+    
+}
+
+.navButton:hover{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.collapseNavButton{
+    float: right;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    font-weight: bolder;
+    font-size: .85rem;
+    cursor: pointer;
+}
+.collapseNavButton:hover{
+    background-color: black;
+    color: white;
+}
+
+.showNav{
+    top: 0;
+    right: 0;
+    position: fixed;
+    padding: 15px;
+    display: none;
+    z-index: 1;
+    
+    
+}
+.showNavButton{
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    font-weight: bolder;
+    font-size: .85rem;
+    cursor: pointer;
+}
+.showNavButton:hover{
+    background-color: black;
+    color: white;
+}
+
+/*
+    ! Top Header Section 
+*/
+
+.headingSection{
+    background-image: url("pics/codeBG.jpg");
+    background-size: cover;
+    padding: 15px;
+    position: relative;
+    height: 1000px;
+    overflow: hidden;
+   
+}
+
+.header{
+    left: 0;
+    background-color: black;
+    color: aliceblue;
+    opacity: .92;
+    padding: 20px;
+    top:25%;
+    width:100%;
+    height:25rem;
+    position: absolute;
+}
+
+.heading{
+    text-align: center;
+    position: relative;
+    opacity: 1;
+    margin-top: 5%;
+    font-size: 4rem;
+    
+}
+
+.subHeading{
+    text-align: center;
+    position: relative;
+    opacity: 1;
+    font-size: 2rem;
+    
+}
+
+
+
+.book{
+    margin-top: 2.5rem;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    font-weight: bolder;
+    font-size: 2rem;
+    cursor: pointer;
+    border-radius: 25px;
+    border: solid 2px white;
+    transition-property: color, background, border-color;
+    transition-duration: .5s;
+    
+    
+}
+
+
+.book:hover{
+    background-color: green;
+    color: black;
+}
+
+
+
+
+/*
+    ! About Me Section
+*/
+
+.about{
+    margin: 0 auto;
+    padding: 5rem;
+    background-color: rgb(221, 221, 221);
+    height: 1000px;
+    
+}
+
+.imgContainer{
+    margin-top: 125px;
+}
+
+.aboutHeader{
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 4rem;
+}
+
+p.aboutMe{
+    margin-top: 2rem;
+    text-align: justify;
+
+}
+
+.profilePic{
+    border-radius: 15px;
+    
+    position: relative;
+    
+}
+
+
+/*
+    ! Services Section 
+*/
+
+.services{
+    height: 1000px;
+    margin: 0 auto;
+    padding: 5rem;
+    background-color: black;
+    color: white;
+    height: 1000px;
+}
+
+.repairHeader{
+    margin-top: 6rem;;
+    align-items: center;
+    font-size: 3rem;
+}
+
+.repair{
+    font-size: 1.5rem;
+    justify-content: center;
+    margin-top: .5rem;
+
+    padding: 20px;
+    text-align: justify;
+    display: flex;
+    max-width: 100%;
+
+    
+    
+    
+}
+
+.install{
+    margin-top: 4rem;
+    display: flex;
+    position: absolute;
+    text-align: justify;
+}
+
+
+/*
+    ! Contact Section 
+*/
+
+.contact{
+    text-align: center;
+    margin: 0 auto;
+    padding: 10rem;
+    height: 1000px;
+    background-color: rgb(221, 221, 221);
+}
+.contact ul{
+    list-style-type: none;
+    margin-top: 1rem;
+}
+form label{
+    display: block;
+    margin-top: 1rem;
+}
+form #submit{
+    display: block;
+    margin: auto;
+    margin-top: 1rem;
+    cursor: pointer;
+    padding: 1rem;
+    width: 8rem;
+    height:3.5rem; 
+    font-size: 1.25rem;
+    border-radius: 4rem;
+    background-color: aqua;
+    
+}
+
+input{
+    border-color: black;
+}
+input:invalid{
+    border-color: red;
+}
+
+
