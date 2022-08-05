@@ -168,7 +168,7 @@ body{
     margin: 0 auto;
     padding: 5rem;
     background-color: rgb(221, 221, 221);
-    height: 1000px;
+    height: 1200px;
     
 }
 
@@ -184,12 +184,14 @@ body{
 }
 
 .aboutMe{
-    margin-top: 2rem;
+    margin-top: 50px;
+    margin: 0 auto;
+    margin-bottom:100px;
     text-align: justify;
     font-size: 2rem;
     display: block;
     width: 800px;
-    align-items: center;
+    
 
 }
 
