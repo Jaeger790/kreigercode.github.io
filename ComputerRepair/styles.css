@@ -306,6 +306,19 @@ input:invalid{
     border-color: red;
 }
 
+.github{
+    height: 50px;
+    width: 50px;
+    color: black;
+    margin-top: 100px ;
+}
+
+.bi-linkedin{
+    color: blue;
+    margin-left: 25px ;
+    font-size: 50px;
+}
+
 
 @media screen and (max-width: 430px ) {
     *{
