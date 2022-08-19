@@ -1,0 +1,203 @@
+/*
+    ? Color Pallete
+
+    #D9E5D6  honeydew white
+    #1C1C1C  Eerie Black
+    #433A3F  Black Coffee
+    #698F3F  Maximum Green
+    #0FA3B1  Viridian Green
+*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    background: #D9E5D6;
+    color: #1C1C1C;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0FA3B1;
+    padding: 30px 70px;
+    margin-bottom: 2rem;
+}
+
+.cart{
+    position: relative;
+    background-color: #D9E5D6;
+    color: #1C1C1C;
+    font-size: 2rem;
+    padding: 5px;
+    border-radius: 8%;
+    cursor: pointer;
+}
+
+.cartAmount{
+    position: absolute;
+    top: -15px;
+    right: -10px;
+    font-size: 1rem;
+    background-color: red;
+    color: #D9E5D6;
+    padding: 3px;
+    border-radius: 16%;
+    cursor: pointer;
+}
+
+.shop{
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    
+    gap: 2rem;
+    justify-content: center;
+}
+
+@media (max-width: 1000px){
+    .shop{
+        grid-template-columns: repeat(2, 300px);
+    }
+}
+
+@media (max-width: 500px){
+    .shop{
+        grid-template-columns: repeat(1, 300px);
+    }
+}
+
+
+.item{
+    border: 2px solid;
+    border-color: #433A3F;
+    border-radius: 2%;
+}
+
+.item img{
+    width: 100%;
+    border-radius: 2%;
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+}
+
+.priceQuantity{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.bi-dash-square{
+    color: red;
+    cursor: pointer;
+}
+
+.bi-plus-square{
+    color: green;
+    cursor: pointer;
+}
+
+/*
+    ! Style Rules for cart label and buttons
+*/
+
+.text-center{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.homeButton, .checkout, .removeAll {
+    background-color: #433A3F;
+    color: white;
+    padding: 6px;
+    border-radius:  5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.checkout{
+    background-color: green;
+    font-weight: bold;
+
+}
+
+.removeAll{
+    background-color: red;
+    font-weight: bold;
+}
+
+.bi-file-x{
+    color: white;
+    background-color: red;
+    font-weight: bold;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    font-family: sans-serif;
+    border-radius: 10px;;
+    border-color: black;
+}
+
+.shopping-cart{
+    display: grid;
+    grid-template-columns: repeat(1, 420px);
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+.cart-item{
+    border: 2px solid black ;
+    border-radius: 5px;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.titlePriceContainer{
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.titlePrice{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+}
+
+.cartItemPrice{
+    background-color: #433A3F ;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 25px;
+}
+
+.cartButtons{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    
+}
