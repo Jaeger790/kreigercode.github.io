@@ -301,15 +301,24 @@ input {
         border-color: red;
     }
 
-.bi-github {
-    height: 50px;
-    width: 50px;
-    color: black;
-    margin-top: 20px;
-}
+
 
 .bi-linkedin {
     color: blue;
+    margin-left: 25px;
+    font-size: 50px;
+}
+
+.bi-facebook{
+    color: blue;
+    margin-left: 25px;
+    font-size: 50px;
+}
+.bi-twitter{
+    margin-left: 25px;
+    font-size: 50px;
+}
+.bi-instagram{
     margin-left: 25px;
     font-size: 50px;
 }
