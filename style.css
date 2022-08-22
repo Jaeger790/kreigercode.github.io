@@ -25,8 +25,8 @@ body{
 
 .profileHeading{
     margin-top: 90px;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+   grid-template-columns: auto;
     column-gap: 4rem;
     
    
@@ -51,17 +51,18 @@ body{
 
 .titleHeader{
     font-size: 65px;
-    margin-left: 200px;
+    margin-left: 650px;
     margin-top: 20px;
     flex: 50%;
     max-width: 800px;
     max-height: 300px;
     
+    
 }
 
 .tagline{
-    margin-left: 500px;
-    margin-top: -400px;
+    align-self: flex-end;
+    margin-left: 240px;
     text-align: center;
     font-family: 'Aboreto', cursive;
     line-height: 80px;
@@ -70,12 +71,13 @@ body{
 }
 
 .pictureContainer{
-    margin-top: 50px;
+    display: flex;
+    align-self: flex-start;
+    margin-top: -260px;
     margin-left: 25px;
     background-color: #748386;
     border-radius: 10px;
     padding: 30px;
-    flex: 20%;
     max-width: 360px;
     box-shadow: 5px 5px rgba(24, 24, 24, 0.651);
 
@@ -227,4 +229,225 @@ ul.serviceText{
     border-radius: 10px;
     overflow: hidden;
     
+}
+
+/*
+    ! Mobile Design Section
+*/
+
+@media screen and (max-width: 400px){
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .profileHeading{
+        margin-top: 90px;
+        display: grid;
+        grid-template-columns: auto;
+        row-gap: 4vh;
+    }
+    .nav{
+        position: fixed;
+        top: 0;
+        transition: top .5s;
+        padding: 20px;
+        background-color: #3B0D11;
+        width: 100vh;
+        font-size: 1rem;
+        font-family: 'Rock Salt', cursive;
+        box-shadow: #000 5px 5px 5px;
+    }
+        .nav ul  li{
+            list-style-type: none;
+            display: inline-block;
+            padding-right: 15px;
+            margin-left: 10px;
+        }
+    
+    .titleHeader{
+        font-size: 2rem;
+        margin-left: 1vh;
+        margin-top: 20px;
+        text-align: center;
+        
+    }
+    
+    .tagline{
+        margin-left: 1vh;
+        text-align: center;
+        font-family: 'Aboreto', cursive;
+        font-size: 1.25rem;
+        margin-bottom: 15vh;
+        
+    }
+
+    .pictureContainer{
+        background-color: #748386;
+        border-radius: 10px;
+        box-shadow: 5px 5px rgba(24, 24, 24, 0.651);
+        max-width: 75%;
+        padding-right: 0px;
+        margin: 0 auto;
+    
+    }
+
+    .profilePicture{
+        height: 90%;
+        width: 90%;
+        border-radius: 10px;
+        align-self: center;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+    }
+    .color{
+    z-index: -1;
+    position: absolute;
+    width: 46.2vh;
+    height: 100vh;
+}
+
+/*************************
+   ! About Section
+*************************/
+
+.about{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    height: 100vh;
+    background-color:#3B0D11;
+    
+}
+
+.aHeader{
+    margin-top: 1.5rem;
+    padding: 1rem;
+    font-size: 2rem;
+    font-family: 'Rock Salt', cursive;
+}
+
+.bio{
+    margin-top:0 ;
+    font-family: 'Aboreto';
+    font-size: 1rem;
+    font-family: sans-serif;
+    width: 100%;
+    padding: 1rem;
+}
+
+/*************************
+    ! Skill Section
+*************************/
+
+
+.skills{
+    height: 180vh;
+    background-color: #0A2E36;
+}
+
+.skillHeader{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-size: 2rem;
+   
+}
+
+.skillContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+    margin-top: 100px;
+    border: #748386 solid 2px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #000;
+    max-width: 85%;
+    margin: 0 auto;
+    
+}
+
+.languages{
+    justify-self: center;
+    flex-wrap: wrap;
+    text-align: center;
+    font-size: 1rem;
+    margin: 10px;
+    
+    
+}
+
+.bi-code-square{
+    
+    font-size: 4rem;
+}
+.bi-ubuntu{
+    
+    font-size: 4rem;
+}
+.bi-shop-window{
+    font-size: 4rem;
+}
+
+.languageHead{
+    text-decoration: underline;
+}
+
+ul.languageText{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    align-self: center;
+}
+
+ul.serviceText{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    align-self: center;
+    text-align: center;
+    
+}
+
+/*************************
+    ! Template Section
+*************************/
+
+
+.templates{
+    height: 120vh;
+    background-color: #3B0D11;
+    display: flex;
+    flex-direction: column;
+}
+
+.templateHead{
+    display: block;
+    font-size: 1.25rem;
+    margin: 0px;
+    padding: 1rem;
+    margin-top: 3rem;
+}
+
+.templateContainer{
+    justify-content: center;
+    row-gap: 3rem;
+}
+
+.templateCard{
+    width: 300px;
+    height: 150px;
+    border-radius: 10px;
+    overflow: hidden;
+    
+}
+
+
+
+
 }
