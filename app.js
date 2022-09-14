@@ -3,10 +3,11 @@ const myShape = document.getElementById("colorBack");
 const ctx = myShape.getContext("2d");
 
 
-ctx.fillStyle= 'darkblue';
+ctx.fillStyle= '#6a859b';
 ctx.moveTo(0,10);
 ctx.lineTo(1920,10);
-ctx.lineTo(450,900);
+ctx.lineTo(300,1250);
+ctx.lineTo(800,500);
 ctx.fill();
 
 
