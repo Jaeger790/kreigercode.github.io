@@ -1,77 +1,39 @@
+// triangle shape for profile header section
+const myShape = document.getElementById("colorBack");
+const ctx = myShape.getContext("2d");
+
+
+ctx.fillStyle= '#6a859b';
+ctx.moveTo(5,10);
+ctx.lineTo(1800,10);
+ctx.lineTo(1350, 400);
+ctx.lineTo(1800,900);
+ctx.fill();
 
 
 
-let phoneValidateMessage = document.getElementById("phone")
-phoneValidateMessage.oninvalid = function(event){
-    event.target.setCustomValidity("Phone number should match format: 123-456-789")
-};
-
-/* 
-    ! Animation funtions
-*/
-
-
-
-function phoneFormat(obj){
-    obj.getElementById("")
+//Hide navbar function
+var hideScroll = window.pageYOffset;
+window.onscroll = function(){
+    let scrollPos = window.pageYOffset;
+    if(hideScroll > scrollPos){
+        document.getElementById("navBar").style.top = "0";
+    }else{
+        document.getElementById("navBar").style.top = "-100px";
+    }
+    hideScroll = scrollPos;
 }
 
-
-/* 
-    ! Navbar funtions
-*/
-
-function coll(){
-  document.getElementById("navBar").style.display = "none";
-  document.getElementById("showNav").style.display = "block";
- 
-  //console.log("hide")
-}
-
-function show(){
-    document.getElementById("navBar").style.display = "block";
-    document.getElementById("showNav").style.display = "none";
-    document.getElementById("collapseNavButton").style.float = "right";
-   //console.log("show")
-}
-
-
-/* 
-    ! Scroll funtions
-*/
-
+//scroll functions
 function scrollToTop(){
-    //document.querySelector("#top").scrollIntoView({behavior:"smooth"});
-    window.scrollTo({top:0, behavior: "smooth"});
-}
+    window.scrollTo({top:0, behavior:"smooth"})
 
-function scrollBottom(){
-    document.querySelector("#contact").scrollIntoView({behavior:"smooth"});
-    
 }
 
 function scrollAbout(){
-    document.querySelector("#about").scrollIntoView({behavior:"smooth"});
+    document.querySelector('#about').scrollIntoView({behavior:"smooth"})
 }
 
-function scrollService(){
-    document.querySelector("#services").scrollIntoView({behavior:"smooth"});
-}
-
-
-
-function sendEmail(){
-    Email.send({
-        Host : "smtp.gmail.com",
-        Username : "b.rott8401@gmail.com",
-        Password : "Codefacers790500!",
-        To : 'b.rott8401@gmail.com',
-        From : document.getElementById("email").value,
-        Subject : "New Appointment Request",
-        Body : "And this is the body"
-    }).then(
-      message => alert(message)
-    );
-
-    sendEmail()
+function scrollTemplate(){
+    document.querySelector('#template').scrollIntoView({behavior:"smooth"})
 }
