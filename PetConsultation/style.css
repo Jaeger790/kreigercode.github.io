@@ -455,3 +455,7 @@ nav a:hover {
 .fishList{
     margin-left: 60px;
 }
+.linkDiv{
+    inline-size: 300px;
+    margin-bottom: 5vh;
+}
