@@ -41,22 +41,21 @@ body{
     font-size: 25px;
     font-family: Arial, Helvetica, sans-serif;
     box-shadow: #000 5px 5px 5px;
+    border: #000 2px solid;
     
 }
     .nav ul  li{
         list-style-type: none;
         display: inline-block;
-        /*  padding-right: 15px */;
-       /*  margin-left: 10px; */
         background-color:#6a859b ;
         color: #020230;
-        padding: 25px;
+        padding: 10px;
         border-radius: 5%;
-        box-shadow: rgb(2, 16, 20) 2px 2px 2px 2px;
         width: 155px;
         text-align: center;
         transition: .4s;
         font-weight: 400;
+        border: solid #020230 2px;
        
     }
     .nav ul  li:hover{
@@ -66,6 +65,7 @@ body{
         transform: rotate(-.5deg); */
         cursor: pointer;
         border: solid #6a859b 2px;
+        box-shadow: rgb(20, 20, 20) 2px 2px 2px 2px;
     }
 
 .titleHeader{
@@ -167,7 +167,7 @@ body{
 .skillHeader{
     margin-top: 100px;
     text-align: center;
-    font-size: 60px;
+    font-size: 6vh;
    
 }
 
@@ -182,6 +182,7 @@ body{
     box-shadow: 1px 1px 5px 1px rgb(172, 179, 214);
     max-width: 85%;
     margin: 0 auto;
+    overflow: hidden
     
 }
 
@@ -257,7 +258,7 @@ ul.serviceText{
 .templateCard{
     width: 300px;
     height: 150px;
-    border-radius: 10px;
+    border-radius: 2px;
     overflow: hidden;
     cursor: pointer;
     background-color: #6a859b;
