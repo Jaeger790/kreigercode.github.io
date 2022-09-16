@@ -1,0 +1,453 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*  Color Pallete
+Primary colors:
+    Midnight Blue - #003B6D
+    Blue Sky- #6699CC
+
+Secondary colors:
+    Dim gray - #676767
+    Silver- #BDBDBD
+
+*/
+
+body {
+    background-color: #6699cc;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* 
+    Nav Bar Section 
+*/
+
+nav {
+    display: block;
+    background-color: #003b6d;
+    z-index: 2;
+    box-shadow: #000911 2px 2px 2px;
+}
+nav a {
+    display: inline-block;
+    height: 40px;
+    width: 100px;
+    background-color: #bdbdbd;
+    vertical-align: middle;
+
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    transition: 0.4s;
+    box-shadow: #022e55 5px 0px 5px;
+    border-radius: 0px;
+}
+nav a:hover {
+    background-color: #676767;
+    color: #bdbdbd;
+    box-shadow: #000911 1px 1px 1px 1px;
+    border-radius: 2px;
+}
+
+.logo {
+    background-color: #003b6d;
+    padding: 0px;
+}
+.logo:hover {
+    background-color: #003b6d;
+}
+
+/* 
+    Header Section 
+*/
+
+.header {
+    display: inline-block;
+    width: 100%;
+}
+
+.headerLogo {
+    width: 300px;
+    margin-top: 3px;
+    transition: 0.4s;
+}
+.headerLogo:hover {
+    box-shadow: #002546 5px 5px 5px;
+}
+.searchContainer {
+    margin-left: auto;
+    width: 200px;
+    position: relative;
+    float: right;
+    margin-top: 2px;
+}
+.sIcon {
+    cursor: pointer;
+    margin-top: 5px;
+}
+.slogan {
+    text-align: center;
+    font-size: 35px;
+    margin-top: 15px;
+    padding: 10px;
+    color: #003b6d;
+    box-shadow: #003b6d 5px 5px 5px 5px;
+}
+
+/* 
+    About Section 
+*/
+
+.aboutHeader {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 50px;
+    background-color: #003b6d;
+    padding: 20px;
+    color: #bdbdbd;
+}
+
+.aboutContent {
+    font-size: 18px;
+    margin: 0 auto;
+    padding-top: 20px;
+    display: block;
+    width: 700px;
+    align-content: center;
+    align-items: center;
+}
+
+.infoLinks {
+    padding-top: 10px;
+    margin-left: 50px;
+}
+.infoLinks a {
+    color: rgb(43, 3, 153);
+}
+.linkItem:hover {
+    color: #bdbdbd;
+    background-color: #003b6d;
+}
+
+/* 
+    Picture Link Section 
+*/
+
+.picNav {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin: 80px 0 20px;
+}
+.picNav a {
+    text-decoration: none;
+    color: #bdbdbd;
+}
+
+.picNav a:hover {
+    color: #003b6d;
+}
+
+.picContain {
+    text-align: center;
+    background-color: #003b6d;
+    color: #bdbdbd;
+    height: 325px;
+    transition: 0.4s;
+}
+
+.picContain:hover {
+    background-color: #bdbdbd;
+    color: #003b6d;
+    box-shadow: #003b6d 5px 5px 5px;
+}
+.picHeader {
+    font-size: 40px;
+    margin: auto;
+    padding: 20px;
+}
+.faqButton {
+    display: block;
+    text-align: center;
+    margin-bottom: 80px;
+}
+.button {
+    width: 1100px;
+    height: 40px;
+    font-size: 30px;
+    background-color: #bdbdbd;
+    transition: 0.4s;
+}
+.button:hover {
+    background-color: #676767;
+    color: #bdbdbd;
+    box-shadow: #003b6d 5px 5px 5px;
+}
+/* 
+    Contact Section 
+*/
+
+.contactForm {
+    color: #bdbdbd;
+    width: 500px;
+    margin: 0 auto 40px;
+    background-color: #6699cc;
+    padding-bottom: 20px;
+    box-shadow: #002546 5px 5px 5px 5px;
+    margin-top: 80px;
+}
+.contact {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    background-color: #6699cc;
+}
+.contactHeader {
+    text-align: center;
+    font-size: 30px;
+    background-color: #003b6d;
+    width: 100%;
+    margin: 0;
+    padding: 30px;
+}
+.field {
+    margin-top: 10px;
+}
+
+.contactLabel {
+    color: black;
+}
+.submit {
+    margin-top: 10px;
+    width: 173px;
+    height: 30px;
+    font-size: 20px;
+    transition: 0.4s;
+}
+.submit:hover {
+    background-color: #676767;
+    color: #bdbdbd;
+    box-shadow: 5px 5px 5px #000911;
+}
+
+/*
+    Mobile Section
+*/
+
+@media screen and (max-width: 600px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .logo {
+        background-color: #003b6d;
+        color: #003b6d;
+        width: 10vh;
+        height: 7vh;
+        margin-top: 0.5vh;
+    }
+    .navLogo {
+        width: 10vw;
+        height: 5vh;
+    }
+    nav {
+        display: flex;
+        font-size: 0.5rem;
+        width: 100%;
+    }
+
+    nav a {
+        margin-top: 2vh;
+        font-size: 1rem;
+        width: 10vh;
+        height: 4vh;
+    }
+
+    .header {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .headerLogo {
+        width: 100%;
+    }
+    .searchContainer {
+        margin: 0 auto;
+        width: 70%;
+        position: relative;
+        float: middle;
+    }
+    .sIcon {
+        cursor: pointer;
+    }
+    .slogan {
+        display: block;
+        position: relative;
+        margin-top: 5vh;
+        text-align: center;
+        box-shadow: #003b6d 5px 5px 5px 5px;
+        padding: 0.5vh;
+    }
+    /* 
+    About Section 
+*/
+
+    .aboutHeader {
+        font-size: 2rem;
+        text-align: center;
+        margin-top: 5vw;
+        background-color: #003b6d;
+        padding: 1rem;
+        color: #bdbdbd;
+    }
+
+    .aboutContent {
+        font-size: 1rem;
+        margin: 0 auto;
+        padding-top: 5vw;
+        display: block;
+        width: 80%;
+        align-content: center;
+        align-items: center;
+    }
+
+    .infoLinks {
+        font-size: 1.25rem;
+        padding-top: 5vw;
+        margin-left: 2vw;
+        width: 80%;
+    }
+    .infoLinks a {
+        color: rgb(43, 3, 153);
+        font-size: 1.16rem;
+    }
+
+    .linkDiv {
+        inline-size: 300px;
+        margin-bottom: 5vh;
+        text-overflow: clip;
+    }
+
+    .picNav {
+        display: flex;
+        flex-direction: column;
+        gap: 10vh;
+        justify-content: center;
+        margin-left: 10%;
+    }
+    .picNav a {
+        text-decoration: none;
+        color: #bdbdbd;
+    }
+    .picContain {
+        text-align: center;
+        background-color: #003b6d;
+        color: #bdbdbd;
+        height: 30vh;
+        width: 90%;
+    }
+    .picHeader {
+        font-size: 5vh;
+        margin: auto;
+        padding: 1rem;
+    }
+    .logoPic {
+        width: 100%;
+    }
+
+    .pictureIcon {
+        width: 40%;
+    }
+
+    .faqButton {
+        display: block;
+        text-align: center;
+        margin: 5vh 0vh 5vh 0vh;
+    }
+
+    .button {
+        width: 85%;
+        height: 10vh;
+        font-size: 30px;
+        background-color: #bdbdbd;
+        transition: 0.4s;
+    }
+
+    /* 
+    Contact Section 
+*/
+
+    .contactForm {
+        color: #bdbdbd;
+        width: 90%;
+        margin: 0 auto 40px;
+        background-color: #6699cc;
+        padding-bottom: 20px;
+        box-shadow: #002546 5px 5px 5px 5px;
+        margin-top: 10vh;
+    }
+    .contact {
+        display: block;
+        width: 200px;
+        margin: 0 auto;
+        background-color: #6699cc;
+    }
+    .contactHeader {
+        text-align: center;
+        font-size: 30px;
+        background-color: #003b6d;
+        width: 100%;
+        margin: 0;
+        padding: 30px;
+    }
+    .field {
+        margin-top: 10px;
+    }
+
+    .contactLabel {
+        color: black;
+    }
+    .submit {
+        margin-top: 10px;
+        width: 173px;
+        height: 30px;
+        font-size: 20px;
+        transition: 0.4s;
+    }
+
+    .aboutText {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .fishList {
+        margin-left: 5vw;
+    }
+}
+
+/* 
+    Cat Page 
+*/
+
+.catList {
+    padding: 20px;
+    margin-left: 50px;
+}
+.AboutCats {
+    background-color: #003b6d;
+    padding: 10px;
+    color: #bdbdbd;
+}
+.ageHeader {
+    background-color: #003b6d;
+    color: #bdbdbd;
+    padding: 10px;
+}
+.aboutText {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
