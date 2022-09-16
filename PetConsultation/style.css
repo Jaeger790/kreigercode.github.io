@@ -194,6 +194,7 @@ nav a:hover {
 .contactForm {
     color: #bdbdbd;
     width: 500px;
+    height: 500px;
     margin: 0 auto 40px;
     background-color: #6699cc;
     padding-bottom: 20px;
