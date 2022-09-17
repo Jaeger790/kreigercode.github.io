@@ -55,6 +55,13 @@ body {
     border: solid #6a859b 2px;
     box-shadow: rgb(20, 20, 20) 3px 0px 5px 2px;
 }
+.nav ul li:active{
+    box-shadow: none;
+    transform: scale(1);
+    background-color: #6a859b;
+    color: #020230;
+    border: solid #01011a 2px;
+}
 
 .profileHeading {
     margin-top: 90px;
@@ -301,6 +308,12 @@ ul.serviceText {
     box-shadow: 3px 3px 5px 3px rgb(172, 179, 214);
     transform: scale(1.15);
 }
+.templateCard:active{
+    box-shadow: none;
+    transform: scale(1);
+
+}
+
 .templateCard h2:hover {
     color: #6a859b;
     background-color: #01011a;
@@ -334,20 +347,25 @@ transition: .6s;
 .bi-github {
     font-size: 6vh;
     color: white;
-  transition: .6s;
+  transition: .2s;
    margin-left: 2%;
 }
 .bi-github:hover{
-    /* color: #01011a; */
     padding: .5%;
     box-shadow: 3px 3px 5px 3px rgb(172, 179, 214);
     transform: scale(1.15);
     border-radius: 30%;
 }
+.bi-github:active{
+    padding: 0;
+    box-shadow: none;
+    transform: scale(1);
+    border-radius: 0;
+}
 
 .bi-linkedin {
     color: white;
-    transition: .6s;
+    transition: .2s;
     font-size: 6vh;
 }
 .bi-linkedin:hover{
@@ -356,11 +374,17 @@ transition: .6s;
     transform: scale(1.15);
     border-radius: 30%;
 }
+.bi-linkedin:active{
+    padding: 0;
+    box-shadow: none;
+    transform: scale(1);
+    border-radius: 0;
+}
 .bi-twitter {
     color: white;
     margin-left: 2%;
     font-size: 6vh;
-    transition: .6s;
+    transition: .2s;
 }
 .bi-twitter:hover{
    /*  padding: .5%;
