@@ -19,36 +19,46 @@
     
     <section class="nav" id="navBar">
         <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Templates</li>
+            <li onclick="scrollToTop()">Home</li>
+            <li onclick="scrollAbout()">About</li>
+            <li onclick="scrollTemplate()">Templates</li>
             <li>Blog</li>
         </ul>
     </section>
-    <canvas class="color" id="colorBack" width="2000" height="1000"></canvas>
+    <canvas class="color" id="colorBack" width="1800" height="1000"></canvas>
    
 
     <section class="profileHeading">
         <div class="titleHeader">
             <h1 class="heading">KriegerCode Designs</h1>
-        </div>
+        
 
         <div class="tagline">
-            <h2>Frontend Developer and Designer</h2>
-            <h3>I design simple, intuitive, and visually appealing websites. </h3>
+            <h2 class="ProfTitle">Frontend Developer and Designer</h2>
+            <h3 class="Motto">I design simple and intuitive websites. </h3>
         </div>
-
+    </div>
         <div class="pictureContainer">
             <img src="pics\RainFire1.jpeg" alt="profile picture" class="profilePicture">
         </div>
+    
         
         
         
     </section>
    
-    <section class="about">
+    <section class="about" id="about">
         <h1 class="aHeader">About Me</h1>
-        <p class="bio">I am a freelance web developer that has been working with computers for 15 years. I got my start in custom computer builds and evolved into a computer technician.  At the end of 2020 I decided to take my career to the next level and went back to school for Software Development. During school I discovered a passion for web development.  I am driven with a natural curiosity to continuously hone my skills and never stop learning. </p>
+        <div class="aboutContentContainer">
+            <img class="aboutPic" height="100%"src="pics\anthony-roberts-W_DCDWCL3Wo-unsplash.jpg" alt="Picture of the mountains">
+
+            <p class="bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquam id diam maecenas ultricies mi eget. Mauris pharetra et ultrices neque ornare aenean euismod elementum nisi. Ac orci phasellus egestas tellus rutrum tellus pellentesque eu. Massa sapien faucibus et molestie.</p>
+            </div>
+        <div class="aboutContentContainer">
+            <p class="bio2">I am a freelance web developer that has been working with computers for 15 years. I got my start in custom computer builds and evolved into a computer technician.  At the end of 2020 I decided to take my career to the next level and went back to school for Software Development. During school I discovered a passion for web development.  I am driven with a natural curiosity to continuously hone my skills and never stop learning.</p>
+
+            <img class="aboutPic" src="pics/motiur-rahman-shakil-mpU7fYbH2-s-unsplash.jpg" alt="Picture of keyboard with laptop in background.">
+        </div>
 
     </section>
 
@@ -108,29 +118,36 @@
         </div>
     </section>
 
-    <section class="templates">
+    <section class="templates" id="template">
         
         <div class="templateHead">
-            <h1>Check out some of the sites I have created so far</h1>
+            <h1 class="eHeader">Example Webistes</h1>
         </div>
         <div class="templateContainer">
             <div class="templateCard">
                 <h2 class="templateTitle">Computer Repair</h2>
-                <a href="ComputerRepair\index.html"><img class="templatePic"width="300" height="150" src="pics\ComputerRepair.jpg" alt="Computer Site" class="computer"></a>
+                <a href="ComputerRepair\index.html"><img class="templatePic" src="pics\ComputerRepair.jpg" alt="Computer Site" class="computer"></a>
             </div>
             <div class="templateCard">
                 <h2 class="templateTitle">Store Cart Functionality</h2>
-                <a href="storeSite\index.html"><img width="300" height="150" src="pics\flower.jpg" alt="Computer Site" class="computer"></a>
+                <a href="storeSite\index.html"><img src="pics\flower.jpg" alt="Computer Site" class="computer"></a>
             </div>
             <div class="templateCard">
                 <h2 class="templateTitle">Pet Consultation</h2>
-                <a href="PetConsultation\Home.html"><img src="pics\PetConsulatation.png" alt="link to pet consultation template"></a>
+                <a href="PetConsole"><img src="pics\PetConsulatation.png" alt="link to pet consultation template"></a>
             </div>
             
         </div>
     </section>
    
-
+    <footer>
+        <h4 class="footerHead">Other places you can me</h4>
+        <div class="socialLinks">
+            <a class="bi bi-linkedin" href="https://www.linkedin.com/in/bradley-r-6b7962176"></a>
+            <a class="bi bi-github" href="https://github.com/Jaeger790"></a>
+            <i class="bi bi-twitter"></i>
+        </div>
+      </footer>
     <script src="app.js"></script>
 </body>
 </html>
