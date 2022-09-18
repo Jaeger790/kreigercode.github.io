@@ -1,11 +1,8 @@
 /*************************
   ? Color Pallete
-
-    #0A2E36 Gunmetal
-    #3B0D11 Dark Sienna
-    #D7FDF0 Aero Blue
-    #748386 Slate Gray
-    #B2FFD6 Magic Mint 
+    #6a859b gray
+    #020230 blue
+ 
 
 *************************/
 * {
@@ -64,19 +61,21 @@ body {
 }
 
 .profileHeading {
-    margin-top: 90px;
-    display: grid;
-    grid-template-columns: auto;
-    column-gap: 4rem;
+    margin-top: 10vh;
+    display: block;
 }
 .titleHeader {
     color: #01011a;
     font-size: 60px;
-    margin-left: 23.5%;
+    padding: 20px;
     margin-top: 20px;
     text-align: center;
+    background-color: #6a859b;
+    width: 100%;
+    z-index: -1;
+  
+    
 }
-
 .tagline {
     color: #01011a;
     font-family: Arial, Helvetica, sans-serif;
@@ -90,14 +89,15 @@ body {
     width: 100%;
 }
 .pictureContainer {
-    display: flex;
-    align-self: flex-start;
-    margin-top: -272px;
+    display:flex;
+    justify-content: center;
+    margin-top: -290px;
     margin-left: 25px;
     background-color: #6a859b;
     border-radius: 10px;
-    padding: 30px;
-    max-width: 360px;
+    /* padding: 30px; */
+    width: 350px;
+    height: 550px;
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.651);
     transition: .8s;
 }
@@ -107,6 +107,7 @@ body {
     transform: scale(.97);
 }
 .profilePicture {
+    align-self: center;
     height: 500px;
     width: 300px;
     border-radius: 10px;
@@ -122,6 +123,8 @@ body {
 .color {
     z-index: -1;
     position: absolute;
+    width: 100%;
+    height: 100vh;
 }
 
 /*************************
@@ -158,6 +161,9 @@ body {
     max-width: 50%;
     box-shadow: #b8baca 2px 2px 5px 2px;
     transition: .4s;
+}
+#aboutPic1{
+    display: none;
 }
 
 .aboutPic:hover{
@@ -202,6 +208,10 @@ body {
     margin-top: 100px;
     text-align: center;
     font-size: 6vh;
+    color: #020230;
+    background-color: #6a859b;
+    box-shadow: #01011a 5px 5px 5px 5px;
+    margin-bottom: 100px;
 }
 
 .skillContainer {
@@ -280,7 +290,7 @@ ul.serviceText {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    column-gap: 40px;
+    column-gap:4%;
 }
 
 .templateCard {
@@ -305,8 +315,8 @@ ul.serviceText {
 .templateCard:hover {
     background-color: #01011a;
     color: #6a859b;
-    box-shadow: 3px 3px 5px 3px rgb(172, 179, 214);
-    transform: scale(1.15);
+    box-shadow: 2px 2px 5px 2px rgb(172, 179, 214);
+    transform: scale(1.08);
 }
 .templateCard:active{
     box-shadow: none;
@@ -340,10 +350,7 @@ transition: .6s;
     padding: .5%;
     margin-bottom: 1%;
 }
-.socialLinks:hover{
-    
-   
-}
+
 .bi-github {
     font-size: 6vh;
     color: white;
@@ -404,105 +411,120 @@ transition: .6s;
         padding: 0;
         box-sizing: border-box;
     }
-
-    .profileHeading {
-        margin-top: 90px;
-        display: grid;
-        grid-template-columns: auto;
-        row-gap: 4vh;
+    body {
+        background-color: #020230;
+        color: #b8baca;
+        font-family: Arial, Helvetica, sans-serif;
     }
+    
     .nav {
         position: fixed;
         top: 0;
         transition: top 0.5s;
-        padding: 20px;
-        background-color: #3b0d11;
-        width: 100vh;
+        background-color: #6a859b;
+        width: 100%;
         font-size: 1rem;
-        font-family: "Rock Salt", cursive;
+        text-align: center;
         box-shadow: #000 5px 5px 5px;
+        
     }
     .nav ul li {
         list-style-type: none;
         display: inline-block;
-        padding-right: 15px;
-        margin-left: 10px;
+        background-color: white;
+        width: 24%;
+        font-weight: 700;
+        box-shadow: 2px 2px 2px 2px #01011a;
     }
 
+    .profileHeading {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 5vh;
+        height: 30vh;
+    }
     .titleHeader {
-        font-size: 2rem;
-        margin-left: 1vh;
-        margin-top: 20px;
-        text-align: center;
+      width: 100%;
+     font-size: 2rem;
+     box-shadow: #01011a 5px 5px 5px 5px;
+        
     }
 
     .tagline {
-        margin-left: 1vh;
-        text-align: center;
-        font-family: "Aboreto", cursive;
         font-size: 1.25rem;
-        margin-bottom: 15vh;
+        width: 100%;
+       
     }
 
     .pictureContainer {
-        background-color: #748386;
-        border-radius: 10px;
-        box-shadow: 5px 5px rgba(24, 24, 24, 0.651);
-        max-width: 75%;
-        padding-right: 0px;
+        margin-top: 10vh;
+        display:none;
+    
+    }
+    .logo{
         margin: 0 auto;
+        margin-top: 15vh;
+        font-size: 15rem;
     }
 
-    .profilePicture {
-        height: 90%;
-        width: 90%;
-        border-radius: 10px;
-        align-self: center;
-        justify-content: center;
-        align-content: center;
-        text-align: center;
-    }
-    .color {
-        z-index: -1;
-        position: absolute;
-        width: 46.2vh;
-        height: 100vh;
-    }
 
     /*************************
    ! About Section
 *************************/
+.about{
+    display: block;
+    height: 200vh;
+    margin-top: 0;
+}
+.aboutContentContainer{
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.aboutPic {
+    box-shadow: #b8baca 2px 2px 5px 2px;
+    transition: .4s;
+    width: 100%;
 
-    .about {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: 100vh;
-    }
+}
+#aboutPic2{
+    display: none;
+}
+#aboutPic1{
+    display: block;
+    margin-top: 0;
+}
 
-    .aHeader {
-        margin-top: 1.5rem;
-        padding: 1rem;
-        font-size: 2rem;
-        font-family: "Rock Salt", cursive;
-    }
-
-    .bio {
-        margin-top: 0;
-        font-family: "Aboreto";
-        font-size: 1rem;
-        font-family: sans-serif;
-        width: 100%;
-        padding: 1rem;
-    }
+.bio {
+    width: 90%;
+    margin-left: 1%;
+    text-align: left;
+    margin-top: 15px;
+    font-size: 3vh;
+    line-height: 45px;
+    font-weight: bold;
+}
+.bio2{
+    width: 90%;
+    margin-left: 1%;
+    
+    text-align: left;
+    font-size: 3vh;
+    line-height: 45px;
+    font-weight: bold;
+}
 
     /*************************
     ! Skill Section
 *************************/
 
     .skills {
-        height: 180vh;
-        background-color: #0a2e36;
+        height: 140vh;
+
     }
 
     .skillHeader {
@@ -568,8 +590,7 @@ transition: .6s;
 *************************/
 
     .templates {
-        height: 120vh;
-        background-color: #3b0d11;
+        height: 100vh;
         display: flex;
         flex-direction: column;
     }
