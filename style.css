@@ -12,7 +12,7 @@
 }
 body {
     background-color: #020230;
-    color: #b8baca;
+    color: #04D010;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -23,7 +23,8 @@ body {
 .nav {
     position: fixed;
     top: 0;
-    padding: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     background-color: #6a859b;
     width: 100%;
     font-size: 25px;
@@ -49,12 +50,12 @@ body {
     /* transform-origin: 300% -20%;
         transform: rotate(-.5deg); */
     cursor: pointer;
-    border: solid #6a859b 2px;
+    border: solid #fff 2px;
     box-shadow: rgb(20, 20, 20) 3px 0px 5px 2px;
 }
 .nav ul li:active{
     box-shadow: none;
-    transform: scale(1);
+    transform: scale(.90);
     background-color: #6a859b;
     color: #020230;
     border: solid #01011a 2px;
@@ -65,7 +66,9 @@ body {
     display: block;
 }
 .titleHeader {
-    color: #01011a;
+    color: #000000;
+    text-shadow: #444849 3px 3px 5px;
+    box-shadow: #01011a 10px 5px 5px;
     font-size: 60px;
     padding: 20px;
     margin-top: 20px;
@@ -77,7 +80,7 @@ body {
     
 }
 .tagline {
-    color: #01011a;
+    color: #000;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 80px;
     font-size: 30px;
@@ -95,7 +98,6 @@ body {
     margin-left: 25px;
     background-color: #6a859b;
     border-radius: 10px;
-    /* padding: 30px; */
     width: 350px;
     height: 550px;
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.651);
@@ -105,6 +107,7 @@ body {
 .pictureContainer:hover{
     box-shadow: none;
     transform: scale(.97);
+    border: #000 1px solid;
 }
 .profilePicture {
     align-self: center;
@@ -118,6 +121,15 @@ body {
 .profilePicture:hover{
     box-shadow: none;
     transform: scale(.97);
+    border: #000 1px solid;
+}
+
+.logo{
+    text-align: center;
+    margin-top: 200px;
+    font-size: 60px;
+    text-shadow: #fff 1px 1px 4px;
+    display: none;
 }
 
 .color {
@@ -135,7 +147,7 @@ body {
     display: block;
     flex-wrap: wrap;
     flex-direction: column;
-   
+    color: #04D010;
     align-items: center;
     height: 1400px;
     background-color: #020230;
@@ -147,10 +159,12 @@ body {
     text-align: center;
     font-size: 60px;
     background-color: #6a859b;
-    color: #01011a;
+    color: #000000;
+    text-shadow: #444849 3px 3px 5px;
     padding: 15px;
     width: 100%;
     box-shadow: #000 10px 5px 5px;
+    
 }
 .aboutContentContainer{
     height: 50%;
@@ -202,16 +216,19 @@ body {
     margin-top: 400px;
     justify-content: center;
     text-align: center;
+    
 }
 
 .skillHeader {
     margin-top: 100px;
     text-align: center;
     font-size: 6vh;
-    color: #020230;
     background-color: #6a859b;
     box-shadow: #01011a 5px 5px 5px 5px;
     margin-bottom: 100px;
+    color: #000000;
+    text-shadow: #444849 3px 3px 5px;
+    padding: 20px;
 }
 
 .skillContainer {
@@ -275,13 +292,15 @@ ul.serviceText {
 }
 
 .templateHead {
-
-    font-size: 4vh;
+    color: #000000;
+    text-shadow: #444849 3px 3px 5px;
+    font-size: 6vh;
     text-align: center;
     background-color: #6a859b;
     color: #01011a;
     padding: 1%;
     box-shadow: #000 10px 5px 5px;
+    padding: 20px;
 }
 
 
@@ -300,23 +319,25 @@ ul.serviceText {
     overflow: hidden;
     cursor: pointer;
     background-color: #6a859b;
-    color: #01011a;
+    color: #000000;
+    text-shadow: #444849 3px 3px 5px;
     transition: 0.4s;
     border: #01011a 2px solid;
 }
 .templateTitle{
     padding-top: 4%; 
     padding-bottom: 4%;
-    font-size: 3vh;
+    font-size: 4.5vh;
     text-align: center;
     border-bottom: #01011a 2px solid;
     
 }
 .templateCard:hover {
     background-color: #01011a;
-    color: #6a859b;
+    color:  #04D010;
     box-shadow: 2px 2px 5px 2px rgb(172, 179, 214);
     transform: scale(1.08);
+    text-shadow: 2px 2px 3px 2px rgb(172, 179, 214);
 }
 .templateCard:active{
     box-shadow: none;
@@ -325,8 +346,10 @@ ul.serviceText {
 }
 
 .templateCard h2:hover {
-    color: #6a859b;
+    color:  #04D010;
+    border: #000 2px solid;
     background-color: #01011a;
+    text-shadow: 2px 2px 3px 2px rgb(172, 179, 214);
 }
 
 /* 
@@ -374,6 +397,7 @@ transition: .6s;
     color: white;
     transition: .2s;
     font-size: 6vh;
+    
 }
 .bi-linkedin:hover{
     padding: .5%;
