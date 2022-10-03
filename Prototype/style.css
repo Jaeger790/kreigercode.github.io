@@ -8,56 +8,58 @@
 
 **************************************************/
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+body {
     background-color: #fff;
     color: #102128;
-    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif; ;
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 /**************************************************
                 Nav Section
 **************************************************/
-.navBar{
+.navBar {
     background-color: rgba(255, 255, 255, 0);
-    color: #20A5B4;
+    color: #20a5b4;
     padding: 1vh;
 }
-.logo{
+.collapse {
+    display: none;
+}
+.logo {
     height: 100%;
     width: 2%;
     border-radius: 50%;
     float: left;
     margin-right: 1%;
 }
-.navBar li{
+.navBar li {
     list-style-type: none;
     display: inline-block;
     padding: 1vh;
 }
-.navBar a{
+.navBar a {
     text-decoration: none;
-    color: #20A5B4;
+    color: #20a5b4;
     padding: 1%;
 }
-.navBar a:hover{
+.navBar a:hover {
     text-shadow: rgb(189, 189, 189) 1px 1px 1px;
     text-decoration: overline;
-    
 }
 
 /**************************************************
                 Heading Section
 **************************************************/
 
-.pageTitleContainer{
+.pageTitleContainer {
     width: 100%;
     height: 50vh;
 }
-.title{
+.title {
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -69,7 +71,7 @@ body{
     background-size: cover;
 }
 .titleText {
-    background-color: rgba(255, 255, 255, 0.377) ;
+    background-color: rgba(255, 255, 255, 0.377);
     align-self: center;
     margin: auto;
     margin-bottom: 0;
@@ -77,16 +79,15 @@ body{
     font-size: 4.5rem;
     border-radius: 10px 10px 0px 0px;
     text-shadow: rgb(95, 95, 95) 5px 5px 4px;
-
 }
-.tagline{
-    background-color: rgba(255, 255, 255, 0.377) ;
-     align-self: center;
+.tagline {
+    background-color: rgba(255, 255, 255, 0.377);
+    align-self: center;
     margin: auto;
     padding: 2%;
     font-size: 2.5rem;
     border-radius: 10px 10px 20px 20px;
-    margin-top:0;
+    margin-top: 0;
     text-shadow: rgb(95, 95, 95) 4px 4px 5px;
 }
 
@@ -94,40 +95,37 @@ body{
                 Content Card Section
 **************************************************/
 
-.contentCards{
+.contentCards {
     height: 40vh;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    
 }
-.column{
+.column {
     width: 33.3%;
     height: 100%;
     display: flex;
     justify-content: center;
 }
-.column a{
+.column a {
     text-decoration: none;
     color: #102128;
 }
-.card{
+.card {
     width: 60%;
     height: 80%;
     margin-top: 2%;
     border-radius: 20px;
     padding: 2% 2% 14% 2%;
     cursor: pointer;
-    transition: .5s;
+    transition: 0.5s;
 }
-.card:hover{
+.card:hover {
     box-shadow: rgb(92, 92, 92) 2px 2px 3px 2px;
-    
 }
 
-
-.photoContainer{
+.photoContainer {
     height: 80%;
     width: 100%;
     display: flex;
@@ -135,55 +133,54 @@ body{
     flex-direction: column;
     background-repeat: no-repeat;
     background-size: cover;
-    transition: .5s;
+    transition: 0.5s;
 }
-.photoContainer:hover{
+.photoContainer:hover {
     box-shadow: rgb(92, 92, 92) 2px 2px 3px 2px;
 }
-#foodPhoto{
+#foodPhoto {
     background-image: url("pics/pim-myten-HXScJqhiSJY-unsplash.jpg");
     background-position: center;
-    background-size:cover;
+    background-size: cover;
     border-radius: 15px;
 }
-#rentalPhoto{
+#rentalPhoto {
     background-image: url("pics/obi-pixel6propix-aZKJEvydrNM-unsplash.jpg");
     background-position: center;
-    background-size:cover;
+    background-size: cover;
     border-radius: 15px;
 }
-#hikingPhoto{
+#hikingPhoto {
     background-image: url("pics/peter-vanosdall-tzTooH9OZ0M-unsplash.jpg");
     background-position: center;
-    background-size:cover;
+    background-size: cover;
     border-radius: 15px;
 }
-.fishingPhoto{
+.fishingPhoto {
     height: 100%;
     width: 100%;
     border-radius: 20px;
 }
-.cardTitle{
+.cardTitle {
     font-size: 1.75rem;
 }
-.cardContent{
+.cardContent {
     margin-top: 5px;
     font-size: 1.25rem;
-    
 }
-.bi-question-square-fill{
+.bi-question-square-fill {
     font-size: 6rem;
     position: absolute;
     right: 0;
     bottom: 0;
-    margin-right:20px;
+    margin-right: 20px;
     cursor: pointer;
     color: #102128;
     text-shadow: rgb(180, 180, 180) 2px 2px 2px;
-    transition: .2s;
+    transition: 0.2s;
 }
-.bi-question-square-fill:hover{
-    color: #20A5B4;
+.bi-question-square-fill:hover {
+    color: #20a5b4;
     text-shadow: #102128 2px 2px 2px;
 }
 /**************************************************
@@ -194,68 +191,69 @@ body{
 /**************************************************
 **************************************************/
 
-
 /**************************************************
                 Heading Section
 **************************************************/
 
-.aboutHeading{
-    background-color: #E0CFA7;
-    color: #20A5B4;
+.aboutHeading {
+    background-color: #e0cfa7;
+    color: #20a5b4;
     width: 98%;
     margin: auto;
     padding: 1%;
 }
-.aboutHeadingText{
-    text-align:center ;   
+.aboutHeadingText {
+    text-align: center;
     font-size: 3rem;
 }
 
 /**************************************************
                 Main Section
 **************************************************/
-.mainAbout{
+.mainAbout {
     margin-top: 4vh;
     height: 100vh;
 }
-.aboutRow{
+.aboutRow {
     display: flex;
     height: 100vh;
     width: 100vw;
 }
-.aboutCol{
+.aboutCol {
     width: 50%;
-    height:100%;
+    height: 100%;
 }
-.aboutPic{
+.aboutPic {
     height: 100%;
     width: 100%;
 }
 
-#aboutIslandPic{
+#aboutIslandPic {
     background-image: url("pics/jcob-nasyr-ppMxyOhPtd8-unsplash.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-#aboutIslandPic2{
+#aboutIslandPic2 {
     background-image: url("pics/luke-mckeown-nlyWZtWTzCo-unsplash.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.aboutText{
+.aboutText {
     padding-top: 25%;
-    margin: 0 25%  0 25%;
+    margin: 0 25% 0 25%;
     width: 50%;
     line-height: 4rem;
     font-size: 1.5rem;
     font-weight: 100;
     text-align: center;
 }
-
+#aboutRowM {
+    display: none;
+}
 /**************************************************         
 **************************************************/
 /**************************************************
@@ -264,77 +262,66 @@ body{
 /**************************************************
 **************************************************/
 
-
 /**************************************************
                 Heading Section
 **************************************************/
 
-.headerContainer{
+.headerContainer {
     text-align: center;
-    background-color: #E0CFA7;
-    color: #20A5B4;
+    background-color: #e0cfa7;
+    color: #20a5b4;
     padding: 1%;
     width: 98%;
     margin: auto;
-    
 }
-.actHeader{
+.actHeader {
     font-size: 3rem;
 }
-
-
 
 /**************************************************
                 Content Section
 **************************************************/
 
-.actRow{
+.actRow {
     height: 30%;
     width: 90%;
     display: flex;
     margin: 5% 0 1% 5%;
-    padding: .5%;
-    box-shadow: #E0CFA7 1px 1px 2px 3px;
-
+    padding: 0.5%;
+    box-shadow: #e0cfa7 1px 1px 2px 3px;
 }
-.actCol{
+.actCol {
     width: 45%;
     height: 100%;
-
 }
-.picTitle{
-    background-color: #20A5B4;
+.picTitle {
+    background-color: #20a5b4;
     color: white;
     padding-left: 2%;
     box-shadow: #102128 2px 2px 5px;
-    
 }
-.actPicCont{
+.actPicCont {
     width: 60%;
     margin-left: 5%;
-    
-    
 }
-.contentPic{
- width: 100%;
- height: auto;
- box-shadow: #102128 2px 2px 5px;
-
+.contentPic {
+    width: 100%;
+    height: auto;
+    box-shadow: #102128 2px 2px 5px;
 }
-.textCol{
+.textCol {
     display: flex;
     width: 70%;
     height: 100%;
     align-self: center;
-    
+
     /* justify-content: center; */
 }
-.textCont{
+.textCont {
     width: 80%;
     margin-left: 0;
-    
 }
-.actText{
+.actText {
     font-size: 1.55rem;
     font-weight: 100;
     line-height: 2;
@@ -347,28 +334,25 @@ body{
 **************************************************/
 /**************************************************
 **************************************************/
-.restRow{
-    height: 80vw;
+.restRow {
+    height: 40vw;
     display: flex;
     width: 100%;
     column-gap: 2%;
-    
 }
-.restCol{
+.restCol {
     width: 22%;
     margin-left: 1.2%;
     margin-top: 10%;
-    
-    
 }
-.rCardTitle{
-   font-size: 2.1rem;
+.rCardTitle {
+    font-size: 2.1rem;
 }
-.restPC{
-    height:300px;
+.restPC {
+    height: 300px;
 }
 
-.rText{
+.rText {
     line-height: 2;
     font-size: 1.25rem;
 }
@@ -379,7 +363,7 @@ body{
 **************************************************/
 /**************************************************
 **************************************************/
-.lodge{
+.lodge {
     display: flex;
     height: 40vw;
     display: flex;
@@ -387,16 +371,15 @@ body{
     column-gap: 15%;
     justify-content: center;
 }
-.lodgeCol{
+.lodgeCol {
     width: 35%;
     margin-left: 1.2%;
     margin-top: 10%;
 }
-.lCardText{
+.lCardText {
     line-height: 2;
     margin-top: 1%;
 }
-
 
 /**************************************************
 **************************************************/
@@ -405,42 +388,38 @@ body{
 **************************************************/
 /**************************************************
 **************************************************/
-.gettingSection{
+.gettingSection {
     margin: 2% 0 1% 10%;
-    box-shadow: #E0CFA7 1px 1px 3px 3px;
+    box-shadow: #e0cfa7 1px 1px 3px 3px;
     width: 80%;
     padding-bottom: 1%;
     display: block;
 }
-.contentCont{
+.contentCont {
     display: flex;
-    
 }
-.getPicCont{
+.getPicCont {
     width: 30%;
     height: 100%;
-    
-    
 }
-.getPic{
+.getPic {
     width: 100%;
     height: 100%;
 }
-.getHeading{
-    background-color: #20A5B4;
+.getHeading {
+    background-color: #20a5b4;
     color: #fff;
     padding: 1%;
     width: 100%;
 }
-.textCont{
+.textCont {
     display: inline-block;
     width: 55%;
     margin-left: 2%;
     line-height: 2;
 }
 
-
-.gettingAround{
+.gettingAround {
     margin-top: 15% 0 0 20%;
 }
 /**************************************************
@@ -451,37 +430,34 @@ body{
 /**************************************************
 **************************************************/
 
-
 /**************************************************
                 Heading Section
 **************************************************/
 
-.contHeader{
-    background-color: #E0CFA7;
-    color: #20A5B4;
+.contHeader {
+    background-color: #e0cfa7;
+    color: #20a5b4;
     text-align: center;
     padding: 1%;
-    margin-top: .25%;
+    margin-top: 0.25%;
     width: 80%;
     margin: auto;
 }
-.contHeaderText{
+.contHeaderText {
     font-size: 3rem;
 }
-
 
 /**************************************************
                 FAQ Section
 **************************************************/
-.faqSection{
+.faqSection {
     display: flex;
     flex-direction: column;
     width: 50%;
     margin: auto;
     margin-top: 5%;
-    
 }
-.subHead{
+.subHead {
     background-color: #102128;
     color: #ffffff;
     text-align: center;
@@ -490,56 +466,53 @@ body{
     margin: auto;
     margin-top: 5%;
 }
-.qContain{
+.qContain {
     margin-left: 15%;
 }
-.faqSection p{
+.faqSection p {
     margin-left: 4%;
     margin-top: 3%;
     width: 65%;
     line-height: 2;
 }
-.QuestionContainer{
+.QuestionContainer {
     margin-bottom: 5%;
     margin-top: 5%;
-    
 }
 
-
-.questionList{
+.questionList {
     margin-left: 8%;
     margin-top: 3%;
     width: 65%;
     line-height: 2;
 }
 
-.Question{
-    background-color:#E0CFA7 ;
-    padding: .95%;
+.Question {
+    background-color: #e0cfa7;
+    padding: 0.95%;
     width: 85%;
-    
 }
 
 /**************************************************
                 Contact Section
 **************************************************/
-.ContactPage{
+.ContactPage {
     width: 100%;
     margin: 0;
 }
-.contactSection{
+.contactSection {
     display: flex;
     justify-content: center;
     border: 1px solid black;
     width: 22%;
     padding: 3%;
     margin: auto;
-    margin-top: .25%;
-    background-color: #E0CFA7;
+    margin-top: 0.25%;
+    background-color: #e0cfa7;
     border-radius: 10px;
     box-shadow: #102128 5px 5px 10px;
 }
-.formHead{
+.formHead {
     margin: auto;
     text-align: center;
     margin-top: 5%;
@@ -550,69 +523,526 @@ body{
     padding: 10px;
     width: 22%;
 }
-.contactForm{
+.contactForm {
     display: flex;
     flex-direction: column;
 }
-.field{
+.field {
     display: flex;
     flex-direction: column;
     padding-bottom: 10%;
 }
-.submit{
+.submit {
     margin: 10% 0% 2% 22.5%;
     width: 50%;
 }
-.messageBox{
+.messageBox {
     max-width: 100%;
     resize: vertical;
 }
 
-
-
-
 /**************************************************
                 Footer Section
 **************************************************/
-.contactFooter{
+.contactFooter {
     position: relative;
     background-color: rgba(16, 33, 40, 1);
     color: #ffffff;
-    padding: .75%;
+    padding: 0.75%;
     width: 100%;
     margin-top: 5%;
-   
-    
-    
 }
-.footRow{
+.footRow {
     display: flex;
     position: relative;
-    column-gap: 33.9%;
+    column-gap: 33.69%;
     text-shadow: #3b3b3b 2px 2px 2px;
 }
-.socialLinkIcons{
+.mobileFooter{
+    display: none;
+   
+}
+.mobileRow{
+    display: none;
+}
+.footH{
+    font-size: 1.25rem;
+}
+.footerText{
+    font-size: 1rem;
+    width: 100%;
+}
+
+.socialLinkIcons {
     font-size: 1.5rem;
 }
-.bi-twitter{
+.bi-twitter {
     cursor: pointer;
-    transition: .3s;
+    transition: 0.3s;
 }
-.bi-twitter:hover{
+.bi-twitter:hover {
     font-size: 2.5rem;
 }
-.bi-facebook{
+.bi-facebook {
     cursor: pointer;
-    transition: .3s;
+    transition: 0.3s;
 }
-.bi-facebook:hover{
+.bi-facebook:hover {
     font-size: 2.5rem;
 }
-.bi-instagram{
+.bi-instagram {
     cursor: pointer;
-    transition: .3s;
+    transition: 0.3s;
 }
-.bi-instagram:hover{
+.bi-instagram:hover {
     transform: scale(1.3);
     font-size: 2.5rem;
+}
+
+
+
+
+
+
+
+
+/* Mobile Site Design */
+
+
+
+
+
+
+
+
+@media screen and (max-width: 480px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .navBar {
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0);
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+    }
+    .navList {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.6 ease-in-out;
+        background-color: rgba(250, 250, 250, 1);
+        border-radius: 15px;
+        box-shadow: #102128 2px 2px 5px;
+    }
+    .navButton {
+        padding: 3%;
+    }
+    .logo {
+        display: none;
+    }
+    .collapse {
+        display: block;
+        margin-top: 0;
+        width: 12%;
+        cursor: pointer;
+        padding: 1%;
+    }
+    .Dash {
+        margin-top: 15%;
+        height: 2%;
+        border: 3.5px solid;
+    }
+
+    /**************************************************
+                Heading Section
+**************************************************/
+
+    .pageTitleContainer {
+        width: 100%;
+        height: 50vh;
+    }
+    .title {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        background-image: url("pics/cris-tagupa-9ZXHUr5aCwM-unsplash.jpg");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .titleText {
+        font-size: 3.5rem;
+    }
+    .tagline {
+        font-size: 1.5rem;
+    }
+
+    /**************************************************
+                Content Card Section
+**************************************************/
+    .contentCards {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .column {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .column a {
+        text-decoration: none;
+        color: #102128;
+    }
+    .card {
+        width: 60%;
+        height: 80%;
+        margin-top: 2%;
+        border-radius: 20px;
+        padding: 2% 2% 14% 2%;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+    .card:hover {
+        box-shadow: rgb(92, 92, 92) 2px 2px 3px 2px;
+    }
+
+    .photoContainer {
+        height: 80%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: 0.5s;
+    }
+    .photoContainer:hover {
+        box-shadow: rgb(92, 92, 92) 2px 2px 3px 2px;
+    }
+    #foodPhoto {
+        background-image: url("pics/pim-myten-HXScJqhiSJY-unsplash.jpg");
+        background-position: center;
+        background-size: cover;
+        border-radius: 15px;
+    }
+    #rentalPhoto {
+        background-image: url("pics/obi-pixel6propix-aZKJEvydrNM-unsplash.jpg");
+        background-position: center;
+        background-size: cover;
+        border-radius: 15px;
+    }
+    #hikingPhoto {
+        background-image: url("pics/peter-vanosdall-tzTooH9OZ0M-unsplash.jpg");
+        background-position: center;
+        background-size: cover;
+        border-radius: 15px;
+    }
+    .fishingPhoto {
+        height: 100%;
+        width: 100%;
+        border-radius: 20px;
+    }
+    .cardTitle {
+        font-size: 1.75rem;
+    }
+    .cardContent {
+        margin-top: 5px;
+        font-size: 1.25rem;
+    }
+    footer {
+        display: flex;
+        justify-content: right;
+    }
+    .bi-question-square-fill {
+        font-size: 4rem;
+        position: relative;
+        margin-bottom: 2%;
+        text-decoration: none;
+    }
+
+    .bi-question-square-fill:hover {
+        color: #20a5b4;
+        text-shadow: #102128 2px 2px 2px;
+    }
+
+    /**************************************************
+**************************************************/
+    /**************************************************
+                About Page
+**************************************************/
+    /**************************************************
+**************************************************/
+
+    /**************************************************
+                Heading Section
+**************************************************/
+    .aboutHeadingText {
+        margin-left: 10%;
+    }
+
+    /**************************************************
+                Main Section
+**************************************************/
+    .mainAbout {
+        margin-top: 4vh;
+        height: 100vh;
+    }
+    .aboutRow {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: 100vw;
+    }
+    #aboutRow2 {
+        display: none;
+    }
+    .aboutCol {
+        width: 100%;
+        height: 100%;
+    }
+    .aboutPic {
+        height: 100%;
+        width: 50%;
+    }
+
+    .aboutText {
+        width: 50%;
+        line-height: 2rem;
+        font-size: 1rem;
+    }
+    .aboutRowM {
+        display: flex;
+    }
+
+    /**************************************************         
+**************************************************/
+    /**************************************************
+                Activity Page
+**************************************************/
+    /**************************************************
+**************************************************/
+
+    /**************************************************
+                Heading Section
+**************************************************/
+
+    .headerContainer {
+        width: 100%;
+    }
+    .actHeader {
+        font-size: 3rem;
+    }
+
+    /**************************************************
+                Content Section
+**************************************************/
+
+    .actRow {
+        display: flex;
+        margin: 5% 0 1% 5%;
+        flex-direction: column;
+    }
+    .actCol {
+        width: 90%;
+        height: 100%;
+    }
+    .picTitle {
+        width: 90%;
+    }
+    .actPicCont {
+        width: 100%;
+        margin-left: 10%;
+    }
+    .contentPic {
+        width: 90%;
+    }
+    .textCol {
+        display: flex;
+        width: 90%;
+    }
+    .textCont {
+        width: 100%;
+        margin-left: 0;
+    }
+    .actText {
+        font-size: 1.25rem;
+    }
+
+    /**************************************************
+**************************************************/
+    /**************************************************
+                Lodging Page
+**************************************************/
+    /**************************************************
+**************************************************/
+    .lodge {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    .lodgeCol {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 10%;
+    }
+    .lCardText {
+        line-height: 2;
+        margin-top: 1%;
+    }
+
+    /**************************************************
+**************************************************/
+    /**************************************************
+                Restaurants Page
+**************************************************/
+    /**************************************************
+**************************************************/
+    .restRow {
+        display: flex;
+        flex-direction: column;
+    }
+    .restCol {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    /**************************************************
+**************************************************/
+    /**************************************************
+                Travel Page
+**************************************************/
+    /**************************************************
+**************************************************/
+    .gettingSection {
+        margin: 10% 0 1% 10%;
+        box-shadow: #e0cfa7 1px 1px 3px 3px;
+        width: 80%;
+        padding-bottom: 1%;
+        display: block;
+    }
+    .contentCont {
+        display: flex;
+        flex-direction: column;
+    }
+    .getPicCont {
+        width: 100%;
+        height: 100%;
+    }
+    .getPic {
+        width: 100%;
+        height: 100%;
+    }
+    .getHeading {
+        background-color: #20a5b4;
+        color: #fff;
+        padding: 1%;
+        width: 100%;
+    }
+    .textCont {
+        display: inline-block;
+        width: 100%;
+        margin-left: 2%;
+        line-height: 2;
+    }
+
+    .gettingAround {
+        margin-top: 15% 0 0 20%;
+    }
+
+    /**************************************************
+                Contact Section
+**************************************************/
+    .ContactPage {
+        width: 100%;
+        margin: 0;
+    }
+    .contHeader {
+        width: 100%;
+    }
+
+    .contactSection {
+        width: 80%;
+    }
+    .formHead {
+        width: 80%;
+    }
+
+    .submit {
+        margin: 5% 0% 5% 22.5%;
+        width: 50%;
+    }
+    /**************************************************
+                FAQ Section
+**************************************************/
+    .faqSection {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+        margin-top: 5%;
+    }
+    .subHead {
+        width: 100%;
+    }
+    .qContain {
+        margin-left: 0;
+    }
+    .faqSection p {
+        width: 85%;
+    }
+    .QuestionContainer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .questionList {
+        width: 85%;
+    }
+
+    .Question {
+        width: 98%;
+        margin: auto;
+    }
+
+    .contactFooter {
+        flex-direction: column;
+    }
+    .footH {
+        font-size: 1rem;
+        margin-bottom: 5%;
+        margin-top: 10%;
+    }
+    .footerText {
+        font-size: 0.8rem;
+    }
+    .footRow {
+        display:none;
+    }
+    .mobileRow {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30%;
+    }
+    .socialLinkIcons {
+        font-size: 2.5rem;
+    }
+    .mobileFooter {
+        display: flex;
+        position: relative;
+        column-gap: 20%;
+        text-shadow: #3b3b3b 2px 2px 2px;
+    }
 }
