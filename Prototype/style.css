@@ -822,7 +822,7 @@ body {
         line-height: 2rem;
         font-size: 1rem;
     }
-    .aboutRowM {
+    #aboutRowM {
         display: flex;
     }
 
