@@ -96,18 +96,31 @@ a{
     font-weight: 10;
 }
 
+.bList{
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    width: 100%;
+}
+.cardC{
+    display: flex;
+    
+    width: 30%;
+}
+
 .blogCard{
    
     background-color: white;
     padding: 2rem;
     margin-top: 2vh;
     border: solid 2px black;
-    max-width: 40vh;
+    width: 100vw;
     margin-left: 2.5vh;
     margin-bottom: 2vh;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     display: flex;
     flex-direction: column;
+    
 }
 
 .blogCard img{
