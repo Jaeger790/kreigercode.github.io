@@ -125,3 +125,16 @@ a{
     font-size: 20px;
     margin-left: -10px;
 }
+
+.videoC{
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+.video{
+   margin-top: 25vh;
+    justify-content: center;
+    width: 50vw;
+    height: 40vh;
+}
+   
