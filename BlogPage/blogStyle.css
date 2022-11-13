@@ -153,16 +153,19 @@ a{
 }
    
 @media screen and (max-width: 800px) {
-   body{
-    display: block;
-    row-gap: 10;
+   .bList{
+    display: flex;
+    margin-top: 10vh;
     
-    
+   }
+   .blogCard{
+    width: 90vw;
+    margin: auto;
    }
    .nav{
     flex-direction: row;
     width: 100%;
-    font-size: 1.5rem;
+    font-size: 1.40rem;
    }
    .videoC{
     width: 100%;
