@@ -164,11 +164,17 @@ a{
 .articalHeader{
     margin-top: 4vh;
     font-size: 2rem;
+   font-family: "Fira Code";
+   font-weight: 500;
+   background-color: #333D29;
+    padding: 2rem;
    }
 .description{
     width: 60%;
     margin: auto;
    margin-bottom: 5vh;
+   margin-top: 3vh;
+   line-height: 3rem;
 }
 @media screen and (max-width: 800px) {
    .mList{
