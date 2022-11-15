@@ -28,6 +28,9 @@ body {
     padding: 2%;
     
 }
+.mainHeader{
+    text-shadow:  0px 0px 20px #000;
+}
 
 .nav {
     position: fixed;
@@ -42,9 +45,6 @@ body {
     border-radius: 2%;
     /* box-shadow: #333D29 1px 1px 2px; */
     
-}
-.nav:hover{
-    box-shadow: #333D29 1px 1px 2px;
 }
 .nav a{
     text-decoration: none;
@@ -99,17 +99,17 @@ a{
     font-size: 30px;
     font-weight: 10;
 }
-.bList{
+.mList{
     display: flex;
     justify-content: center;
     justify-self: center;
     width: 100%;
 }
 
-
 .blogCard{
    
-    background-color: white;
+    background-color: #333D29 ;
+    color: #C2C5AA;
     padding: 2rem;
     margin-top: 2vh;
     border: solid 2px black;
@@ -119,6 +119,18 @@ a{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     display: flex;
     flex-direction: column;
+    /*filter: drop-shadow(5px 2px 4px rgb(110, 110, 110)); */
+    box-shadow: #000 0px 0px 10px 0px inset;
+    transition: .1s
+}
+.blogCard:hover{
+    transform: scale(.99);
+    box-shadow: #000 0px 0px 30px 0px inset;
+    ;
+}
+.blogCard:active{
+    transform: scale(.98);
+    box-shadow: #000 0px 0px 60px 0px inset;
     
 }
 
@@ -158,7 +170,7 @@ a{
     margin: auto;
 }
 @media screen and (max-width: 800px) {
-   .bList{
+   .mList{
     display: flex;
     margin-top: 10vh;
     
