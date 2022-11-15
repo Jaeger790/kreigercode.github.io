@@ -159,7 +159,7 @@ a{
    margin-top: 15vh;
     justify-content: center;
     width: 60vw;
-    height: 40vh;
+    height: 80vh;
 }
 .articalHeader{
     margin-top: 4vh;
@@ -168,6 +168,7 @@ a{
 .description{
     width: 60%;
     margin: auto;
+   margin-bottom: 5vh;
 }
 @media screen and (max-width: 800px) {
    .mList{
