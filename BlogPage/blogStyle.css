@@ -180,16 +180,19 @@ a{
    .mList{
     display: flex;
     margin-top: 10vh;
-    
+   }
+   .content{
+    flex-direction: column;
    }
    .blogCard{
-    width: 90vw;
+    max-width: 90vw;
     margin: auto;
+    margin-bottom: 4vh;
    }
    .nav{
     flex-direction: row;
     width: 100%;
-    font-size: 1.40rem;
+    font-size: 1.29rem;
    }
    .videoC{
     width: 100%;
