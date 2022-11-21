@@ -1,0 +1,85 @@
+/*************************
+   Color Pallete
+    #7F4F24
+    #333D29
+    #C2C5AA
+ 
+
+*************************/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #000 ;
+    color: #fff;
+    font-family: "Fira Code", monospace;
+    font-weight: 100;
+}
+.pageTitle{
+    margin: auto;
+}
+.entry{
+    margin: auto;
+    width: 50%;
+    margin-bottom: 5vh;
+}
+a{
+
+    color: #7F4F24;
+}
+
+@media screen and (max-width: 430px) {
+    .pageTitle{
+        font-weight: 200;
+    }
+    .titlePicC{
+        width: 100vw;
+        margin-bottom: 10vh;
+        margin-top: 10vh;
+    }
+    .titlePic{
+        width: 100%;
+    }
+    .entry{
+        margin: auto;
+        width: 98vw;
+        margin-bottom: 5vh;
+    }
+    .entryPicC{
+        width: 100%;
+    }
+    .entryPic{
+        width: 100%;
+    }
+    .entryP{
+        line-height: 1.5rem;
+        margin-bottom: 5vh;
+    }
+    .entryHeader{
+        margin-bottom: 5vh;
+        background-color: rgb(16, 24, 34);
+        padding: 1rem;
+
+    }
+    .entryHeadline{
+        font-size: 1.5rem;
+        text-decoration: underline;
+        font-weight: 100;
+    }
+    .entryDate{
+        margin-bottom: 2vh;
+    }
+    .entryContent{
+        padding-bottom: 5vh;
+    }
+    .subHeader{
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+        font-size: 1.25rem;
+    }
+    .subSubject{
+        text-decoration: underline;
+    }
+}
