@@ -1,13 +1,18 @@
+let techBlog = document.getElementById('techBlog');
+let motoLog = document.getElementById("motoLog");
+
+
+
 function showTechBlog(){
     fadeOutMoto();
-    fadeIn();
-    //document.getElementById('motoLog').style.display = 'none';
+    setTimeout(()=>fadeIn(), 400);
+    
 }
 
 function showMotoLog(){
     fadeOut();
-    fadeInMoto();
-    //document.getElementById('techBlog').style.display= 'none';
+    setTimeout(()=>fadeInMoto(), 400);
+    
 }
 function showAll(){
     fadeIn();
@@ -15,27 +20,43 @@ function showAll(){
 }
 
 function fadeOut(){
-    document.getElementById('techBlog').style.transition = "all .5s";
-    document.getElementById('techBlog').style.transform = "scale(0)";
-    document.getElementById('techBlog').style.display = 'none';
+    techBlog.style.transition = "all .2s";
+    
+    techBlog.style.transform = "scale(0)";
+    setTimeout(()=>techBlog.style.display = 'none', 200);
 }
 function fadeIn(){
     
-    document.getElementById('techBlog').style.transition = "all .5s";
-    document.getElementById('techBlog').style.transform = "scale(1)";
-   document.getElementById('techBlog').style.display = 'flex';
+    if(techBlog.style.display = "none"){
+        techBlog.style.display = 'flex';
+        
+        techBlog.style.transition = "all .2s";
+        setTimeout(()=>techBlog.style.transform = "scale(1)", 1);
+        
+        
+    }
+
+    
+    
     
 }
 
 function fadeInMoto(){
-    document.getElementById('motoLog').style.transition = "all .5s";
-    document.getElementById('motoLog').style.transform = "scale(1)";
-   document.getElementById('motoLog').style.display = 'flex';
+
+    if(motoLog.style.display = "none"){
+        motoLog.style.display = 'flex';
+        motoLog.style.transition = "all .2s";
+        setTimeout(()=>motoLog.style.transform = "scale(1)", 1);
+    }
+        
+    
 }
 
 function fadeOutMoto(){
-    document.getElementById('motoLog').style.transition = "all .5s";
-    document.getElementById('motoLog').style.transform = "scale(0)";
-    document.getElementById('motoLog').style.display = 'none';
+    motoLog.style.transition = "all .2s";
+    motoLog.style.transform = "scale(0)";
+    setTimeout(()=> motoLog.style.display = 'none', 200);
 }
+
+
 
