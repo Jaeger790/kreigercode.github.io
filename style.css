@@ -189,7 +189,7 @@ body {
 .aboutRow{
     display: flex;
     height: 140vh;
-    width: 100vw;
+    width: 100%;
     padding-bottom: 20vh;
 }
 
