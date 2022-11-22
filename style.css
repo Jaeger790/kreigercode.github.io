@@ -170,6 +170,7 @@ body {
 .about {
     color: #fff;
     background-color: #020230;
+
 }
 
 .aHeader {
@@ -187,9 +188,9 @@ body {
 }
 .aboutRow{
     display: flex;
-    height: 100vh;
+    height: 140vh;
     width: 100vw;
-    padding-bottom: 10vh;
+    padding-bottom: 20vh;
 }
 
 .aboutCol{
@@ -210,10 +211,6 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-#aboutRowF{
-    display: flex;
 }
 #aboutRowM{
     display: none;
@@ -245,7 +242,7 @@ body {
 }
 
 .skillHeader {
-    margin-top: 100px;
+  
     text-align: center;
     font-size: 6vh;
     background-color: #6a859b;
@@ -260,7 +257,7 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    max-height: 70%;
+    height: 100vh;
     border: #748386 solid 2px;
     padding: 30px;
     border-radius: 10px;
@@ -268,6 +265,13 @@ body {
     max-width: 65%;
     overflow-y: scroll;
     
+}
+.skillHeaderC{
+    
+    display: flex;
+    flex-direction: row;
+    column-gap: 2rem;
+    justify-content: center;
 }
 
 .languages {
@@ -290,6 +294,17 @@ body {
 
 .languageHead {
     text-decoration: underline;
+}
+.langList{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: auto;
+    margin-top: 5vh;
+    width: 50%;
+    column-gap: 7rem;
+    row-gap: 2rem;
+    list-style-type:circle;
+    align-self: center;
 }
 
 ul.languageText {
@@ -581,9 +596,7 @@ transition: .6s;
 #aboutRowF{
     display: none;
 }
-#aboutRowM{
-    display: flex;
-}
+
 
 
 #paraPic1{
