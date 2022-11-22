@@ -2,7 +2,6 @@
    Color Pallete
     #6a859b gray
     #020230 blue
- 
 
 *************************/
 * {
@@ -169,18 +168,13 @@ body {
 *************************/
 
 .about {
-    display: block;
-    flex-wrap: wrap;
-    flex-direction: column;
     color: #fff;
-    align-items: center;
-    
     background-color: #020230;
-    
 }
 
 .aHeader {
     margin-top: 30vh;
+    margin-bottom: 10vh;
     text-align: center;
     font-size: 60px;
     background-color: #6a859b;
@@ -191,44 +185,42 @@ body {
     box-shadow: #000 10px 5px 5px;
     
 }
-.aboutContentContainer{
-    height: 50%;
-    margin-top: 80px;
-}
-.aboutPic {
-    height:auto;
-    max-width: 50%;
-    box-shadow: #b8baca 2px 2px 5px 2px;
-    transition: .4s;
-}
-#aboutPic1{
-    display: none;
+.aboutRow{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    padding-bottom: 10vh;
 }
 
-.aboutPic:hover{
-    box-shadow: none;
-    transform: scale(.95);
+.aboutCol{
+    width: 50%;
+    height: 100%;
+    
+}
+#paraPic1{
+    background-image: url('pics/anthony-roberts-W_DCDWCL3Wo-unsplash.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#paraPic2{
+    background-image: url('pics/keyBoard.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .bio {
-    width: 49%;
-    margin-left: 1%;
-    float: right;
+    
+    margin: 0 15% 0 5%;
+    width: 80%;
+    line-height: 4rem;
+    font-size: 1.5rem;
+    font-weight: 100;
     text-align: left;
-    margin-top: 15px;
-    font-size: 3vh;
-    line-height: 45px;
-    font-weight: bold;
-}
-.bio2{
-    width: 49%;
-    margin-right: 1%;
-    float: left;
-    text-align: right;
-    margin-top: 15px;
-    font-size: 3vh;
-    line-height: 45px;
-    font-weight: bold;
+   
 }
 
 /*************************
@@ -236,9 +228,10 @@ body {
 *************************/
 
 .skills {
-    height: 1000px;
+
     background-color: #020230;
-    margin-top: 400px;
+    margin-bottom: 10vh;
+
     justify-content: center;
     text-align: center;
     
@@ -321,7 +314,7 @@ ul.serviceText {
 *************************/
 
 .templates {
-    height: 1000px;
+    padding-bottom:5vh ;
     background-color: #020230;
 }
 
@@ -336,6 +329,17 @@ ul.serviceText {
     box-shadow: #000 10px 5px 5px;
     padding: 20px;
 }
+.templatePic{
+    width: 100%;
+    height: 100%;
+}
+#templatePicHusky{
+    background-image: url("pics/petCover.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
 
 
 .templateContainer {
@@ -343,7 +347,8 @@ ul.serviceText {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    column-gap:4%;
+    column-gap:4vw;
+    row-gap: 5vh;
 }
 
 .templateCard {
@@ -352,7 +357,7 @@ ul.serviceText {
     border-radius: 4%;
     overflow: hidden;
     cursor: pointer;
-    background-color: #6a859b;
+    background-color: rgb(106, 133, 155, 1);
     color: #000000;
     text-shadow: #444849 3px 3px 5px;
     transition: 0.4s;
@@ -467,7 +472,7 @@ transition: .6s;
     ! Mobile Design Section
 */
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 800px) {
     * {
         margin: 0;
         padding: 0;
@@ -476,49 +481,50 @@ transition: .6s;
     body {
         background-color: #020230;
         color: #b8baca;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: "Fira Code", monospace;
     }
     
     .nav {
         position: fixed;
         top: 0;
         transition: top 0.5s;
-        background-color: #6a859b;
-        width: 100%;
+        background-color: rgba(106, 133, 155,.1);
+        width: 100vw;
         font-size: 1rem;
-        text-align: center;
-        box-shadow: #000 5px 5px 5px;
-        
     }
     .nav ul li {
-        list-style-type: none;
-        display: inline-block;
-        background-color: white;
-        width: 24%;
-        font-weight: 700;
-        box-shadow: 2px 2px 2px 2px #01011a;
+        width: 24vw;
     }
-
+    .nav a{
+        text-align: center;
+        padding: 0;
+        
+    }
     .profileHeading {
         display: flex;
         flex-direction: column;
         width: 100%;
         margin-top: 5vh;
-        height: 30vh;
+        padding-bottom: 20vh;
+        
     }
     .titleHeader {
       width: 100%;
      font-size: 2rem;
+     
      box-shadow: #01011a 5px 5px 5px 5px;
         
     }
-
-    .tagline {
-        font-size: 1.25rem;
-        width: 100%;
-       
+    .ProfTitle{
+        font-size: 1.75rem;;
     }
-
+    .Motto{
+        font-size: 1.5rem;
+    }
+    .tagline {
+        width: 100%;
+        line-height: 8vh;
+    }
     .pictureContainer {
         margin-top: 10vh;
         display:none;
@@ -535,9 +541,8 @@ transition: .6s;
    ! About Section
 *************************/
 .about{
-    display: block;
-    height: 200vh;
-    margin-top: 0;
+    display: flex;
+    
 }
 .aboutContentContainer{
     display: flex;
