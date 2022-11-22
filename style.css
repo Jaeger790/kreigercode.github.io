@@ -212,6 +212,13 @@ body {
     background-size: cover;
 }
 
+#aboutRowF{
+    display: flex;
+}
+#aboutRowM{
+    display: none;
+}
+
 .bio {
     
     margin: 0 15% 0 5%;
