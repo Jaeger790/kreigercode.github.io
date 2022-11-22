@@ -12,8 +12,9 @@
 }
 body {
     background-color: #020230;
-    color: #04D010;
-    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-family: "Fira Code", monospace;
+    font-weight: 300;
 }
 
 
@@ -27,16 +28,16 @@ body {
     top: 0;
     padding-top: 5px;
     padding-bottom: 5px;
-    background-color: #6a859b;
+    background-color: rgba(106, 133, 155,.01);
     width: 100%;
     font-size: 25px;
     font-family: Arial, Helvetica, sans-serif;
-    box-shadow: #000 5px 5px 5px;
-    border: #000 2px solid;
+   
 }
 .nav a{
     text-decoration: none;
     color: #020230;
+    padding: 3rem;;
     
 }
 .nav a:hover{
@@ -50,21 +51,27 @@ body {
 .nav a:visited:hover{
     color: #6a859b;
 }
+#navButtonBlog:hover{
+    color:#6a859b;
+}
 .nav ul li {
     list-style-type: none;
     display: inline-block;
     background-color: #6a859b;
     color: #020230;
-    padding: 10px;
+    padding: .5rem;
+    border: 2px black solid;
     border-radius: 5%;
+    box-shadow: rgb(0,0,0) 1px 1px 15px 1px;
     width: 155px;
     text-align: center;
-    transition: 0.4s;
+    transition: 0.2s;
     font-weight: 400;
 }
 .nav ul li:hover {
     background-color: #020230;
     color: #6a859b;
+    padding: 0;
     /* transform-origin: 300% -20%;
         transform: rotate(-.5deg); */
     cursor: pointer;
@@ -165,15 +172,15 @@ body {
     display: block;
     flex-wrap: wrap;
     flex-direction: column;
-    color: #04D010;
+    color: #fff;
     align-items: center;
-    height: 1400px;
+    
     background-color: #020230;
-    margin-top: 300px;
+    
 }
 
 .aHeader {
-    margin-top: 550px;
+    margin-top: 30vh;
     text-align: center;
     font-size: 60px;
     background-color: #6a859b;
@@ -258,7 +265,7 @@ body {
     padding: 30px;
     border-radius: 10px;
     box-shadow: 1px 1px 5px 1px rgb(172, 179, 214);
-    max-width: 55%;
+    max-width: 65%;
     overflow-y: scroll;
     
 }
@@ -286,19 +293,28 @@ body {
 }
 
 ul.languageText {
-    display: flex;
-    flex-direction: column;
-    list-style-type: none;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: auto;
+    margin-top: 5vh;
+    width: 50%;
+    column-gap: 7rem;
+    row-gap: 2rem;
+    list-style-type:circle;
     align-self: center;
 }
 
 ul.serviceText {
-    display: flex;
-    flex-direction: column;
-    list-style-type: none;
-    align-self: center;
-    
+    display: grid;
+    grid-template-columns: auto auto;
+    list-style-type: circle;
+    margin: auto;
+    margin-top: 5vh;
+    width: 50%;
+    column-gap: 7rem;
+    row-gap: 2rem;    
 }
+
 
 /*************************
     ! Template Section

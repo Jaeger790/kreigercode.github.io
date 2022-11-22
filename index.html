@@ -4,25 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KriegerCode Designs | Web Development, User Interface Design, Computer Repair, Network Install</title>
-    <meta name="description" content="Web development, UI Design, Frontend Development, Web Design">
+    <title>CodeRott Development | Software Development / Engineering</title>
+    <meta name="description" content="Web development, UI Design, Frontend Development, Web Design, Software Engineering, Software Development">
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet"> 
-<link href="https://fonts.googleapis.com/css2?family=Rock+Salt&family=Splash&display=swap" rel="stylesheet"> 
-<link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet"> 
-<link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 </head>
 <body>
     
     <section class="nav" id="navBar">
         <ul>
-            <li onclick="scrollToTop()">Home</li>
-            <li onclick="scrollAbout()">About</li>
-            <li onclick="scrollTemplate()">Templates</li>
-            <li><a href="BlogPage\blog.html">Blog</a></li>
+            <li class="navButton" onclick="scrollToTop()">Home</li>
+            <li class="navButton" onclick="scrollAbout()">About</li>
+            <li class="navButton" onclick="scrollTemplate()">Templates</li>
+            <li id="navButtonBlog"><a href="BlogPage\blog.html">Blog</a></li>
         </ul>
     </section>
     <!-- <canvas class="color" id="colorBack"></canvas> -->
@@ -35,7 +30,7 @@
 
             <div class="tagline">
                 <h2 class="ProfTitle">Software Developer</h2>
-                <h3 class="Motto">Simple and intuitive solutions</h3>
+                <h3 class="Motto">Intuitive Solutions for Modern Designs</h3>
             </div>
         </div>
 
@@ -53,19 +48,13 @@
         <div class="aboutContentContainer">
             <img class="aboutPic" height="100%"src="pics\anthony-roberts-W_DCDWCL3Wo-unsplash.jpg" alt="Picture of the mountains">
 
-            <p class="bio">I am a software developer and I am currently attending WGU. I anticipate graduating with a Bachelors in March of 2023.  
-                            I enjoy learning new technologies and languages and I am constantly working to improve my skillsets in programming and user experience. 
-                            Currently my best language is Java.  I am currently working on learning C# and the .NET framework as well.
-                            I am always open to new project ideas and enjoy working in an agile enviornment.  I am also interested in web development, game development and machine learning.
-                            </p>
+            <p class="bio">
+                I am a software developer and I am currently attending WGU. I anticipate graduating with a Bachelors in March of 2023. I enjoy learning new technologies and languages and I am constantly working to improve my skillsets in programming and user experience. Currently my best language is Java. I am currently working on learning C# and the .NET framework as well. I am always open to new project ideas and enjoy working in an agile enviornment. I am also interested in web development, game development and machine learning. </p>
             </div>
         <div class="aboutContentContainer">
             <img class="aboutPic" id="aboutPic1" src="pics/motiur-rahman-shakil-mpU7fYbH2-s-unsplash.jpg" alt="Picture of keyboard with laptop in background.">
-            <p class="bio2">When I am not programming I enjoy spending time outdoors.  I have been camping all throughout the western U.S. and I wish to see more. 
-                            My dog Freya enjoys going on hikes with me and has even guided me back to my truck when I got lost on a trail once.  I am always working on
-                            new skills and I enjoy the satisfaction that  DIY brings.  I even got a certification for HVAC after my A/C broke.  I value self reliance but
-                            understand that it is important to ask for help when progress has been halted.  I play video games occassionally and generally enjoy RPG and strategy games.
-                            Add me on Steam: Deku Stick</p>
+            <p class="bio2">When I am not programming I enjoy spending time outdoors. I have been camping all throughout the western U.S. and I wish to see more. My dog Freya enjoys going on hikes with me and has even guided me back to my truck when I got lost on a trail once. I am always working on new skills and I enjoy the satisfaction that DIY brings. I even got a certification for HVAC after my A/C broke. I value self reliance but understand that it is important to ask for help when progress has been halted. I play video games occassionally and generally enjoy RPG and strategy games. Add me on Steam: Deku Stick
+            </p>
 
             <img class="aboutPic" id="aboutPic2" src="pics/motiur-rahman-shakil-mpU7fYbH2-s-unsplash.jpg" alt="Picture of keyboard with laptop in background.">
         </div>
@@ -80,48 +69,49 @@
         <div class="skillContainer">
             <div class="languages">
                 <i class="bi bi-code-square"></i>
-                <h2 class="languageHead">Languages I've learned</h2>
+                <h2 class="languageHead">Languages</h2>
                 <ul class="languageText">
+                    <li>Java</li>
+                    <li>C++</li>
+                    <li>C#</li>
+                    <li>Python</li>
+                    <li>SQL</li>
                     <li>HTML</li>
                     <li>CSS</li>
                     <li>JavaScript</li>
                     <li>JSON</li>
                     <li>XML</li>
                     <li>PHP</li>
-                    <li>Python</li>
-                    <li>SQL</li>
-                    <li>C++</li>
-                    <li>C#</li>
+                    
                 </ul>
                 </ul>
             </div>
 
             <div class="languages">
                 <i class="bi bi-ubuntu"></i>
-                <h2 class="languageHead">Technologies I Use</h2>
+                <h2 class="languageHead">Technologies</h2>
                 <ul class="languageText">
                     <li>Unity</li>
                     <li>Git</li>
-                    <li>MS Office 365</li>
-                    <li>Bootstrap</li>
-                    <li>jQuery</li>
-                    <li>ajax</li>
-                    <li>React</li>
+                    <li>JavaFX</li>
+                    <li>Scene Builder</li>
                     <li>pgAdmin</li>
                     <li>MySQL</li>
-                    
+                    <li>Bootstrap</li>
+                    <li>jQuery</li>
+                    <li>ajax</li> 
                 </ul>
             </div>
 
             <div class="languages">
                 <i class="bi bi-shop-window"></i>
-                <h2 class="languageHead">Services I Offer</h2>
+                <h2 class="languageHead">Services</h2>
                 <ul class="serviceText">
-                    <li>Frontend Development</li>
-                    <li>UI Design</li>
-                    <li>App Development</li>
-                    <li>Software Troubleshooting</li>
-                    <li>Computer Repair</li>
+                    <li class="serviceItem">Software Development</li>
+                    <li class="serviceItem">UI Design</li>
+                    <li class="serviceItem">Webiste Building</li>
+                    <li class="serviceItem">Database Management</li>
+                    <li class="serviceItem">Computer Repair</li>
                 </ul>
             </div>
             
