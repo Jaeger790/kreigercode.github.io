@@ -14,9 +14,8 @@ body {
     color: #fff;
     font-family: "Fira Code", monospace;
     font-weight: 300;
+    width: 100%;
 }
-
-
 
 /*************************
     Heading Section
@@ -27,34 +26,30 @@ body {
     top: 0;
     padding-top: 5px;
     padding-bottom: 5px;
-    background-color: rgba(106, 133, 155,.01);
+    background-color: rgba(106, 133, 155, 0.01);
     width: 100%;
     font-size: 25px;
-    font-family: "Fira Code",monospace;
-   
+    font-family: "Fira Code", monospace;
 }
-.nav a{
+.nav a {
     text-decoration: none;
     color: #fff;
     display: block;
-    
 }
-.nav a:hover{
+.nav a:hover {
     color: #fff;
-    box-shadow:inset rgb(0, 0, 0) 0px 0px 10px 0px;
-    
+    box-shadow: inset rgb(0, 0, 0) 0px 0px 10px 0px;
 }
-.nav a:visited{
+.nav a:visited {
     color: #fff;
     text-decoration: none;
 }
-.nav a:visited:hover{
+.nav a:visited:hover {
     color: #000;
-    box-shadow:inset rgb(0, 0, 0) 0px 0px 30px 0px;
-
+    box-shadow: inset rgb(0, 0, 0) 0px 0px 30px 0px;
 }
-#navButtonBlog:hover{
-    color:#000;
+#navButtonBlog:hover {
+    color: #000;
     background-color: #fff;
 }
 .nav ul li {
@@ -62,25 +57,26 @@ body {
     display: inline-block;
     background-color: #000;
     color: #fff;
-    padding: .5rem;
+    padding: 0.5rem;
     border: 1px #fff solid;
     border-radius: 5%;
-    width: 15vw;
+    width: 20vw;
+    min-width: 150px;
     text-align: center;
     transition: 0.09s;
     font-weight: 400;
-    box-shadow:inset rgb(255, 255, 255) 0px 0px 10px 0px;
+    box-shadow: inset rgb(255, 255, 255) 0px 0px 10px 0px;
 }
 .nav ul li:hover {
     background-color: #fff;
     color: #000;
     padding: 0;
     cursor: pointer;
-    box-shadow:inset rgb(0, 0, 0) 0px 0px 30px 0px;
+    box-shadow: inset rgb(0, 0, 0) 0px 0px 30px 0px;
 }
-.nav ul li:active{
+.nav ul li:active {
     box-shadow: none;
-    transform: scale(.90);
+    transform: scale(0.9);
     background-color: #000;
     color: #fff;
 }
@@ -88,11 +84,11 @@ body {
 .profileHeadingGrid {
     margin-top: 10vh;
     display: grid;
-    grid-auto-columns:auto, auto ;
+    grid-auto-columns: auto, auto;
 }
 .titleHeaderCol {
     background-image: url("pics/header.jpg");
-    background-attachment:fixed;
+    background-attachment: fixed;
     background-position: center;
     color: #000000;
     text-shadow: rgb(97, 97, 97) 3px 3px 5px;
@@ -110,20 +106,20 @@ body {
     line-height: 80px;
     font-size: 30px;
 }
-.ProfTitle{
+.ProfTitle {
     width: 100%;
 }
-.Motto{
+.Motto {
     width: 80%;
     margin: auto;
 }
-.logo a{
+.logo a {
     width: 100%;
     text-decoration: none;
     font-weight: 600;
     color: #000;
 }
-.logo{
+.logo {
     display: flex;
     justify-content: center;
     justify-self: center;
@@ -135,15 +131,15 @@ body {
     border: #363636 2px solid;
     font-size: 1rem;
     border-radius: 15px;
-    transition: .5s;
+    transition: 0.5s;
 }
-.logo:hover{
+.logo:hover {
     background: linear-gradient(to bottom, #fff 0%, #000 100%);
 }
-.logo a:hover{
+.logo a:hover {
     color: #fff;
 }
-.bi-download{
+.bi-download {
     font-size: 2rem;
     color: #000;
 }
@@ -151,9 +147,9 @@ body {
 /*************************
    ! About Section
 *************************/
-
-
-
+.about {
+    margin-bottom: 25vh;
+}
 .aHeader {
     margin-top: 30vh;
     margin-bottom: 10vh;
@@ -165,47 +161,45 @@ body {
     padding: 2rem;
     width: 100%;
     box-shadow: #000 10px 5px 5px;
-    
 }
-.aboutRow{
+.aboutRow {
     display: flex;
     height: 100vh;
     width: 100%;
-    padding-bottom: 20vh;
 }
 
-.aboutCol{
+.aboutCol {
     width: 50%;
     height: 100%;
-    
 }
-#paraPic1{
-    background-image: url('pics/anthony-roberts-W_DCDWCL3Wo-unsplash.jpg');
+#paraPic1 {
+    background-image: url("pics/anthony-roberts-W_DCDWCL3Wo-unsplash.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-#paraPic2{
-    background-image: url('pics/Godfre.bmp');
+#paraPic2 {
+    background-image: url("pics/Godfre.bmp");
     background-attachment: fixed;
     background-position: right;
     background-repeat: no-repeat;
-     background-size:contain;
+    background-size: contain;
+    margin-top: 10vh;
 }
-#aboutRowM{
+#aboutRowM {
     display: none;
 }
-
+.aboutCol #bio2 {
+    margin-top: 10vh;
+}
 .bio {
-    
     margin: 0 15% 0 5%;
     width: 80%;
     line-height: 4rem;
     font-size: 1.5rem;
     font-weight: 100;
     text-align: left;
-   
 }
 
 /*************************
@@ -219,7 +213,6 @@ body {
 }
 
 .skillHeader {
-  
     text-align: center;
     font-size: 6vh;
     background-color: #6a859b;
@@ -242,10 +235,8 @@ body {
     max-width: 85%;
     overflow-y: scroll;
     background-color: #020230;
-    
-    
 }
-.skillHeaderC{
+.skillHeaderC {
     display: flex;
     flex-direction: row;
     column-gap: 2rem;
@@ -273,7 +264,7 @@ body {
 .languageHead {
     text-decoration: underline;
 }
-.langList{
+.langList {
     display: grid;
     grid-template-columns: auto auto auto;
     margin: auto;
@@ -281,7 +272,7 @@ body {
     width: 50%;
     column-gap: 7rem;
     row-gap: 2rem;
-    list-style-type:circle;
+    list-style-type: circle;
     align-self: center;
 }
 
@@ -293,7 +284,7 @@ ul.languageText {
     width: 50%;
     column-gap: 7rem;
     row-gap: 2rem;
-    list-style-type:circle;
+    list-style-type: circle;
     align-self: center;
 }
 
@@ -303,18 +294,19 @@ ul.serviceText {
     list-style-type: circle;
     margin: auto;
     margin-top: 5vh;
+    margin-bottom: 5vh;
     width: 50%;
     column-gap: 7rem;
-    row-gap: 2rem;    
-}
+    row-gap: 2rem;
 
+}
 
 /*************************
     ! Template Section
 *************************/
 
 .templates {
-    padding-bottom:5vh ;
+    padding-bottom: 5vh;
 }
 
 .templateHead {
@@ -328,25 +320,23 @@ ul.serviceText {
     box-shadow: #000 10px 5px 5px;
     padding: 20px;
 }
-.templatePic{
+.templatePic {
     width: 100%;
     height: 100%;
 }
-#templatePicHusky{
+#templatePicHusky {
     background-image: url("pics/petCover.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    
 }
-
 
 .templateContainer {
     margin-top: 100px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    column-gap:4vw;
+    column-gap: 4vw;
     row-gap: 5vh;
 }
 
@@ -362,31 +352,29 @@ ul.serviceText {
     transition: 0.4s;
     border: #01011a 2px solid;
 }
-.templateTitle{
-    padding-top: 4%; 
+.templateTitle {
+    padding-top: 4%;
     padding-bottom: 4%;
     font-size: 4.15vh;
     text-align: center;
     border-bottom: #01011a 2px solid;
-    
 }
 .templateCard:hover {
     background-color: #01011a;
-    color:#fff;
+    color: #fff;
     /* box-shadow: 2px 2px 5px 2px rgb(172, 179, 214); */
-    filter: drop-shadow(0px 0px 15px rgba(255, 255, 255, .6));
+    filter: drop-shadow(0px 0px 15px rgba(255, 255, 255, 0.6));
     transform: scale(1.08);
     text-shadow: 2px 2px 5px 2px rgb(172, 179, 214);
 }
-.templateCard:active{
+.templateCard:active {
     box-shadow: none;
     transform: scale(1);
     filter: none;
-
 }
 
 .templateCard h2:hover {
-    color:  #fff;
+    color: #fff;
     background-color: #01011a;
     text-shadow: 2px 2px 3px 2px rgb(172, 179, 214);
 }
@@ -394,38 +382,38 @@ ul.serviceText {
 /* 
     Footer Section 
 */
-footer{
-    background-color:#6a859b;
+footer {
+    background-color: #6a859b;
     color: #01011a;
     padding: 1%;
 }
-.footerHead{
+.footerHead {
     text-align: center;
     margin-bottom: 2%;
-    
+
     font-size: 3vh;
 }
 
-.socialLinks{
+.socialLinks {
     display: flex;
     justify-content: center;
 }
 
 .bi-github {
     font-size: 6vh;
-   color:#01011a;
-  transition: .09s;
-   margin-left: 2%;
+    color: #01011a;
+    transition: 0.09s;
+    margin-left: 2%;
 }
-.bi-github:hover{
-    padding: .5%;
+.bi-github:hover {
+    padding: 0.5%;
     color: #fff;
     filter: drop-shadow(15px 15px 2px rgb(0, 0, 0));
     transform: scale(1.15);
     border-radius: 30%;
     transform: translateY(-2vh);
 }
-.bi-github:active{
+.bi-github:active {
     padding: 0;
     filter: none;
     transform: scale(1);
@@ -434,19 +422,18 @@ footer{
 
 .bi-linkedin {
     color: #01011a;
-    transition: .09s;
+    transition: 0.09s;
     font-size: 6vh;
-    
 }
-.bi-linkedin:hover{
+.bi-linkedin:hover {
     color: #fff;
-    padding: .5%;
-   filter: drop-shadow(15px 15px 2px rgb(0, 0, 0));
+    padding: 0.5%;
+    filter: drop-shadow(15px 15px 2px rgb(0, 0, 0));
     transform: scale(1.15);
-     transform: translateY(-2vh); 
+    transform: translateY(-2vh);
     border-radius: 30%;
 }
-.bi-linkedin:active{
+.bi-linkedin:active {
     padding: 0;
     filter: none;
     transform: scale(1);
@@ -456,15 +443,14 @@ footer{
     color: #01011a;
     margin-left: 2%;
     font-size: 6vh;
-    transition: .2s;
+    transition: 0.2s;
 }
-.bi-twitter:hover{
-   /*  padding: .5%;
+.bi-twitter:hover {
+    /*  padding: .5%;
     box-shadow: 3px 3px 5px 3px rgb(172, 179, 214);
     transform: scale(1.15);
     border-radius: 30%; */
 }
-
 
 /*
     ! Mobile Design Section
@@ -476,25 +462,25 @@ footer{
         padding: 0;
         box-sizing: border-box;
     }
-    
+
     .nav {
         position: fixed;
         top: 0;
         transition: top 0.5s;
         width: 100vw;
-        font-size: .85rem;
+        font-size: 0.85rem;
     }
     .nav ul li {
-        width: 22vw;
+        max-width: 25vw;
+        min-width: 22vw;
     }
-    .nav a{
+    .nav a {
         text-align: center;
         padding: 0;
-        
     }
     .titleHeaderCol {
         background-image: url("pics/header.jpg");
-        background-attachment:fixed;
+        background-attachment: fixed;
         background-position: center;
         background-repeat: none;
         color: #000000;
@@ -502,112 +488,99 @@ footer{
         font-size: 2.5rem;
         padding: 2rem;
         text-align: center;
-    
+
         /* z-index: -1; */
     }
     .profileHeadingGrid {
         margin-top: 0;
-       height: 60vh;
-        
+        height: 60vh;
     }
-    .heading{
+    .heading {
         margin-top: 1.5rem;
     }
-    .ProfTitle{
-        font-size: 1.5rem;;
+    .ProfTitle {
+        font-size: 1.5rem;
     }
-    .Motto{
+    .Motto {
         font-size: 1rem;
         line-height: 3rem;
-       width: 100%;
+        width: 100%;
     }
     .tagline {
         width: 100%;
         line-height: 8vh;
     }
-    .logo{
+    .logo {
         width: 50vw;
-       height: 8vh;
+        height: 10vh;
     }
-
-
 
     /*************************
    ! About Section
 *************************/
 
+    .aHeader {
+        margin-top: 45vh;
+        margin-bottom: 10vh;
+        text-align: center;
+        font-size: 2.5rem;
+        background-color: #6a859b;
+        color: #000000;
+        text-shadow: #444849 3px 3px 5px;
+        padding: 2rem;
+        width: 100%;
+        box-shadow: #000 10px 5px 5px;
+    }
+    .aboutRow {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: 100%;
+    }
 
-.aHeader {
-    margin-top: 45vh;
-    margin-bottom: 10vh;
-    text-align: center;
-    font-size: 2.5rem;
-    background-color: #6a859b;
-    color: #000000;
-    text-shadow: #444849 3px 3px 5px;
-    padding: 2rem;
-    width: 100%;
-    box-shadow: #000 10px 5px 5px;
-    
-}
-.aboutRow{
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    width: 100%;
-   
-}
+    .aboutCol {
+        width: 100%;
+        height: 100%;
+    }
+    #aboutRowF {
+        display: none;
+    }
+    #aboutRowM {
+        display: flex;
+    }
 
-.aboutCol{
-    width: 100%;
-    height: 100%;
-    
-}
-#aboutRowF{
-    display: none;
-}
-#aboutRowM{
-    display: flex;
-}
+    #paraPic1 {
+        background-image: url("pics/anthony-roberts-W_DCDWCL3Wo-unsplash.jpg");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #paraPic2 {
+        background-image: url("pics/keyBoard.jpg");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 
-
-
-#paraPic1{
-    background-image: url('pics/anthony-roberts-W_DCDWCL3Wo-unsplash.jpg');
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-#paraPic2{
-    background-image: url('pics/keyBoard.jpg');
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.bio {
-    
-    margin: 0 15% 0 5%;
-    width: 98%;
-    line-height: 2rem;
-    font-size: 1rem;
-    font-weight: 100;
-    text-align: left;
-   
-}
+    .bio {
+        margin: 0 15% 0 5%;
+        width: 98%;
+        line-height: 2rem;
+        font-size: 1rem;
+        font-weight: 100;
+        text-align: left;
+    }
 
     /*************************
     ! Skill Section
 *************************/
 
     .skills {
-
         overflow-y: scroll;
         padding-bottom: 0;
         margin-bottom: 0;
-
     }
 
     .skillHeader {
@@ -616,15 +589,14 @@ footer{
         text-align: center;
         font-size: 1.5rem;
     }
-    .skillHeaderC{
+    .skillHeaderC {
         display: flex;
         flex-direction: row;
         column-gap: 2rem;
     }
     .skillContainer {
-       max-width: 98%;
-       height: 100vh;
-        
+        max-width: 98%;
+        height: 100vh;
     }
 
     .bi-code-square {
@@ -636,7 +608,7 @@ footer{
     .bi-shop-window {
         font-size: 4rem;
     }
-    .lanuages{
+    .lanuages {
         margin-bottom: 40vh;
     }
     .languageHead {
@@ -647,48 +619,42 @@ footer{
     ul.languageText {
         display: grid;
         grid-template-columns: auto auto;
-        
-        margin-top: 2vh;
-        margin-bottom: 5vh;
         width: 100%;
         column-gap: 4rem;
         row-gap: 2rem;
-        list-style-type:circle;
-        align-self: center;
+        list-style-type: circle;
+        margin-top:1vh ;
         text-align: left;
     }
-    .langList{
+    .langList {
         display: grid;
         grid-template-columns: auto auto;
-        margin-bottom: 5vh;
-        margin-top: 2vh;        
-        column-gap: 1rem;
+        column-gap: 2rem;
         row-gap: 2rem;
-        list-style-type:circle;
+        list-style-type: circle;
         text-align: left;
+        width: 100%;
+        margin-top:1vh ;
+
+        
     }
-    
-    
+
     ul.serviceText {
         display: grid;
         grid-template-columns: auto auto;
         list-style-type: circle;
         width: 100%;
         margin-top: 1vh;
-     
         column-gap: 2rem;
-        row-gap: 2rem;   
-    
+        row-gap: 2rem;
         text-align: left;
     }
 
-   
     /*************************
     ! Template Section
 *************************/
 
     .templates {
-
         display: flex;
         flex-direction: column;
     }
@@ -705,7 +671,7 @@ footer{
         justify-content: center;
         row-gap: 3rem;
     }
-    .templateTitle{
+    .templateTitle {
         font-size: 2rem;
     }
 
