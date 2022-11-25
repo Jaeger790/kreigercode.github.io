@@ -117,27 +117,6 @@ body {
     width: 80%;
     margin: auto;
 }
-
-
-.pictureContainerCol:hover{
-    box-shadow: none;
-    transform: scale(.97);
-    border: #000 1px solid;
-}
-.profilePicture {
-    align-self: center;
-    height: 500px;
-    width: 300px;
-    border-radius: 10px;
-    /*  border: #000 2px solid; */
-    box-shadow: rgb(44, 44, 44) 2px 2px 2px 2px;
-    transition: .8s;
-}
-.profilePicture:hover{
-    box-shadow: none;
-    transform: scale(.97);
-    border: #000 1px solid;
-}
 .logo a{
     width: 100%;
     text-decoration: none;
@@ -167,13 +146,6 @@ body {
 .bi-download{
     font-size: 2rem;
     color: #000;
-}
-
-.color {
-    z-index: -1;
-    position: absolute;
-    width: 100%;
-    height: 100vh;
 }
 
 /*************************
@@ -436,22 +408,18 @@ footer{
 
 .socialLinks{
     display: flex;
-transition: .6s;
     justify-content: center;
-    padding: .5%;
-    margin-bottom: 1%;
 }
 
 .bi-github {
     font-size: 6vh;
    color:#01011a;
-  transition: .2s;
+  transition: .09s;
    margin-left: 2%;
 }
 .bi-github:hover{
     padding: .5%;
     color: #fff;
-    /* box-shadow: 3px 3px 5px 3px rgb(172, 179, 214); */
     filter: drop-shadow(15px 15px 2px rgb(0, 0, 0));
     transform: scale(1.15);
     border-radius: 30%;
@@ -459,14 +427,14 @@ transition: .6s;
 }
 .bi-github:active{
     padding: 0;
-    box-shadow: none;
+    filter: none;
     transform: scale(1);
     border-radius: 0;
 }
 
 .bi-linkedin {
     color: #01011a;
-    transition: .2s;
+    transition: .09s;
     font-size: 6vh;
     
 }
@@ -475,12 +443,12 @@ transition: .6s;
     padding: .5%;
    filter: drop-shadow(15px 15px 2px rgb(0, 0, 0));
     transform: scale(1.15);
-    transform: translateY(-2vh);
+     transform: translateY(-2vh); 
     border-radius: 30%;
 }
 .bi-linkedin:active{
     padding: 0;
-    box-shadow: none;
+    filter: none;
     transform: scale(1);
     border-radius: 0;
 }
@@ -508,72 +476,63 @@ transition: .6s;
         padding: 0;
         box-sizing: border-box;
     }
-    body {
-        background-color: #020230;
-        color: #b8baca;
-        font-family: "Fira Code", monospace;
-    }
     
     .nav {
         position: fixed;
         top: 0;
         transition: top 0.5s;
-        background-color: rgba(106, 133, 155,.1);
         width: 100vw;
-        font-size: 1rem;
+        font-size: .85rem;
     }
     .nav ul li {
-        width: 24vw;
+        width: 22vw;
     }
     .nav a{
         text-align: center;
         padding: 0;
         
     }
-    .profileHeading {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        margin-top: 5vh;
-        padding-bottom: 20vh;
+    .titleHeaderCol {
+        background-image: url("pics/header.jpg");
+        background-attachment:fixed;
+        background-position: center;
+        background-repeat: none;
+        color: #000000;
+        text-shadow: rgb(97, 97, 97) 3px 3px 5px;
+        font-size: 2.5rem;
+        padding: 2rem;
+        text-align: center;
+    
+        /* z-index: -1; */
+    }
+    .profileHeadingGrid {
+        margin-top: 0;
         
     }
-    .titleHeader {
-      width: 100%;
-     font-size: 2rem;
-     
-     box-shadow: #01011a 5px 5px 5px 5px;
-        
+    .heading{
+        margin-top: 1.5rem;
     }
     .ProfTitle{
-        font-size: 1.75rem;;
+        font-size: 1.5rem;;
     }
     .Motto{
-        font-size: 1.5rem;
+        font-size: 1rem;
+        line-height: 3rem;
     }
     .tagline {
         width: 100%;
         line-height: 8vh;
     }
-    .pictureContainer {
-        margin-top: 10vh;
-        display:none;
-    
-    }
     .logo{
-        margin: 0 auto;
-        margin-top: 15vh;
-        font-size: 15rem;
+        width: 50vw;
     }
+
 
 
     /*************************
    ! About Section
 *************************/
-.about {
-    color: #fff;
-    background-color: #020230;
-}
+
 
 .aHeader {
     margin-top: 30vh;
@@ -593,7 +552,7 @@ transition: .6s;
     flex-direction: column;
     height: 100vh;
     width: 100vw;
-    padding-bottom: 10vh;
+   
 }
 
 .aboutCol{
@@ -603,6 +562,9 @@ transition: .6s;
 }
 #aboutRowF{
     display: none;
+}
+#aboutRowM{
+    display: flex;
 }
 
 
@@ -638,7 +600,7 @@ transition: .6s;
 *************************/
 
     .skills {
-        height: 100vh;
+
         overflow-y: scroll;
         padding-bottom: 0;
         margin-bottom: 0;
