@@ -10,7 +10,7 @@
     box-sizing: border-box;
 }
 body {
-    background-color: #020230;
+    background-color: #000;
     color: #fff;
     font-family: "Fira Code", monospace;
     font-weight: 300;
@@ -30,82 +30,83 @@ body {
     background-color: rgba(106, 133, 155,.01);
     width: 100%;
     font-size: 25px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Fira Code",monospace;
    
 }
 .nav a{
     text-decoration: none;
-    color: #020230;
-    padding: 3rem;;
+    color: #fff;
+    display: block;
     
 }
 .nav a:hover{
-    color: #6a859b;
+    color: #fff;
+    box-shadow:inset rgb(0, 0, 0) 0px 0px 10px 0px;
     
 }
 .nav a:visited{
-    color: #020230;
+    color: #fff;
     text-decoration: none;
 }
 .nav a:visited:hover{
-    color: #6a859b;
+    color: #000;
+    box-shadow:inset rgb(0, 0, 0) 0px 0px 30px 0px;
+
 }
 #navButtonBlog:hover{
-    color:#6a859b;
+    color:#000;
+    background-color: #fff;
 }
 .nav ul li {
     list-style-type: none;
     display: inline-block;
-    background-color: #6a859b;
-    color: #020230;
+    background-color: #000;
+    color: #fff;
     padding: .5rem;
-    border: 2px black solid;
+    border: 1px #fff solid;
     border-radius: 5%;
-    box-shadow: rgb(0,0,0) 1px 1px 15px 1px;
-    width: 155px;
+    width: 15vw;
     text-align: center;
-    transition: 0.2s;
+    transition: 0.09s;
     font-weight: 400;
+    box-shadow:inset rgb(255, 255, 255) 0px 0px 10px 0px;
 }
 .nav ul li:hover {
-    background-color: #020230;
-    color: #6a859b;
+    background-color: #fff;
+    color: #000;
     padding: 0;
-    /* transform-origin: 300% -20%;
-        transform: rotate(-.5deg); */
     cursor: pointer;
-    border: solid #fff 2px;
-    box-shadow: rgb(20, 20, 20) 3px 0px 5px 2px;
+    box-shadow:inset rgb(0, 0, 0) 0px 0px 30px 0px;
 }
 .nav ul li:active{
     box-shadow: none;
     transform: scale(.90);
-    background-color: #6a859b;
-    color: #020230;
-    border: solid #01011a 2px;
+    background-color: #000;
+    color: #fff;
 }
 
-.profileHeading {
+.profileHeadingGrid {
     margin-top: 10vh;
-    display: block;
+    display: grid;
+    grid-auto-columns:auto, auto ;
 }
-.titleHeader {
+.titleHeaderCol {
+    background-image: url("pics/header.jpg");
+    background-attachment:fixed;
+    background-position: center;
     color: #000000;
-    text-shadow: #444849 3px 3px 5px;
-    box-shadow: #01011a 10px 5px 5px;
-    font-size: 60px;
-    padding: 20px;
-    margin-top: 20px;
+    text-shadow: rgb(97, 97, 97) 3px 3px 5px;
+    font-size: 4rem;
+    padding: 2rem;
+    margin-top: 0rem;
     text-align: center;
-    background-color: #6a859b;
-    width: 100%;
-    z-index: -1;
-  
-    
+
+    /* z-index: -1; */
 }
+
 .tagline {
     color: #000;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Fira Code", monospace;
     line-height: 80px;
     font-size: 30px;
 }
@@ -113,22 +114,12 @@ body {
     width: 100%;
 }
 .Motto{
-    width: 100%;
-}
-.pictureContainer {
-    display:flex;
-    justify-content: center;
-    margin-top: -290px;
-    margin-left: 25px;
-    background-color: #6a859b;
-    border-radius: 10px;
-    width: 350px;
-    height: 550px;
-    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.651);
-    transition: .8s;
+    width: 80%;
+    margin: auto;
 }
 
-.pictureContainer:hover{
+
+.pictureContainerCol:hover{
     box-shadow: none;
     transform: scale(.97);
     border: #000 1px solid;
@@ -147,13 +138,35 @@ body {
     transform: scale(.97);
     border: #000 1px solid;
 }
-
+.logo a{
+    width: 100%;
+    text-decoration: none;
+    font-weight: 600;
+    color: #000;
+}
 .logo{
+    display: flex;
+    justify-content: center;
+    justify-self: center;
     text-align: center;
-    margin-top: 200px;
-    font-size: 60px;
-    text-shadow: #fff 1px 1px 4px;
-    display: none;
+    margin-top: 1.25rem;
+    background-color: #fff;
+    width: 15vw;
+    text-shadow: #000 1px 1px 4px;
+    border: #363636 2px solid;
+    font-size: 1rem;
+    border-radius: 15px;
+    transition: .5s;
+}
+.logo:hover{
+    background: linear-gradient(to bottom, #fff 0%, #000 100%);
+}
+.logo a:hover{
+    color: #fff;
+}
+.bi-download{
+    font-size: 2rem;
+    color: #000;
 }
 
 .color {
@@ -167,21 +180,17 @@ body {
    ! About Section
 *************************/
 
-.about {
-    color: #fff;
-    background-color: #020230;
 
-}
 
 .aHeader {
     margin-top: 30vh;
     margin-bottom: 10vh;
     text-align: center;
-    font-size: 60px;
+    font-size: 4rem;
     background-color: #6a859b;
     color: #000000;
     text-shadow: #444849 3px 3px 5px;
-    padding: 15px;
+    padding: 2rem;
     width: 100%;
     box-shadow: #000 10px 5px 5px;
     
@@ -206,11 +215,11 @@ body {
     background-size: cover;
 }
 #paraPic2{
-    background-image: url('pics/keyBoard.jpg');
+    background-image: url('pics/Godfre.bmp');
     background-attachment: fixed;
-    background-position: center;
+    background-position: right;
     background-repeat: no-repeat;
-    background-size: cover;
+     background-size:contain;
 }
 #aboutRowM{
     display: none;
@@ -232,13 +241,9 @@ body {
 *************************/
 
 .skills {
-
-    background-color: #020230;
     margin-bottom: 10vh;
-
     justify-content: center;
     text-align: center;
-    
 }
 
 .skillHeader {
@@ -257,17 +262,18 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    height: 100vh;
+    height: 60vh;
     border: #748386 solid 2px;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 1px 1px 5px 1px rgb(172, 179, 214);
-    max-width: 65%;
+    box-shadow: inset 0px 0px 10px 5px rgb(172, 179, 214);
+    max-width: 85%;
     overflow-y: scroll;
+    background-color: #020230;
+    
     
 }
 .skillHeaderC{
-    
     display: flex;
     flex-direction: row;
     column-gap: 2rem;
@@ -337,7 +343,6 @@ ul.serviceText {
 
 .templates {
     padding-bottom:5vh ;
-    background-color: #020230;
 }
 
 .templateHead {
@@ -395,11 +400,11 @@ ul.serviceText {
 }
 .templateCard:hover {
     background-color: #01011a;
-    color:  #04D010;
+    color:#fff;
     /* box-shadow: 2px 2px 5px 2px rgb(172, 179, 214); */
-    filter: drop-shadow(15px 15px 2px rgba(255, 255, 255, .1));
+    filter: drop-shadow(0px 0px 15px rgba(255, 255, 255, .6));
     transform: scale(1.08);
-    text-shadow: 2px 2px 3px 2px rgb(172, 179, 214);
+    text-shadow: 2px 2px 5px 2px rgb(172, 179, 214);
 }
 .templateCard:active{
     box-shadow: none;
@@ -409,8 +414,7 @@ ul.serviceText {
 }
 
 .templateCard h2:hover {
-    color:  #04D010;
-    border: #000 2px solid;
+    color:  #fff;
     background-color: #01011a;
     text-shadow: 2px 2px 3px 2px rgb(172, 179, 214);
 }
@@ -419,7 +423,8 @@ ul.serviceText {
     Footer Section 
 */
 footer{
-    background-color: #01011a;
+    background-color:#6a859b;
+    color: #01011a;
     padding: 1%;
 }
 .footerHead{
@@ -439,16 +444,18 @@ transition: .6s;
 
 .bi-github {
     font-size: 6vh;
-    color: white;
+   color:#01011a;
   transition: .2s;
    margin-left: 2%;
 }
 .bi-github:hover{
     padding: .5%;
+    color: #fff;
     /* box-shadow: 3px 3px 5px 3px rgb(172, 179, 214); */
-    filter: drop-shadow(15px 15px 2px rgb(90, 90, 90));
+    filter: drop-shadow(15px 15px 2px rgb(0, 0, 0));
     transform: scale(1.15);
     border-radius: 30%;
+    transform: translateY(-2vh);
 }
 .bi-github:active{
     padding: 0;
@@ -458,16 +465,17 @@ transition: .6s;
 }
 
 .bi-linkedin {
-    color: white;
+    color: #01011a;
     transition: .2s;
     font-size: 6vh;
     
 }
 .bi-linkedin:hover{
+    color: #fff;
     padding: .5%;
-   /*  box-shadow: 3px 3px 5px 3px rgb(172, 179, 214); */
-   filter: drop-shadow(15px 15px 2px rgb(90, 90, 90));
+   filter: drop-shadow(15px 15px 2px rgb(0, 0, 0));
     transform: scale(1.15);
+    transform: translateY(-2vh);
     border-radius: 30%;
 }
 .bi-linkedin:active{
@@ -477,7 +485,7 @@ transition: .6s;
     border-radius: 0;
 }
 .bi-twitter {
-    color: white;
+    color: #01011a;
     margin-left: 2%;
     font-size: 6vh;
     transition: .2s;

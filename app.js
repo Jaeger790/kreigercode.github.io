@@ -1,14 +1,26 @@
-// triangle shape for profile header section
-const myShape = document.getElementById("colorBack");
-const ctx = myShape.getContext("2d");
+const navBar = document.getElementById("navBar");
+const downloadIcon = document.getElementById("downloadIcon");
+const resume = document.getElementById("resumeLink");
+
+resume.style.borderRadius = "15px";
 
 
-ctx.fillStyle= '#6a859b';
-ctx.moveTo(5,10);
-ctx.lineTo(1800,10);
-ctx.lineTo(1350, 400);
-ctx.lineTo(1800,900);
-ctx.fill();
+//change color of download icon when the mouse enters and leaves the button area
+resume.addEventListener("mouseover", ()=>{
+    downloadIcon.style.color="#fff";
+    resume.style.background = "linear-gradient(to bottom, #fff 0%, #000 100%)"});
+resume.addEventListener("mouseout",()=>{
+    downloadIcon.style.color = "#000";
+    resume.style.background = "#fff";
+});
+resume.addEventListener("mousedown",()=>{
+   resume.style.background = "linear-gradient(to top, #fff 0%, #000 100%)";    
+});
+resume.addEventListener("mouseup", ()=>{
+    resume.style.background = "linear-gradient(to bottom, #fff 0%, #000 100%)"; 
+})
+
+
 
 
 
@@ -17,9 +29,11 @@ var hideScroll = window.pageYOffset;
 window.onscroll = function(){
     let scrollPos = window.pageYOffset;
     if(hideScroll > scrollPos){
-        document.getElementById("navBar").style.top = "0";
+        navBar.style.transition = "1s";
+        navBar.style.top = "0";
+
     }else{
-        document.getElementById("navBar").style.top = "-100px";
+        navBar.style.top = "-100px";
     }
     hideScroll = scrollPos;
 }
