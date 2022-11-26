@@ -445,16 +445,20 @@ footer {
     font-size: 6vh;
     transition: 0.2s;
 }
-.bi-twitter:hover {
-    /*  padding: .5%;
+/* .bi-twitter:hover {
+      padding: .5%;
     box-shadow: 3px 3px 5px 3px rgb(172, 179, 214);
     transform: scale(1.15);
-    border-radius: 30%; */
-}
+    border-radius: 30%; 
+} */
 
-/*
+/********************************************************
+*********************************************************
+*********************************************************
     ! Mobile Design Section
-*/
+*********************************************************
+*********************************************************
+*********************************************************/
 
 @media screen and (max-width: 800px) {
     * {
@@ -557,7 +561,7 @@ footer {
         background-size: cover;
     }
     #paraPic2 {
-        background-image: url("pics/keyBoard.jpg");
+        background-image: url("pics/Godfre.bmp");
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
