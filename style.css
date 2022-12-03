@@ -453,6 +453,26 @@ footer {
     border-radius: 30%; 
 } */
 
+.bi-envelope{
+    color: #01011a;
+    margin-left: 2%;
+    font-size: 6vh;
+    transition: 0.2s;
+}
+.bi-envelope:hover {
+    color: #fff;
+    padding: 0.5%;
+    filter: drop-shadow(15px 15px 2px rgb(0, 0, 0));
+    transform: scale(1.15);
+    transform: translateY(-2vh);
+    border-radius: 30%;
+}
+.bi-envelope:active {
+    padding: 0;
+    filter: none;
+    transform: scale(1);
+    border-radius: 0;
+}
 /********************************************************
 *********************************************************
 *********************************************************
