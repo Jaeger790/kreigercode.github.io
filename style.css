@@ -132,7 +132,7 @@ body {
     font-size: 1rem;
     border-radius: 15px;
     transition: 0.5s;
-    height: 5vh;
+    height: 7vh;
 }
 .logo:hover {
     background: linear-gradient(to bottom, #fff 0%, #000 100%);
