@@ -230,6 +230,13 @@ a {
         margin-top: 2vh;
         font-size: 2rem;
     }
+    .pageHeadLine{
+        font-size: 1rem;
+        width: 95%;
+        text-align: justify;
+        margin: auto;
+        padding: .5rem ;
+    }
     .description {
         width: 95%;
         margin: auto;
