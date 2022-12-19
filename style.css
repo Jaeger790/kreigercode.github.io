@@ -454,12 +454,20 @@ footer {
     font-size: 6vh;
     transition: 0.2s;
 }
-/* .bi-twitter:hover {
-      padding: .5%;
-    box-shadow: 3px 3px 5px 3px rgb(172, 179, 214);
+.bi-twitter:hover {
+    color: #fff;
+    padding: 0.5%;
+    filter: drop-shadow(15px 15px 2px rgb(0, 0, 0));
     transform: scale(1.15);
-    border-radius: 30%; 
-} */
+    transform: translateY(-2vh);
+    border-radius: 30%;
+}
+.bi-twitter:active {
+    padding: 0;
+    filter: none;
+    transform: scale(1);
+    border-radius: 0;
+}
 
 .bi-envelope{
     color: #01011a;
