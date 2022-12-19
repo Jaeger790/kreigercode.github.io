@@ -185,11 +185,11 @@ body {
     background-size: cover;
 }
 #paraPic2 {
-    background-image: url("pics/Godfre.bmp");
+    background-image: url("pics/motoMe.png");
     background-attachment: fixed;
-    background-position: right;
+    background-position:right;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 50% 100%;
     margin-top: 10vh;
 }
 #aboutRowM {
