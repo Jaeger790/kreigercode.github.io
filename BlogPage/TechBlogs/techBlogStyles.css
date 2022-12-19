@@ -34,6 +34,14 @@ body{
     margin-bottom: 5vh;
     margin-top: 5vh;
 }
+
+.entryPicC{
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    justify-items: center;
+}
+
 a{
     color: #7F4F24;
 }
