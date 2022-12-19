@@ -41,7 +41,9 @@ body{
     justify-self: center;
     justify-items: center;
 }
-
+.entryPic{
+    width: 90%;
+}
 a{
     color: #7F4F24;
 }
