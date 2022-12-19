@@ -22,8 +22,6 @@ resume.addEventListener("mouseup", ()=>{
 
 
 
-
-
 //Hide navbar function
 var hideScroll = window.pageYOffset;
 window.onscroll = function(){
@@ -43,11 +41,10 @@ function scrollToTop(){
     window.scrollTo({top:0, behavior:"smooth"})
 
 }
-
 function scrollAbout(){
     document.querySelector('#about').scrollIntoView({behavior:"smooth"})
 }
-
 function scrollTemplate(){
     document.querySelector('#template').scrollIntoView({behavior:"smooth"})
 }
+

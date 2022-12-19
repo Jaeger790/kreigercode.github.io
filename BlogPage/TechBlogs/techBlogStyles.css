@@ -11,6 +11,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+hr{
+    height: .8vh;
+     width: 95vw; 
+    margin: auto;
+    background-color: black;
+    border-color: #000;
+    box-shadow: rgba(255,255 , 255, .4) 1px 1px 5px;
+}
 body{
     background-color: #000 ;
     color: #fff;
@@ -24,10 +32,61 @@ body{
     margin: auto;
     width: 50%;
     margin-bottom: 5vh;
+    margin-top: 5vh;
 }
 a{
-
     color: #7F4F24;
+}
+
+.slider {
+    width: 100%;
+    margin: 0 auto 20px;
+    text-align: center;
+}
+
+.slider .photos {
+    position: relative;
+    height: 60vh;
+}
+
+.slider .photos img {
+    
+    width: 60%;
+    height: 100%;
+    position: absolute;
+    left: 20%;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.slider .photos img.shown {
+    opacity: 1;
+}
+
+.prev:before,
+.next:before {
+  color: rgba(0, 0, 0, 1);
+  font-size: 6rem;
+  position: absolute;
+  top: 35%;
+  cursor: pointer;
+  background-color: rgba(245,245,245,.4);
+  padding: .5rem;
+  align-self: center;
+  box-shadow: rgba(0,0,0,.4) 1px 0px 20px 1px;
+}
+
+.prev:before {
+  content: '<';
+  left: 0;
+  
+  
+}
+
+.next:before {
+  content: '>';
+  right: 0;
+ 
 }
 
 @media screen and (max-width: 430px) {
@@ -45,7 +104,8 @@ a{
     .entry{
         margin: auto;
         width: 98vw;
-        margin-bottom: 5vh;
+        margin-top: 5vh;
+        
     }
     .entryPicC{
         width: 100%;
