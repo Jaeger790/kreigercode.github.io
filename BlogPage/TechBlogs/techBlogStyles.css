@@ -155,12 +155,12 @@ a{
     .prev:before,
     .next:before {
         color: rgba(0, 0, 0, 1);
-        font-size: 6rem;
+        font-size: 3rem;
         position: absolute;
         top: 35%;
         cursor: pointer;
         background-color: rgba(245,245,245,.19);
-        padding: .5rem;
+        
         align-self: center;
         box-shadow: rgba(0,0,0,.6) 1px 0px 20px 1px;
     }
