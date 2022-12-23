@@ -45,9 +45,8 @@ descriptionBubble2.addEventListener("click",()=>{
     }else{
        bubbleHeight2 = bubbleShow2;
        bubbleArrow2.style.transform = "rotate(0deg)";
-       
-       
      }
+     
  });
 
  //change background color of description bubble 1 when hovered over

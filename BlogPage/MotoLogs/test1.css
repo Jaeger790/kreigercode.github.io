@@ -40,9 +40,8 @@ body {
     padding: 2rem;
 }
 .description {
-    width: 60%;
+    width: 100%;
     margin: auto;
-    margin-top: 3vh;
     margin-bottom: 5vh;
     border-radius: 10px;
     line-height: 3rem;
@@ -53,6 +52,14 @@ body {
     background: #b6ad90;
     padding: 2rem;
     
+}
+.descContainer{
+    margin: auto;
+    width: 60%;
+    margin-top: 3vh;
+}
+.descHead{
+    text-align: left;
 }
 .bi-arrow-down-square{
     font-size: 2rem;
@@ -105,5 +112,7 @@ body {
         width: 95%;
         margin: auto;
         margin-top: 5vh;
+        margin-bottom: 5vh;
+
     }
 }
