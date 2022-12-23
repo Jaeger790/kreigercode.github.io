@@ -11,6 +11,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     background-color: #b6ad90;
     color: black;
@@ -47,6 +48,7 @@ body {
     line-height: 3rem;
     text-align: left;
     border: #333d29 2px solid;
+    white-space: normal;
     overflow: hidden;
     background: #b6ad90;
     padding: 2rem;

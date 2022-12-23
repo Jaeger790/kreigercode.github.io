@@ -72,7 +72,7 @@ descriptionBubble2.addEventListener("click",()=>{
  descriptionBubble2.addEventListener("mouseenter",()=>{
     descriptionBubble2.style.transition = "1s";
     descriptionBubble2.style.background = "rgba(51, 61, 41,.4)";
-    descriptionBubble1.style.boxShadow = "10px 20px 30px rgb(64, 67, 40)";
+    descriptionBubble2.style.boxShadow = "10px 20px 30px rgb(64, 67, 40)";
     
     
     
@@ -81,6 +81,6 @@ descriptionBubble2.addEventListener("click",()=>{
  descriptionBubble2.addEventListener("mouseleave",()=>{
     descriptionBubble2.style.transition = "1s";
     descriptionBubble2.style.background = "rgba(194, 197, 170,0)";
-    descriptionBubble1.style.boxShadow = "none";
+    descriptionBubble2.style.boxShadow = "none";
     
  });
