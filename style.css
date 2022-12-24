@@ -598,9 +598,17 @@ footer {
         background-size: cover;
     }
     #paraPic2 {
-        background-image: url("pics/Godfre.bmp");
+        background-image: url("pics/motoMe.png");
         background-attachment: fixed;
         background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #paraPic3 {
+        background-image: url("pics/motoMe.png");
+        background-attachment: fixed;
+        background-position: 10%;
+        padding-top:10vh;
         background-repeat: no-repeat;
         background-size: cover;
     }

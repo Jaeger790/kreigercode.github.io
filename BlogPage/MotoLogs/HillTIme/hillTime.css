@@ -1,0 +1,129 @@
+/*************************
+   Color Pallete
+    #7F4F24
+    #333D29
+    #C2C5AA
+    #b6ad90
+
+*************************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #b6ad90;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.trail{
+    padding-bottom: 5vh;
+}
+.videoC {
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+.video {
+    margin-top: 5vh;
+    justify-content: center;
+    width: 60vw;
+    height: 80vh;
+}
+.articalHeader {
+    margin-top: 2vh;
+    font-size: 2rem;
+    font-family: "Fira Code";
+    font-weight: 500;
+    background-color: rgb(51, 61, 41);
+    padding: 2rem;
+}
+.description {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 5vh;
+    border-radius: 10px;
+    line-height: 3rem;
+    text-align: left;
+    border: #333d29 2px solid;
+    white-space: normal;
+    overflow: hidden;
+    background: #b6ad90;
+    padding: 2rem;
+    min-height: 20vh;
+    
+}
+.description p{
+    margin-right: 4vw;
+}
+.descContainer{
+    margin: auto;
+    width: 60%;
+    margin-top: 3vh;
+}
+.descHead{
+    text-align: left;
+}
+.bi-arrow-down-square{
+    font-size: 2rem;
+    float: right;
+    
+    
+}
+
+.pageHeadLine{
+    font-size: 1.6rem;
+    width: 50%;
+    text-align: justify;
+    margin: auto;
+    padding: 1.5rem ;
+}
+.pageHeader{
+    margin-top: 2vh;
+    font-size: 2rem;
+    font-family: "Fira Code";
+    font-weight: 500;
+    background-color: #333d29;
+    padding: 2rem;
+}
+@media screen and (max-width: 800px) {
+    .videoC {
+        width: 100%;
+        height: 50vh;
+    }
+    .video {
+        width: 100%;
+        height: 100%;
+        margin-top: 2vh;
+    }
+
+    .mainHeading {
+        margin-top: 10vh;
+        width: 100%;
+    }
+    .articalHeader {
+        margin-top: 2vh;
+        font-size: 2rem;
+    }
+    .pageHeadLine{
+        font-size: 1rem;
+        width: 95%;
+        text-align: justify;
+        margin: auto;
+        padding: .5rem ;
+    }
+    .description {
+        width: 99%;
+        margin: auto;
+      
+        margin-bottom: 5vh;
+    }
+    .descContainer{
+        margin-top: 5vh;
+        width: 99%;
+    }
+    .descHead{
+        margin-left: 1vw;
+    }
+}

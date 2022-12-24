@@ -1,0 +1,178 @@
+/*************************
+   Color Pallete
+    #7F4F24
+    #333D29
+    #C2C5AA
+ 
+
+*************************/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+hr{
+    height: .8vh;
+     width: 95vw; 
+    margin: auto;
+    background-color: black;
+    border-color: #000;
+    box-shadow: rgba(255,255 , 255, .4) 1px 1px 5px;
+}
+body{
+    background-color: #000 ;
+    color: #fff;
+    font-family: "Fira Code", monospace;
+    font-weight: 100;
+}
+.pageTitle{
+    margin: auto;
+    font-size: 3.75rem;
+    text-shadow: rgba(180,180,180,.08) 50px 50px 6px;
+}
+.entry{
+    margin: auto;
+    width: 50%;
+    margin-bottom: 5vh;
+    margin-top: 5vh;
+}
+
+.entryPicC{
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    justify-items: center;
+}
+.entryPic{
+    width: 90%;
+}
+a{
+    color: #7F4F24;
+}
+.slider {
+    width: 100%;
+    margin: 0 auto 20px;
+    text-align: center;
+}
+
+.slider .photos {
+    position: relative;
+    height: 60vh;
+}
+
+.slider .photos img {
+    
+    width: 60%;
+    height: 100%;
+    position: absolute;
+    left: 20%;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.slider .photos img.shown {
+    opacity: 1;
+}
+
+.prev:before,
+.next:before {
+  color: rgba(0, 0, 0, 1);
+  font-size: 6rem;
+  position: absolute;
+  top: 35%;
+  cursor: pointer;
+  background-color: rgba(245,245,245,.4);
+  padding: .5rem;
+  align-self: center;
+  box-shadow: rgba(0,0,0,.4) 1px 0px 20px 1px;
+}
+
+.prev:before {
+  content: '<';
+  left: 0;
+  
+  
+}
+
+.next:before {
+  content: '>';
+  right: 0;
+ 
+}
+
+@media screen and (max-width: 900px) {
+    .pageTitle{
+        font-weight: 200;
+    }
+    .titlePicC{
+        width: 100vw;
+        margin-bottom: 10vh;
+        margin-top: 10vh;
+    }
+    .titlePic{
+        width: 100%;
+    }
+    .entry{
+        margin: auto;
+        width: 98vw;
+        margin-top: 5vh;
+        
+    }
+    .entryPicC{
+        width: 100%;
+    }
+    .entryPic{
+        width: 100%;
+    }
+    .entryP{
+        line-height: 1.5rem;
+        margin-bottom: 5vh;
+        width: 100%;
+    }
+    .entryHeader{
+        margin-bottom: 5vh;
+        background-color: rgb(16, 24, 34);
+        padding: 1rem;
+
+    }
+    .entryHeadline{
+        font-size: 1.5rem;
+        text-decoration: underline;
+        font-weight: 100;
+    }
+    .entryDate{
+        margin-bottom: 2vh;
+    }
+    .entryContent{
+        padding-bottom: 5vh;
+    }
+    .subHeader{
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+        font-size: 1.25rem;
+    }
+    .subSubject{
+        text-decoration: underline;
+    }
+    .slider .photos img {
+    
+        width: 90%;
+        height: 100%;
+        position: absolute;
+        left: 5%;
+        opacity: 0;
+        transition: opacity 1s;
+    }
+    .prev:before,
+    .next:before {
+        color: rgba(0, 0, 0, 1);
+        font-size: 3rem;
+        position: absolute;
+        top: 35%;
+        cursor: pointer;
+        background-color: rgba(245,245,245,.19);
+        
+        align-self: center;
+        box-shadow: rgba(0,0,0,.6) 1px 0px 20px 1px;
+    }
+}
