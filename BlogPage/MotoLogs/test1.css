@@ -51,7 +51,11 @@ body {
     overflow: hidden;
     background: #b6ad90;
     padding: 2rem;
+    min-height: 20vh;
     
+}
+.description p{
+    margin-right: 4vw;
 }
 .descContainer{
     margin: auto;
@@ -64,6 +68,7 @@ body {
 .bi-arrow-down-square{
     font-size: 2rem;
     float: right;
+    
     
 }
 
@@ -109,10 +114,16 @@ body {
         padding: .5rem ;
     }
     .description {
-        width: 95%;
+        width: 99%;
         margin: auto;
-        margin-top: 5vh;
+      
         margin-bottom: 5vh;
-
+    }
+    .descContainer{
+        margin-top: 5vh;
+        width: 99%;
+    }
+    .descHead{
+        margin-left: 1vw;
     }
 }
