@@ -1,39 +1,41 @@
-// triangle shape for profile header section
-const myShape = document.getElementById("colorBack");
-const ctx = myShape.getContext("2d");
 
-
-ctx.fillStyle= '#6a859b';
-ctx.moveTo(5,10);
-ctx.lineTo(1800,10);
-ctx.lineTo(1350, 400);
-ctx.lineTo(1800,900);
-ctx.fill();
-
-
+const bookButton = document.querySelector("#book");
+const homeButton = document.querySelector("#homeButton");
+const aboutButton = document.querySelector("#aboutButton");
+const servicesButton = document.querySelector("#servicesButton");
+const contactButton = document.querySelector("#contactButton");
+const aboutSection = document.querySelector("#about");
+const serviceSection = document.querySelector("#services");
+const contactSection = document.querySelector("#footer");
 
 //Hide navbar function
 var hideScroll = window.pageYOffset;
 window.onscroll = function(){
     let scrollPos = window.pageYOffset;
     if(hideScroll > scrollPos){
-        document.getElementById("navBar").style.top = "0";
+        navBar.style.transition = ".5s";
+        navBar.style.top = "0";
+
     }else{
-        document.getElementById("navBar").style.top = "-100px";
+        navBar.style.top = "-100px";
     }
     hideScroll = scrollPos;
 }
 
 //scroll functions
-function scrollToTop(){
+
+bookButton.addEventListener("click",()=>{
+    contactSection.scrollIntoView({behavior: "smooth"})
+});
+homeButton.addEventListener("click",()=>{
     window.scrollTo({top:0, behavior:"smooth"})
-
-}
-
-function scrollAbout(){
-    document.querySelector('#about').scrollIntoView({behavior:"smooth"})
-}
-
-function scrollTemplate(){
-    document.querySelector('#template').scrollIntoView({behavior:"smooth"})
-}
+});
+aboutButton.addEventListener("click",()=>{
+    aboutSection.scrollIntoView({behavior:"smooth"})
+});
+servicesButton.addEventListener("click",()=>{
+    serviceSection.scrollIntoView({behavior:"smooth"})
+});
+contactButton.addEventListener("click",()=>{
+    contactSection.scrollIntoView({behavior: "smooth"})
+});

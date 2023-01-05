@@ -8,10 +8,10 @@
   <title>Computer Repair</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-  
-  
+
+
 </head>
-  
+
 <body>
   <div class="top" id="top"></div>
 
@@ -20,35 +20,39 @@
   </div>
 
   <nav class="navBar" id="navBar">
-    <p class="navButton" onclick="scrollToTop()">Home</p>
-    <p class="navButton" onclick="scrollAbout()">About Me</p>
-    <p class="navButton" onclick ="scrollService()">Services</p>
-    <p class="navButton"><a href="blogs.html">News</a></p>
-    <p class="navButton" onclick="scrollBottom()">Contact</p>
-    <button class="collapseNavButton" id="collapseNav" onclick="coll()">X</button>
+    <p class="navButton" id="homeButton">Home</p>
+    <p class="navButton" id="aboutButton">About</p>
+    <p class="navButton" id="servicesButton">Services</p>
+    <p class="navButton" id="contactButton">Contact</p>
+    <button class="collapseNavButton" id="collapseNav">X</button>
 
   </nav>
 
   <div class="headingSection">
     <div class="header">
-      <h1 class="heading">Computer Repair</h1>
-      <h2 class="subHeading">Serving Your Area</h2>
-      <button class="book" id="book" type="button" onclick="scrollBottom()">Book An Appointment</button>
+      <h1 class="heading">KriegerCode Computer Repair</h1>
+      <h2 class="subHeading">Serving Mother Lode Area</h2>
+      <button class="bookButton" id="book" type="button" onclick="scrollBottom()">Book An Appointment</button>
     </div>
   </div>
-  
-  
+
+
   <section class="about" id="about">
     <div class="imgContainer">
-    <img class="profilePic" src="pics/pexels-andrea-piacquadio-845451.jpg" width="400" height="300" alt="profile picture" /> 
-  </div>
-    
+      <img class="profilePic" src="pics/pexels-andrea-piacquadio-845451.jpg" width="400" height="300"
+        alt="profile picture" />
+    </div>
+
     <h1 class="aboutHeader">About Us</h1>
-    
-    <p class="aboutMe">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt non labore, corporis quos explicabo ratione et voluptas similique laborum enim vel corrupti ea dolorem cumque quisquam totam velit inventore nobis.
-    
-    <p class="aboutMe">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis eos quia dignissimos tempore eum, culpa nostrum repellat omnis eligendi nisi accusamus dolore voluptas consequatur rerum laudantium distinctio rem iusto. Animi.</p>
-    
+
+    <p class="aboutMe">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt non labore, corporis quos
+      explicabo ratione et voluptas similique laborum enim vel corrupti ea dolorem cumque quisquam totam velit inventore
+      nobis.</p>
+
+    <p class="aboutMe">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis eos quia dignissimos tempore
+      eum, culpa nostrum repellat omnis eligendi nisi accusamus dolore voluptas consequatur rerum laudantium distinctio
+      rem iusto. Animi.</p>
+
   </section>
 
   <section class="services" id="services">
@@ -56,82 +60,99 @@
     <h2 class="aboutHeader">Services</h2>
 
     <div class="serviceCard">
-    <div class="repairHeader">
-      <h2>Computer Repair</h2>
-    </div>
-  
+      <div class="repairHeader">
+        <h2>Computer Repair</h2>
+      </div>
 
-    <div class="repair">
-      
-      <ul class="serviceList">
-        <li>Troubleshoot and repair hardware components</li>
-        <li>Malware removal</li>
-        <li>System tuning and cleaning</li>
-        <li>Security configuration</li>
-      </ul>
-      <div class="photoBox">
-        <img class="serviceImage" height="250" width="400" src="pics\D1024_98_505_1200.jpg" alt="server repair"></div>
+
+      <div class="repair">
+
+        <ul class="serviceList">
+          <li>Troubleshoot and repair hardware components</li>
+          <li>Malware removal</li>
+          <li>System tuning and cleaning</li>
+          <li>Security configuration</li>
+        </ul>
+        <div class="photoBox">
+          <img class="serviceImage" height="250" width="400" src="pics\D1024_98_505_1200.jpg" alt="server repair">
+        </div>
+      </div>
     </div>
-    </div>
-    
+
 
     <div class="serviceCard">
-        <div class="installHeader">
-          <h2>Installation and Configuration</h2>
-        </div>
-        <div class="install">
-          <ul calss="serviceList">
-            <li>Set up hardware</li>
-            <li>Install and configure: software, operating systems, and drivers</li>
-            <li>Install and configure networks and security options</li>
-            <li>Install, configure, and troubleshoot printers</li>
-            <li>Custom computer builds</li>
-          </ul>
-          <div class="photoBox"><img class="serviceImage" height="250" width="400" src="pics/istockphoto-1185435967-170667a.jpg" alt="computer install"></div>
-        
+      <div class="installHeader">
+        <h2>Installation and Configuration</h2>
+      </div>
+      <div class="install">
+        <ul calss="serviceList">
+          <li>Set up hardware</li>
+          <li>Install and configure: software, operating systems, and drivers</li>
+          <li>Install and configure networks and security options</li>
+          <li>Install, configure, and troubleshoot printers</li>
+          <li>Custom computer builds</li>
+        </ul>
+        <div class="photoBox"><img class="serviceImage" height="250" width="400"
+            src="pics/istockphoto-1185435967-170667a.jpg" alt="computer install"></div>
+
       </div>
     </div>
 
   </section>
-   
+
   <section class="contact" id="contact">
 
     <div class="contactCard">
 
-      <h1 class="formHeader">Contact Us</h1>
+      <h1 class="formHeader">Contact</h1>
 
-      <form id="contactForm" action="appointmentform.php" method="POST" >
-        <label for="firstName">First Name</label>
-        <input id='firstName' type="text" name="name" pattern="[a-zA-Z]{1,15}">
+      <form id="contactForm" action="appointmentform.php" class="contactForm" method="POST">
 
-        <label for="lastName">Last Name</label>
-        <input id="lastName" type="text" name="lastName" pattern="[a-zA-Z]{1,20}">
+        <div class="infoEntry">
 
-        <label for="email">Email</label>
-        <input id="email" type="email" name="email">
+          <div class="entryRow">
+            <div class="entryC"><label for="firstName">First Name</label>
+              <input id='firstName' class="textBox" type="text" name="name" pattern="[a-zA-Z]{1,15}">
+            </div>
+            <div class="entryC"><label for="lastName">Last Name</label>
+              <input id="lastName" type="text" class="textBox" name="lastName" pattern="[a-zA-Z]{1,20}">
+            </div>
+          </div>
 
-        <label for="phone">Phone Number</label>
-        <input type="tel" name="phone" id="phone" pattern="[0-9]{10}" title="123-456-789">
+          <div class="entryRow">
+            <div class="entryC">
+              <label for="email">Email</label>
+              <input id="email" type="email" name="email" class="textBox">
+            </div>
 
-        <label for="message">How can we help?</label>
-        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            <div class="entryC"><label for="phone">Phone Number</label>
+              <input type="tel" name="phone" id="phone" pattern="[0-9]{10}" class="textBox" title="123-456-789">
+            </div>
+          </div>
 
-        <input name="submit" type="submit" id="submit" value="Submit">
+        </div>
+
+        <div class="entryC">
+          <label for="message">How can we help?</label>
+          <textarea name="message" id="message" cols="47" rows="10" class="messageBox"></textarea>
+        </div>
+        <div class="entryC"><input name="submit" type="submit" id="submit" value="Submit"></div>
       </form>
     </div>
-  
+
   </section>
 
-  <footer>
+  <footer id="footer">
     <h4 class="footerHead">Other places you can reach us</h4>
-    
+
     <a href=""><i class="bi bi-linkedin"></i></a>
     <i class="bi bi-facebook"></i>
     <i class="bi bi-twitter"></i>
     <i class="bi bi-instagram"></i>
   </footer>
-  
+
   <script src="app.js"></script>
- 
+
 </body>
+
 </html>

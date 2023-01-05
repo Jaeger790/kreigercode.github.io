@@ -5,7 +5,9 @@
 }
 
 body {
-    background-color: whitesmoke;
+    background-color: black;
+    color: white;
+    
     font-family: 'Inter', sans-serif;
     font-size: 1.1rem;
     text-align: center;
@@ -26,10 +28,6 @@ body {
     box-shadow: 5px 5px 10px black;
     display: block;
     z-index: 1;
-}
-
-.active {
-    background-color: blue;
 }
 
 .navButton {
@@ -96,10 +94,12 @@ body {
 .headingSection {
     background-image: url("pics/codeBG.jpg");
     background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
     padding: 15px;
-    position: relative;
+
     height: 1000px;
-    overflow: hidden;
+    
 }
 
 .header {
@@ -131,7 +131,7 @@ body {
 
 
 
-.book {
+.bookButton {
     margin-top: 2.5rem;
     background-color: black;
     color: white;
@@ -141,8 +141,6 @@ body {
     cursor: pointer;
     border-radius: 25px;
     border: solid 2px white;
-    transition-property: color, background, border-color;
-    transition-duration: .5s;
 }
 
 
@@ -154,15 +152,17 @@ body {
 
 
 
-/*
-    ! About Me Section
-*/
+/************************************************************************
+*************************************************************************
+            ! About Me Section
+*************************************************************************
+*************************************************************************/
 
 .about {
-    margin: 0 auto;
-    padding: 5rem;
-    background-color: rgb(221, 221, 221);
-    height: 1200px;
+    padding: 10rem;
+    
+    background: linear-gradient(0deg, rgba(0,0,0,1) 2%, rgba(0,114,30,0.20772058823529416) 20%, rgba(0,212,255,1) 100%);;
+        background-attachment: fixed;
 }
 
 .imgContainer {
@@ -177,13 +177,12 @@ body {
 }
 
 .aboutMe {
-    margin-top: 50px;
+    
     text-align: justify;
     font-size: 2rem;
     display: block;
     width: 800px;
-    margin: 0 auto;
-    margin-bottom: 100px;
+    margin:auto;
 }
 
 .profilePic {
@@ -191,11 +190,19 @@ body {
     position: relative;
 }
 
-/*
-    ! Services Section 
-*/
 
+/************************************************************************
+*************************************************************************
+            ! Services
+*************************************************************************
+*************************************************************************/
+.services{
+    background: linear-gradient(0deg, rgba(0,0,0,1) 10%, rgba(0,114,30,0.20772058823529416) 30%, rgba(0,212,255,1) 100%);;
+        background-attachment: fixed;
+    padding-bottom: 10rem;
+}
 .serviceCard {
+    background-color: rgba(30,30,30,.8);
     display: flex;
     border: 2px solid white;
     padding: 40px;
@@ -211,11 +218,7 @@ body {
     
 }
 
-.services {
-    background-color: black;
-    color: white;
-    height: 1700px;
-}
+
 
 .repairHeader {
     margin-top: 2.25rem;
@@ -246,26 +249,61 @@ body {
 }
 
 
-/*
-    ! Contact Section 
-*/
+/************************************************************************
+*************************************************************************
+             Contact Section
+*************************************************************************
+*************************************************************************/
 
-.contact {
-    height: 1200px;
-    background-color: rgb(221, 221, 221);
-    padding: 120px;
+.contact{
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,114,30,.2) 2%, rgba(0,212,255,1) 30%);
+        background-attachment: fixed;
+    padding: 10rem;
+    
 }
 
 .contactCard {
     box-shadow: 5px 5px 10px black;
-    width: 400px;
+    width: 60vw;
     margin: auto;
-    padding: 70px 20px;
+    background-color: rgba(30,30,30,.8);
+    
+    
+}
+.contactForm{
+    display: flex;
+   flex-direction: column;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    align-content:center ;
+    justify-self: center;
+}
+.infoEntry{
+    display: flex;
+    flex-direction: column;
+}
+.entryRow{
+    display: flex;
+    flex-direction: row;
+    column-gap: 3vw;
 }
 
-
+.entryC{
+    display: block;
+    justify-self: center;
+    text-align: left;
+}
+.textBox{
+    height: 3vh;
+    font-size: 1.25rem;
+}
+.messageBox{
+    font-size: 1.25rem;
+}
 .formHeader {
-    margin-bottom: 80px;
+    margin:2vh,0,0,5vh;
     font-size: 2.75rem;
 }
 
@@ -494,14 +532,9 @@ footer{
     ! Contact Section 
     */
 
-    .contact {
-        height: 900px;
-        padding: 20px;
-    }
-
     .contactCard {
         box-shadow: 5px 5px 10px black;
-        width: 350px;
+        width: 50vw;
         display: block;
         margin-top: 100px;
     }
