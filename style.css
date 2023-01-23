@@ -98,6 +98,8 @@ body {
     padding: 2rem;
     margin-top: 0rem;
     text-align: center;
+    text-shadow: 1px 0 #fff, -1px 0 #fff, 0 1px #fff, 0 -1px #fff,
+    1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
 
     /* z-index: -1; */
 }
@@ -107,13 +109,16 @@ body {
     font-family: "Fira Code", monospace;
     line-height: 80px;
     font-size: 30px;
+      text-shadow: 2px #fff;
 }
 .ProfTitle {
     width: 100%;
 }
 .Motto {
-    width: 80%;
+    width: 70%;
     margin: auto;
+    text-shadow: 1px 0 #fff, -1px 0 #fff, 0 1px #fff, 0 -1px #fff,
+    1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
 }
 .logo a {
     width: 100%;
