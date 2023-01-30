@@ -1,3 +1,7 @@
+
+window.onload = () =>{
+    observeSkillSection()
+};
 const navBar = document.getElementById("navBar");
 const downloadIcon = document.getElementById("downloadIcon");
 const resume = document.getElementById("resumeLink");
@@ -66,6 +70,7 @@ const jsInnerBar = document.getElementById("jsInnerBar");
 const pythonInnerBar = document.getElementById("pythonInnerBar");
 const skillSection = document.getElementById("skillSection");
 const langLevelContainer = document.getElementsByClassName("langLevelContainer");
+const langContainerSelector = document.querySelector('#langLevel')
 const skillS = document.querySelector("#skillSection");
 const langHead = document.getElementById("langHead");
 let position = 0;
@@ -102,7 +107,7 @@ function animateFadeIn(){
 
 function animateFadeOut(){
     for (let i = 0; i < langLevelContainer.length; i++) {
-        langLevelContainer[i].style.transition = " 2s";
+        langLevelContainer[i].style.transition = "all 2s";
         langLevelContainer[i].style.opacity --;
         langLevelContainer[i].style.transform = "translateX(-150px)";
     }
@@ -111,18 +116,33 @@ function animateFadeOut(){
     langHead.style.transform = 'translateX(-10vw)';
 }
 
+function fadeInSkillSection(){
+    var observer = new IntersectionObserver(function(entries) {
+        if(entries[0].isIntersecting === true){
+            animateFadeIn();
+        }
+          
+    }, { threshold: [0] });
+    observer.observe(langHead);
+    
+}
+
+function fadeOutSkillSection(){
+    var observer = new IntersectionObserver(function(entries) {
+        if(entries[0].isIntersecting === false){
+            animateFadeOut();
+        }
+          
+    }, { threshold: [0] });
+    observer.observe(langHead);
+    return true;
+    
+}
+
+fadeInSkillSection();
+
+    
 
 
 
-
-
-var observer = new IntersectionObserver(function(entries) {
-	if(entries[0].isIntersecting === true){
-        animateFadeIn();
-    } else{
-        animateFadeOut();    
-    }    
-}, { threshold: [0] });
-
-observer.observe(skillS);
 
