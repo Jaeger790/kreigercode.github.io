@@ -52,7 +52,10 @@ function scrollAbout(){
 function scrollTemplate(){
     document.querySelector('#template').scrollIntoView({behavior:"smooth"})
 }
+function scrollSkills(){
+    document.querySelector('#skillSection').scrollIntoView({behavior:"smooth"})
 
+}
 
 
 
@@ -62,8 +65,6 @@ function scrollTemplate(){
 
 const innerLevelBars = document.getElementsByClassName("langBarInner");
 const javaInnerBar = document.getElementById("javaInnerBar");
-let javaLevelText = document.getElementById("javaLevelValue");
-
 const cSharpInnerBar = document.getElementById("cSharpInnerBar");
 const cPlusInnerBar = document.getElementById("cPlusInnerBar");
 const jsInnerBar = document.getElementById("jsInnerBar");
@@ -77,6 +78,7 @@ let position = 0;
 
 javaInnerBar.style.left = "0";
 langHead.style.opacity = "0";
+
 
 
 function animateFadeIn(){
@@ -98,12 +100,7 @@ function animateFadeIn(){
         setTimeout(()=> (jsInnerBar.style.width = "77%",200));
         setTimeout(()=> (pythonInnerBar.style.width = "84%",200));
     }
-
-    
-
 }
-
-
 
 function animateFadeOut(){
     for (let i = 0; i < langLevelContainer.length; i++) {
@@ -120,11 +117,12 @@ function fadeInSkillSection(){
     var observer = new IntersectionObserver(function(entries) {
         if(entries[0].isIntersecting === true){
             animateFadeIn();
+            
         }
           
     }, { threshold: [0] });
     observer.observe(langHead);
-    
+    return true;
 }
 
 function fadeOutSkillSection(){
@@ -141,7 +139,53 @@ function fadeOutSkillSection(){
 
 fadeInSkillSection();
 
+// div level fade in for the rest of the skills section
+
+const languagesClass = document.querySelectorAll(".languages");
+const techSection = document.getElementById("techSection")
+
+languagesClass.forEach(languagesClass =>{
+    languagesClass.style.opacity = "0";
+});
+
+
+
+
+function techSkillFI(){
     
+    var observer = new IntersectionObserver(function(entries) {
+        if(entries[0].isIntersecting === true){
+            setTimeout(()=>{
+                languagesClass[0].style.transition = "4s";
+                languagesClass[0].style.opacity ++;
+                languagesClass[0].style.transform = 'translateX(5vw)';
+
+            },200);
+        }
+          
+    }, { threshold: [0] });
+    observer.observe(languagesClass[0]);
+    return true;
+}
+
+function skillFI(){
+    var observer = new IntersectionObserver(function(entries) {
+        if(entries[0].isIntersecting === true){
+            setTimeout(()=>{
+                languagesClass[1].style.transition = "4s";
+                languagesClass[1].style.opacity ++;
+                languagesClass[1].style.transform = 'translateX(5vw)';
+
+            },600)
+        }
+          
+    }, { threshold: [0] });
+    observer.observe(languagesClass[1]);
+    return true;
+}
+
+techSkillFI();
+skillFI();
 
 
 
