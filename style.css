@@ -28,7 +28,8 @@ body {
   position: relative;
   color: white;
   font-size: 4rem;
-
+  align-items: center;
+  text-align: center;
   animation: glitch-skew 0.5s infinite linear alternate-reverse;
 }
 .glitch::after {
@@ -43,7 +44,7 @@ body {
   animation: glitch-anim2 1s infinite linear alternate-reverse;
 }
 #glitchContainer {
-
+    margin-bottom: 10vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -413,7 +414,7 @@ body {
 ***************************************************/
 .about {
     margin-bottom: 25vh;
-    height: 210vh;
+  
 }
 .aHeader {
     margin-top: 30vh;
@@ -431,6 +432,7 @@ body {
     display: flex;
     height: 100vh;
     width: 100%;
+    margin-bottom: 20vh;
 }
 
 .aboutCol {
@@ -815,6 +817,7 @@ footer {
         padding: 0;
         box-sizing: border-box;
     }
+    about{}
 
     .nav {
         position: fixed;
@@ -863,31 +866,26 @@ footer {
         width: 100%;
         line-height: 8vh;
     }
-    .logo {
+    .resumeButton {
         width: 50vw;
         height: 10vh;
+    
     }
 
     /*************************
    ! About Section
 *************************/
-
-    .aHeader {
-        margin-top: 45vh;
-        margin-bottom: 10vh;
-        text-align: center;
-        font-size: 2.5rem;
-        background-color: #6a859b;
-        color: #000000;
-        text-shadow: #444849 3px 3px 5px;
-        padding: 2rem;
-        width: 100%;
-        box-shadow: #000 10px 5px 5px;
+    .about{
+        margin-top: 30vh;
     }
+    .glitch {
+        font-size: 2.5rem;
+        width: 100%;
+  }
     .aboutRow {
         display: flex;
         flex-direction: column;
-        height: 150vh;
+
         width: 100%;
     }
 
@@ -944,12 +942,7 @@ footer {
         margin-bottom: 0;
     }
 
-    .skillHeader {
-        margin-top: 1.5rem;
-        margin-bottom: 1.5rem;
-        text-align: center;
-        font-size: 1.5rem;
-    }
+    
     .skillHeaderC {
         display: flex;
         flex-direction: row;
@@ -961,20 +954,49 @@ footer {
     }
 
     .bi-code-square {
-        font-size: 4rem;
+        font-size: 2.5rem;
     }
     .bi-ubuntu {
-        font-size: 4rem;
+        font-size: 2.5rem;
     }
     .bi-shop-window {
-        font-size: 4rem;
+        font-size: 2.5rem;
     }
-    .lanuages {
-        margin-bottom: 40vh;
+
+
+    .langLevelSection{
+        width: 80%;
+        display: grid;
+        grid-template-columns: auto auto;
+        column-gap: 10vw;
+    
+    }
+    .langLevelContainer{
+        display: flex;
+        width: 100%;
+        margin-bottom: 5vh;
+        flex-wrap: wrap;
+        opacity: 0;
+        
+        
+    }
+    .languageHeader{
+        text-align: left;
+        margin-bottom: 5vh;
+        font-size: 1.5rem;
+    }
+    
+    .techSkillHeader{
+        font-size: 1.25rem;
+    }
+
+
+    .languages {
+        font-size: 1.5rem;
     }
     .languageHead {
         text-decoration: underline;
-        font-size: 2.25rem;
+        font-size: 1.5rem;
     }
 
     ul.languageText {
