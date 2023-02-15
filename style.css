@@ -331,6 +331,9 @@ body {
     background-color: #000;
     color: #fff;
 }
+.navBarMobile{
+    display: none;
+}
 
 /**************************************************
                 ! Title
@@ -817,14 +820,10 @@ footer {
         padding: 0;
         box-sizing: border-box;
     }
-    about{}
+    
 
     .nav {
-        position: fixed;
-        top: 0;
-        transition: top 0.5s;
-        width: 100vw;
-        font-size: 0.85rem;
+        display: none;
     }
     .nav ul li {
         max-width: 25vw;
@@ -834,6 +833,57 @@ footer {
         text-align: center;
         padding: 0;
     }
+    .navBarMobile{
+        display: block;
+        position: fixed;
+        top: 0;
+        width: 100vw;
+        height: auto;
+        background-color: rgba(0, 0, 0, 1);
+        border-bottom:1px solid rgba(255, 255, 255, 0.1);
+        padding-bottom: .5vh;
+        box-shadow: rgba(25, 25, 255, 0.1) 0px 12px 15px;
+    }
+    .navBarMobile ul{
+        text-align: center;
+        display: none;
+        padding-bottom: 2vh;
+    }
+    .navBarMobile li{
+        border-bottom:1px solid rgba(255, 255, 255, 1);
+        box-shadow: rgba(255, 255, 255, 0.1) 0px 5px 5px;
+
+        margin-bottom: 2vh;
+        background-color: #363636;
+        padding: 1rem;
+        
+        
+    }
+    .navBarMobile li a{
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .menuIcon{
+        display: block;
+        margin-top: .25vh;
+        margin-left: .5vh;
+        width: 15vw;
+        padding:.75rem;
+        margin-bottom: 1vh;
+        border-radius: 10px;
+        box-shadow: rgba(255, 255, 255, 0.3) 1px 1px 5px;
+        
+    }
+    .menuIcon hr{
+        margin-bottom: .5vh;
+        width: 100%;
+        
+        height: .6vh;
+        background-color: #363636;
+    }
+
+
     .titleHeaderCol {
         background-image: url("pics/header.jpg");
         background-attachment: fixed;

@@ -3,11 +3,16 @@ window.onload = () =>{
     observeSkillSection()
 };
 const navBar = document.getElementById("navBar");
+const navBarM = document.getElementById("navBarM");
 const downloadIcon = document.getElementById("downloadIcon");
 const resume = document.getElementById("resumeLink");
-
+const menuIcon = document.getElementById("menuIcon");
+const navLL = document.getElementById("navLinkList");
+const blogButton = document.getElementById("blogButton");
 
 resume.style.borderRadius = "15px";
+
+navLL.style.display = "none"
 
 
 //change color of download icon when the mouse enters and leaves the button area
@@ -36,24 +41,99 @@ window.onscroll = function(){
         navBar.style.top = "0";
 
     }else{
-        navBar.style.top = "-100px";
+        navBar.style.top = "-200px";
+    }
+    hideScroll = scrollPos;
+}
+//hide mobile navbar
+var hideScroll = window.pageYOffset;
+window.onscroll = function(){
+    let scrollPos = window.pageYOffset;
+    if(hideScroll > scrollPos){
+        navBarM.style.transition = "1s";
+        navBarM.style.top = "0";
+
+    }else{
+        navBarM.style.top = "-100%";
     }
     hideScroll = scrollPos;
 }
 
+//show navigation links when menu button is selected
+
+
+
+function expandNavLinks(){
+    navLL.style.transition = "all 1s";
+    navBar.style.transition = "all 1s";
+    menuIcon.addEventListener("click",()=>{
+        if(navLL.style.display != "block"){
+            
+            menuIcon.style.color= "black";
+            menuIcon.style.backgroundColor = "white";
+            menuIcon.style.boxShadow = "rgba(255, 255, 255, 0.3) 2px 2px 5px";
+            menuIcon.style.border = "1px solid rgba(0, 0, 0, 1)";
+            navLL.style.display = "block";
+            navBarM.style.height = "fit-content";
+        }
+        collapseNavLinks();
+    });
+
+    
+}
+function collapseNavLinks(){
+    menuIcon.addEventListener("click",()=>{
+        if(navLL.style.display != "none"){
+            navLL.style.display = "none";
+            navBarM.style.height = "fit-content";
+            navLL.style.transition = "all 1s";
+            navBar.style.transition = "all 1s";
+            menuIcon.style.backgroundColor = "#000";
+            menuIcon.style.boxShadow = "rgba(255, 255, 255, 0.3) 2px 2px 5px";
+            menuIcon.style.border = "1px solid rgba(0, 0, 0, 1)";
+            
+        }
+        expandNavLinks();
+    });
+    
+}
+function collapseOnScroll(){
+    if(navLL.style.display != "none"){
+        navLL.style.transition = "all 1s";
+        navBar.style.transition = "all 1s";
+        navLL.style.display = "none";
+        navBarM.style.height = "fit-content";
+    }
+}
+
+function blogClick(target) {
+    location.href='BlogPage\\blog.html';
+};
+
+expandNavLinks();
+
+
 //scroll functions
 function scrollToTop(){
-    window.scrollTo({top:0, behavior:"smooth"})
+    window.scrollTo({top:0, behavior:"smooth"});
+    collapseOnScroll();
+
 
 }
 function scrollAbout(){
-    document.querySelector('#about').scrollIntoView({behavior:"smooth"})
+    document.querySelector('#about').scrollIntoView({behavior:"smooth"});
+    collapseOnScroll();
+
 }
 function scrollTemplate(){
-    document.querySelector('#template').scrollIntoView({behavior:"smooth"})
+    document.querySelector('#template').scrollIntoView({behavior:"smooth"});
+    collapseOnScroll();
+
 }
 function scrollSkills(){
-    document.querySelector('#skillSection').scrollIntoView({behavior:"smooth"})
+    document.querySelector('#skillSection').scrollIntoView({behavior:"smooth"});
+    collapseOnScroll();
+
 
 }
 
@@ -186,7 +266,6 @@ function skillFI(){
 
 techSkillFI();
 skillFI();
-
 
 
 
