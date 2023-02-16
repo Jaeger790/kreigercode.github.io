@@ -1,5 +1,5 @@
 /*************************
-   Color Pallete
+   Color Pallet
     #6a859b gray
     #020230 blue
 
@@ -271,6 +271,7 @@ body {
                 ! Navigation Bar
 ***************************************************/
 .nav {
+    display: block;
     position: fixed;
     top: 0;
     padding-top: 5px;
@@ -814,28 +815,19 @@ footer {
 *********************************************************
 *********************************************************/
 
-@media screen and (max-width: 850px) {
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    
-
+/*****************************************
+******************************************
+         Wide mobile
+******************************************
+*****************************************/
+@media screen and (max-width: 1200px){
     .nav {
         display: none;
-    }
-    .nav ul li {
-        max-width: 25vw;
-        min-width: 22vw;
-    }
-    .nav a {
-        text-align: center;
-        padding: 0;
     }
     .navBarMobile{
         display: block;
         position: fixed;
+        list-style-type: none;
         top: 0;
         width: 100vw;
         height: auto;
@@ -843,11 +835,151 @@ footer {
         border-bottom:1px solid rgba(255, 255, 255, 0.1);
         padding-bottom: .5vh;
         box-shadow: rgba(25, 25, 255, 0.1) 0px 12px 15px;
+        z-index: 2;
     }
     .navBarMobile ul{
         text-align: center;
         display: none;
         padding-bottom: 2vh;
+        width: 65%;
+        margin:auto ;
+        list-style-type: none;
+    }
+    .navBarMobile li{
+        border-bottom:1px solid rgba(255, 255, 255, 1);
+        box-shadow: rgba(255, 255, 255, 0.3) 2px 2px 3px;
+
+        margin-bottom: 2vh;
+        background-color: #363636;
+        padding: 1rem;
+        
+        
+    }
+    .navBarMobile li a{
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .menuIcon{
+        display: block;
+        margin-top: .5vh;
+        margin-left: .75vh;
+        width: 10vw;
+        padding:.75rem;
+        margin-bottom: 1vh;
+        border-radius: 10px;
+        box-shadow: rgba(255, 255, 255, 0.3) 1px 1px 5px;
+        
+    }
+    .menuIcon hr{
+        margin-bottom: .5vh;
+        width: 100%;
+        
+        height: .6vh;
+        background-color: #363636;
+    }
+
+
+
+/*****************************************
+
+        About me Wide mobile
+
+*****************************************/
+
+    .about{
+        margin-top: 30vh;
+    }
+    .glitch {
+        font-size: 2.5rem;
+        width: 100%;
+  }
+    .aboutRow {
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+    }
+
+    .aboutCol {
+        width: 100%;
+        height: 100%;
+    }
+    #aboutRowF {
+        display: none;
+    }
+    #aboutRowM {
+        display: flex;
+    }
+
+    #paraPic1 {
+        background-image: url("pics/anthony-roberts-W_DCDWCL3Wo-unsplash.jpg");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #paraPic2 {
+        background-image: url("pics/motoMe.png");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #paraPic3 {
+        background-image: url("pics/motoMe.png");
+        background-attachment: fixed;
+        background-position: 10%;
+        padding-top:10vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .bio {
+        margin: 0 15% 0 1%;
+        width: 98%;
+        line-height: 2rem;
+        font-size: 1rem;
+        font-weight: 100;
+        text-align: left;
+    }
+}
+
+
+
+/*****************************************
+******************************************
+         Mobile Portrait Design
+******************************************
+*****************************************/
+
+
+@media screen and (max-width: 850px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .nav {
+        display: none;
+    }
+    .navBarMobile{
+        display: block;
+        position: fixed;
+
+        width: 100vw;
+        height: auto;
+        background-color: rgba(0, 0, 0, 1);
+        border-bottom:1px solid rgba(255, 255, 255, 0.1);
+        padding-bottom: .5vh;
+        box-shadow: rgba(25, 25, 255, 0.1) 0px 12px 15px;
+        z-index: 2;
+    }
+    .navBarMobile ul{
+        text-align: center;
+        display: none;
+        padding-bottom: 2vh;
+        list-style-type: none;
     }
     .navBarMobile li{
         border-bottom:1px solid rgba(255, 255, 255, 1);
@@ -866,8 +998,8 @@ footer {
 
     .menuIcon{
         display: block;
-        margin-top: .25vh;
-        margin-left: .5vh;
+        margin-top: .5vh;
+        margin-left: .75vh;
         width: 15vw;
         padding:.75rem;
         margin-bottom: 1vh;
@@ -882,6 +1014,17 @@ footer {
         height: .6vh;
         background-color: #363636;
     }
+
+    
+    .nav ul li {
+        max-width: 25vw;
+        min-width: 22vw;
+    }
+    .nav a {
+        text-align: center;
+        padding: 0;
+    }
+
 
 
     .titleHeaderCol {
@@ -925,7 +1068,7 @@ footer {
     /*************************
    ! About Section
 *************************/
-    .about{
+ /*    .about{
         margin-top: 30vh;
     }
     .glitch {
@@ -980,7 +1123,7 @@ footer {
         font-size: 1rem;
         font-weight: 100;
         text-align: left;
-    }
+    } */
 
     /*************************
     ! Skill Section

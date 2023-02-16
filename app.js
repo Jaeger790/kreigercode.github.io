@@ -36,6 +36,9 @@ resume.addEventListener("mouseup", ()=>{
 var hideScroll = window.pageYOffset;
 window.onscroll = function(){
     let scrollPos = window.pageYOffset;
+    if(navBar.style.display === "none"){
+        return;
+    }
     if(hideScroll > scrollPos){
         navBar.style.transition = "1s";
         navBar.style.top = "0";
@@ -45,8 +48,9 @@ window.onscroll = function(){
     }
     hideScroll = scrollPos;
 }
+
 //hide mobile navbar
-var hideScroll = window.pageYOffset;
+/* var hideScroll = window.pageYOffset;
 window.onscroll = function(){
     let scrollPos = window.pageYOffset;
     if(hideScroll > scrollPos){
@@ -58,11 +62,10 @@ window.onscroll = function(){
     }
     hideScroll = scrollPos;
 }
+ */
+
 
 //show navigation links when menu button is selected
-
-
-
 function expandNavLinks(){
     navLL.style.transition = "all 1s";
     navBar.style.transition = "all 1s";
@@ -103,7 +106,11 @@ function collapseOnScroll(){
         navBar.style.transition = "all 1s";
         navLL.style.display = "none";
         navBarM.style.height = "fit-content";
+        menuIcon.style.backgroundColor = "#000";
+            menuIcon.style.boxShadow = "rgba(255, 255, 255, 0.3) 2px 2px 5px";
+            menuIcon.style.border = "1px solid rgba(0, 0, 0, 1)";
     }
+    expandNavLinks();
 }
 
 function blogClick(target) {
