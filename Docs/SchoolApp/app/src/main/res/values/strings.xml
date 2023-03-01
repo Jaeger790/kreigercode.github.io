@@ -1,0 +1,86 @@
+<resources>
+    <string name="app_name">School App</string>
+    <string name="homeHeader">Home</string>
+    <string name="courseLabel">Courses</string>
+    <string name="welcomeText">Welcome to School App</string>
+    <string name="coursesButton">Courses Button</string>
+    <string name="currentCourse">Current Course</string>
+    <string name="homeButtonDescription">Home Button</string>
+    <string name="backButton">back button</string>
+    <string name="termsButton">Terms Button</string>
+    <string name="enter_username_prompt">Enter UserName</string>
+    <string name="enterButtonText">Enter</string>
+    <string name="loginError">You must enter a userName to continue</string>
+    <string name="add_course_button_description">add course button</string>
+    <string name="course_title">Course Title</string>
+    <string name="instructor_info">Instructor Info</string>
+    <string name="terms_header">Terms</string>
+    <string name="course_title_prompt">Course Title</string>
+    <string name="add_assessment_prompt">Add Assessment</string>
+    <string name="select_status_prompt">Select Course Status</string>
+    <string name="term_start_prompt">Term Start Date</string>
+    <string name="add">Add</string>
+    <string name="term_end_date_prompt">Term End Date</string>
+    <string name="select_instructor_prompt">Select Instructor</string>
+    <string name="select_term_prompt">Select Term</string>
+    <string name="add_course_title">Add Course</string>
+    <string name="cancel_button_text">Cancel</string>
+    <string name="save_button_text">Save</string>
+    <string name="course_end_date">Course End Date</string>
+    <string name="course_start_date">Course Start Date</string>
+    <string name="assessment_title">Assessment Title</string>
+    <string name="assessment_type">Assessment Type</string>
+    <string name="assessment_type_icon_description">Assessment Type Icon</string>
+    <string name="end_date_term_item_text">End Date</string>
+    <string name="view_note_button_text">View Note</string>
+    <string name="title_assessment">Title</string>
+    <string name="start_date">Start date</string>
+    <string name="end_date">End date</string>
+    <string name="goal_date">Goal Date</string>
+    <string name="assessment_type_prompr">Assessment Type</string>
+    <string name="term_title_add_label">Term Title</string>
+    <string name="term_start_date_label">Term Start Date</string>
+    <string name="term_end_date_label">Term End Date</string>
+    <string name="hyphen">-</string>
+    <string name="dateFormatStringLabel">dd:MM:YYYY</string>
+    <string name="_label">Start Date:</string>
+    <string name="end_date_label">End Date:</string>
+    <string name="dd_mm_yyyy">dd:MM:YYYY</string>
+    <string name="term_title">Term Title</string>
+    <string name="start_date_label">Start Date:</string>
+    <string name="add_note_label">Add Note</string>
+    <string name="delete_button_label">Delete</string>
+    <string name="select_course_label">Select Course</string>
+    <string name="assessment_button">Assessment Button</string>
+    <string name="title">Title:</string>
+    <string name="instructor">Instructor:</string>
+    <string name="instructor_name">Instructor Name</string>
+    <string name="phone">Phone:</string>
+    <string name="_123_456_789">123-456-789</string>
+    <string name="example_email">example@aol.com</string>
+    <string name="edit_button_text">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="term_title_label">Term Title:</string>
+    <string name="type">Type:</string>
+    <string name="course_status">Course Status</string>
+    <string name="status">Status:</string>
+    <string name="save_note">Save Note</string>
+    <string name="add_note">Add Note:</string>
+    <string name="edit_note">Edit Note</string>
+    <string name="select_date">Select Date</string>
+    <string name="alarm">Alarm</string>
+    <string name="share_note">Share Note</string>
+    <string name="channel_name">assessment</string>
+    <string name="channel_description">Notifications for School App</string>
+    <string name="date_picker">Date Picker</string>
+    <string name="set_alarm">Set Alarm</string>
+    <string name="performance_assessment">Performance Assessment</string>
+    <string name="objective_assessment">Objective Assessment</string>
+    <string-array name="courseStatusArray">
+        <item>PlanToTake</item>
+        <item>InProgress</item>
+        <item>Completed</item>
+        <item>Dropped</item>
+    </string-array>
+
+</resources>

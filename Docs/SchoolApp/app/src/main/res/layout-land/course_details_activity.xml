@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/scrollContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <include
+                android:id="@+id/toolbar"
+                layout="@layout/tool_bar_alt"/>
+
+        <TextView
+            android:id="@+id/courseTitleLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toolbar"
+            android:textSize="20sp"
+
+            android:text="Title: "/>
+
+        <TextView
+            android:id="@+id/courseTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/courseTitleLabel"
+            app:layout_constraintTop_toBottomOf="@id/toolbar"
+            android:layout_marginStart="20dp"
+            android:textSize="20sp"
+
+            android:text="Course Title"/>
+
+        <TextView
+            android:id="@+id/startDateLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/courseTitleLabel"
+            android:textSize="20sp"
+
+            android:text="@string/start_date_label"/>
+
+        <TextView
+            android:id="@+id/courseStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/startDateLabel"
+            app:layout_constraintTop_toBottomOf="@id/courseTitle"
+            android:layout_marginStart="20dp"
+            android:textSize="20sp"
+
+            android:text="@string/dd_mm_yyyy"/>
+
+        <TextView
+            android:id="@+id/endDateLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/startDateLabel"
+            android:textSize="20sp"
+
+            android:text="@string/end_date_label"/>
+
+
+
+        <TextView
+            android:id="@+id/courseEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/endDateLabel"
+            app:layout_constraintTop_toBottomOf="@id/courseStart"
+            android:layout_marginStart="20dp"
+            android:textSize="20sp"
+
+            android:text="@string/dd_mm_yyyy"/>
+
+        <TextView
+            android:id="@+id/courseStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/endDateLabel"
+            app:layout_constraintTop_toBottomOf="@id/courseEnd"
+            android:layout_marginStart="20dp"
+            android:textSize="20sp"
+            android:text="@string/course_status"/>
+
+        <TextView
+            android:id="@+id/statusLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/courseEnd"
+            android:textSize="20sp"
+
+            android:text="@string/status"/>
+
+        <TextView
+            android:id="@+id/instructorNameLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/statusLabel"
+            android:textSize="20sp"
+
+            android:text="@string/instructor"/>
+
+
+
+        <TextView
+            android:id="@+id/iName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/instructorNameLabel"
+            app:layout_constraintTop_toBottomOf="@id/statusLabel"
+            android:layout_marginStart="20dp"
+            android:textSize="20sp"
+
+            android:text="@string/instructor_name"/>
+
+        <TextView
+            android:id="@+id/instructorPhoneLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/instructorNameLabel"
+            android:textSize="20sp"
+
+            android:text="@string/phone"/>
+
+        <TextView
+            android:id="@+id/iPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/instructorPhoneLabel"
+            app:layout_constraintTop_toBottomOf="@id/iName"
+            android:layout_marginStart="20dp"
+            android:textSize="20sp"
+
+            android:text="@string/_123_456_789"/>
+
+        <TextView
+            android:id="@+id/instructorEmailLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/instructorPhoneLabel"
+            android:textSize="20sp"
+
+            android:text="Email:"/>
+
+        <TextView
+            android:id="@+id/iEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/instructorEmailLabel"
+            app:layout_constraintTop_toBottomOf="@id/iPhone"
+            android:layout_marginStart="20dp"
+            android:textSize="20sp"
+
+            android:text="@string/example_email"/>
+
+        <TextView
+            android:id="@+id/termLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/instructorEmailLabel"
+            android:textSize="20sp"
+            android:text="@string/term_title_label"/>
+
+        <TextView
+            android:id="@+id/tTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/termLabel"
+            app:layout_constraintTop_toBottomOf="@id/iEmail"
+            android:layout_marginStart="20dp"
+            android:textSize="20sp"
+
+            android:text="@string/term_title"/>
+
+        <TextView
+            android:id="@+id/NoteLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tTitle"
+
+            android:textSize="20sp"
+
+            android:text="@string/add_note"/>
+
+        <EditText
+            android:id="@+id/note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            app:layout_constraintTop_toBottomOf="@id/NoteLabel"
+            app:layout_constraintStart_toStartOf="parent"
+            android:autofillHints="" />
+
+        <Button
+            android:id="@+id/saveNote"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/dark_pastel_green"
+            android:text="@string/save_note"
+            android:onClick="saveNoteClick"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/note" />
+
+        <Button
+            android:id="@+id/shareNote"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@color/cyan_process"
+            android:text="@string/share_note"
+            android:onClick="shareNote"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/note" />
+
+
+
+        <Button
+            android:id="@+id/deleteButton"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/shareNote"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="40dp"
+            android:text="@string/delete"
+            android:onClick="onDeleteClick"
+            android:background="@color/red"
+            android:textColor="@color/white"
+            />
+
+        <Button
+            android:id="@+id/editButton"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:background="@color/yellow"
+            android:text="@string/edit_button_text"
+            android:onClick="onEditClick"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/saveNote" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

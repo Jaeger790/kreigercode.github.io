@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/assessmentItem"
+    android:backgroundTint="@color/dark_pastel_green"
+    android:layout_marginBottom="14dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cyan_process"
+        android:layout_margin="4dp">
+
+
+
+        <TextView
+            android:id="@+id/assessmentTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="@string/assessment_title"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/assessmentType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/assessmentTitle"
+            android:textColor="@android:color/black"
+
+            android:layout_marginStart="8dp"
+            android:text="@string/assessment_type"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/goalDateLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@id/goalDate"
+            android:layout_marginStart="25dp"
+            android:text="@string/end_date_term_item_text" />
+
+        <TextView
+            android:id="@+id/goalDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="25dp"
+            android:text="@string/end_date_term_item_text" />
+
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

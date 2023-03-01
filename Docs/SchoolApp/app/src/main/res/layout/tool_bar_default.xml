@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/colorPrimaryVariant"
+    android:minHeight="?attr/actionBarSize"
+    android:theme="?attr/colorOnPrimary">
+
+    <TextView
+        android:id="@+id/appBarHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/homeHeader"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <ImageButton
+        android:id="@+id/termsButton"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="0dp"
+        android:background="@color/clear"
+        android:contentDescription="@string/termsButton"
+        app:srcCompat="@drawable/date_range_48px"
+        android:onClick="onTermsButtonClick"
+        app:tint="@color/white" />
+
+
+    <ImageButton
+        android:id="@+id/coursesButton"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="15dp"
+        android:background="@color/clear"
+        android:contentDescription="@string/coursesButton"
+        android:onClick="onCourseButtonClick"
+        app:srcCompat="@drawable/library_books_48px"
+        app:tint="@color/white" />
+
+    <ImageButton
+        android:id="@+id/assessmentButton"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="15dp"
+        android:background="@color/cyan_process"
+        android:contentDescription="@string/assessment_button"
+        android:onClick="onAssessmentsButtonClick"
+        app:srcCompat="@drawable/quiz_48px"
+        app:tint="@color/white" />
+
+</Toolbar>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textColor="@color/white"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="tech.school.schoolapp.activity.AddAssessmentActivity">
+
+    <include
+        android:id="@+id/toolbarAlt"
+        layout="@layout/tool_bar_alt" />
+
+    <TextView
+        android:id="@+id/assessmentTitle"
+        android:layout_width="206dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/title_assessment"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/assessmentTitleEdit"
+        android:layout_width="206dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:autofillHints="Enter Title" />
+
+    <TextView
+        android:id="@+id/assessmentGoal"
+        android:layout_width="206dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/goal_date"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/assessmentTitle" />
+
+    <EditText
+        android:id="@+id/goalDate"
+        android:layout_width="206dp"
+        android:layout_height="50dp"
+
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/assessmentTitleEdit"
+        android:autofillHints="dd/MM/yyyy" />
+
+    <TextView
+        android:id="@+id/assessmentType2"
+        android:layout_width="206dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/assessment_type_prompr"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/assessmentGoal" />
+
+    <RadioGroup
+        android:id="@+id/assessmentTypeRadio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/goalDate">
+
+        <RadioButton
+            android:id="@+id/objectiveRadio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="oaRadioSet"
+            android:text="@string/objective_assessment" />
+
+        <RadioButton
+            android:id="@+id/performanceRadio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="paRadioSet"
+            android:text="@string/performance_assessment" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/courseSpinnerLabel"
+        android:layout_width="206dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/select_course_label"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/assessmentTypeRadio" />
+
+    <Spinner
+        android:id="@+id/courseSpinner"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@id/assessmentTypeRadio" />
+
+    <TextView
+        android:id="@+id/alarmLabel"
+        android:layout_width="206dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/set_alarm"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/courseSpinnerLabel" />
+
+    <Button
+        android:id="@+id/alarmPicker"
+        android:layout_width="206dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/date_picker"
+        android:inputType="none"
+        app:layout_constraintTop_toBottomOf="@id/courseSpinnerLabel"
+        app:layout_constraintStart_toEndOf="@id/alarmLabel"/>
+
+    <Button
+        android:id="@+id/assessmentPrompt2"
+        android:layout_width="196dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/delete_button_label"
+        android:background ="@color/red"
+        android:textColor="@color/white"
+
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alarmLabel" />
+
+    <Button
+        android:id="@+id/addAssessmentButton2"
+        android:layout_width="196dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/blue_sapphire"
+        android:onClick="addAssessmentClick"
+        android:text="@string/add"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alarmLabel" />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

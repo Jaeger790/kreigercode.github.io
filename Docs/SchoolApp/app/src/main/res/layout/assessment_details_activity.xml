@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/tool_bar_alt" />
+
+    <TextView
+        android:id="@+id/titleLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="20sp"
+        android:text="Title:"/>
+
+    <TextView
+        android:id="@+id/assessmentTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/titleLabel"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        android:layout_marginStart="50dp"
+        android:textSize="20sp"
+
+        android:text="Assessment Title"/>
+
+    <TextView
+        android:id="@+id/goalDateLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/titleLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="20sp"
+        android:text="Goal Date:"/>
+
+    <TextView
+        android:id="@+id/goalDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/goalDateLabel"
+        app:layout_constraintTop_toBottomOf="@+id/assessmentTitle"
+        android:layout_marginStart="20dp"
+        android:textSize="20sp"
+        android:text="@string/dd_mm_yyyy"
+        />
+
+    <TextView
+        android:id="@+id/typeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/goalDateLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/type"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/assessmentType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/goalDate"
+        app:layout_constraintStart_toEndOf="@id/typeLabel"
+        android:text="@string/assessment_type"
+        android:layout_marginStart="50dp"
+        android:textSize="20sp"
+        />
+    <TextView
+        android:id="@+id/courseLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/typeLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Course:"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/courseName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/assessmentType"
+        app:layout_constraintStart_toEndOf="@id/courseLabel"
+        android:text="@string/courseLabel"
+        android:layout_marginStart="50dp"
+        android:textSize="20sp"
+        />
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"
+        android:text="@string/delete_button_label"
+        android:onClick="onDeleteClick"
+        android:background="@color/red"
+        android:textColor="@color/white"
+        />
+
+    <Button
+        android:id="@+id/editButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/yellow"
+        android:text="@string/edit_button_text"
+        android:onClick="onEditClick"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

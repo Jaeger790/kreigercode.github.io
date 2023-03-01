@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="dark_pastel_green">#46EA29</color>
+    <color name="blue_sapphire">#F30B4F6C</color>
+    <color name="cyan_process">#4001BAEF</color>
+    <color name="xiketic">#1C1018</color>
+    <color name="teal_700">#05403F</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="clear">#00000000</color>
+    <color name="red">#F44336</color>
+    <color name="yellow">#FFFFC107</color>
+</resources>
