@@ -120,6 +120,8 @@ function blogClick(target) {
 expandNavLinks();
 
 
+
+
 //scroll functions
 function scrollToTop(){
     window.scrollTo({top:0, behavior:"smooth"});
@@ -225,6 +227,8 @@ function fadeOutSkillSection(){
 }
 
 fadeInSkillSection();
+
+
 
 // div level fade in for the rest of the skills section
 
