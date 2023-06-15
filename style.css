@@ -1114,62 +1114,11 @@ footer {
     /*************************
    ! About Section
 *************************/
- /*    .about{
-        margin-top: 30vh;
-    }
-    .glitch {
-        font-size: 2.5rem;
-        width: 100%;
-  }
-    .aboutRow {
-        display: flex;
-        flex-direction: column;
 
-        width: 100%;
-    }
-
-    .aboutCol {
-        width: 100%;
-        height: 100%;
-    }
-    #aboutRowF {
-        display: none;
-    }
-    #aboutRowM {
-        display: flex;
-    }
-
-    #paraPic1 {
-        background-image: url("pics/anthony-roberts-W_DCDWCL3Wo-unsplash.jpg");
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    #paraPic2 {
-        background-image: url("pics/motoMe.png");
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    #paraPic3 {
-        background-image: url("pics/motoMe.png");
-        background-attachment: fixed;
-        background-position: 10%;
-        padding-top:10vh;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    .bio {
-        margin: 0 15% 0 5%;
-        width: 98%;
-        line-height: 2rem;
-        font-size: 1rem;
-        font-weight: 100;
-        text-align: left;
-    } */
+.bioHeadline{
+    font-size: 1.75rem;
+    
+}
 
     /*************************
     ! Skill Section
@@ -1276,31 +1225,8 @@ footer {
     ! Template Section
 *************************/
 
-    .templates {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .templateHead {
-        display: block;
-        font-size: 1.5rem;
-        margin: 0px;
-        padding: 2rem;
-        margin-top: 3rem;
-    }
-
-    .templateContainer {
-        justify-content: center;
-        row-gap: 3rem;
-    }
-    .templateTitle {
-        font-size: 2rem;
-    }
-
-    .templateCard {
-        width: 80vw;
-        height: 30vh;
-        border-radius: 10px;
-        overflow: hidden;
-    }
+.projectTitleContainer{
+    width: 98%;
+    margin-left: 0;
+}
 }
