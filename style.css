@@ -347,12 +347,12 @@ body {
     text-shadow: rgb(97, 97, 97) 3px 3px 5px;
     font-size: 4rem;
     padding: 2rem;
-    margin-top: 0rem;
+    margin-top: 5vh;
     text-align: center;
     text-shadow: 1px 0 #fff, -1px 0 #fff, 0 1px #fff, 0 -1px #fff,
     1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
     height: 50vh;
-    /* z-index: -1; */
+
 }
 
 .tagline {
@@ -371,6 +371,8 @@ body {
     text-shadow: 1px 0 #fff, -1px 0 #fff, 0 1px #fff, 0 -1px #fff,
     1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
 }
+
+
 .resumeButton a {
     display: flex;
     flex-direction: column;
@@ -1101,7 +1103,9 @@ footer {
     /*************************
    ! About Section
 *************************/
-
+.about{
+    margin-top: 0vh;
+}
 .bioHeadline{
     font-size: 1.75rem;
     
