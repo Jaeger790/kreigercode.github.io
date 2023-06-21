@@ -336,10 +336,37 @@ body {
     text-decoration: none;
     color: #fff;
 }
+.certLogos{
+  display: flex;
+  column-gap: 100px;
+  justify-content: center;
+  margin-top: 50px;
+}
+.aPlus{
+  width: 100px;
+  height: 100px;
+}
 
-
-
-
+.pPlus{
+  width: 100px;
+  height: 100px;
+}
+.aPlusCert{
+  width: 100px;
+  height: 100px;
+}
+.pPlusCert{
+  width: 100px;
+  height: 100px;
+}
+.itil{
+  width: 100px;
+  height: 100px;
+}
+.itilCert{
+  width: 100px;
+  height: 100px;
+}
 
 
 
@@ -995,6 +1022,38 @@ footer {
         margin-top: .75rem;
         width: 100%;
         font-size: 1.25rem;
+    }
+
+    .certLogos{
+      display: flex;
+      column-gap: 10vw;
+      justify-content: center;
+      margin-top: 50px;
+    }
+    .aPlus{
+      width: 100px;
+      height: 100px;
+    }
+    
+    .pPlus{
+      width: 100px;
+      height: 100px;
+    }
+    .aPlusCert{
+      width: 100px;
+      height: 100px;
+    }
+    .pPlusCert{
+      width: 100px;
+      height: 100px;
+    }
+    .itil{
+      width: 100px;
+      height: 100px;
+    }
+    .itilCert{
+      width: 100px;
+      height: 100px;
     }
    
 
