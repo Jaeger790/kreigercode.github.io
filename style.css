@@ -25,7 +25,6 @@ body {
 
 
 .glitch {
-  
   color: white;
   font-size: 4rem;
   text-align: center;
@@ -143,6 +142,7 @@ body {
   100% {
     clip: rect(58px, 9999px, 66px, 0);
     transform: skew(0.05deg);
+
   }
 }
 @keyframes glitch-anim2 {
@@ -225,15 +225,18 @@ body {
   95% {
     clip: rect(29px, 9999px, 82px, 0);
     transform: skew(0.47deg);
+
   }
   100% {
     clip: rect(15px, 9999px, 94px, 0);
     transform: skew(0.76deg);
+
   }
 }
 @keyframes glitch-skew {
   0% {
     transform: skew(2deg);
+    
   }
   10% {
     transform: skew(4deg);
@@ -263,7 +266,7 @@ body {
     transform: skew(-2deg);
   }
   100% {
-    transform: skew(-2deg);
+    transform: skew(-250deg);
   }
 }
 
@@ -275,30 +278,33 @@ body {
                 ! Navigation Bar
 ***************************************************/
 .nav{
-    display: none;
+    display: block;
+    
 }
 
-.navBarMobile{
+.navBar{
     display: block;
     position: fixed;
     top: 0;
-        width: 100vw;
-        height: auto;
-        background-color: rgba(10, 10, 10, 1);
-        border-bottom:1px solid rgba(255, 255, 255, 0.5);
-        padding-bottom: .5vh;
-        box-shadow: rgba(25, 25, 255, 0.1) 0px 12px 15px;
-        z-index: 2;
+    width: 100vw;
+    height: auto;
+    background-color: rgba(10, 10, 10, .4);
+    padding-bottom: .5vh;
+    box-shadow: rgba(200, 200, 255, 0.1) 0px 2px 5px;
+    z-index: 1;
+
 }
+
 .menuIcon{
     display: block;
     margin-top: .5vh;
     margin-left: .75vh;
-    width: 3vw;
-    padding:.75rem;
+    width: 100px;
+    padding:20px;
     margin-bottom: 1vh;
     border-radius: 10px;
     box-shadow: rgba(255, 255, 255, 0.3) 1px 1px 5px;
+    cursor: pointer;
     
 }
 .menuIcon hr{
@@ -308,38 +314,47 @@ body {
     background-color: #363636;
 }
 
-.navBarMobile ul{
-    text-align: center;
-    display: none;
-    padding-bottom: 2vh;
-    width: 45%;
-    margin:auto ;
-    list-style-type: none;
-}
-.navBarMobile li{
+
+.navList li{
     border-bottom:1px solid rgba(255, 255, 255, 1);
     box-shadow: rgba(255, 255, 255, 0.3) 2px 2px 3px;
-
-    margin-bottom: 2vh;
+    width: 45%;
+    text-align: center;
+    list-style-type: none;
+    margin: auto auto 20px;
     background-color: #363636;
     padding: 1rem;
-    
-    
+
+
 }
-.navBarMobile li a{
+.navBar li:hover{
+    background-color: #000;
+    color: #fff;
+    border-top: 1px solid #fff;
+}
+.navBar li a{
     text-decoration: none;
     color: #fff;
 }
+
+
+
+
+
+
+
+
+
 /**************************************************
                 ! Title
 ***************************************************/
 
-.profileHeadingGrid {
+.headline {
     margin-top: 10vh;
     display: grid;
     grid-auto-columns: auto, auto;
 }
-.titleHeaderCol {
+.headerBackground {
     background-image: url("pics/header.jpg");
     background-attachment: fixed;
     background-position: center;
@@ -352,64 +367,56 @@ body {
     text-shadow: 1px 0 #fff, -1px 0 #fff, 0 1px #fff, 0 -1px #fff,
     1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
     height: 50vh;
-    /* z-index: -1; */
+    overflow: hidden;
+
 }
 
-.tagline {
-    color: #000;
-    font-family: "Fira Code", monospace;
-    line-height: 80px;
-    font-size: 30px;
-      text-shadow: 2px #fff;
-}
-.ProfTitle {
-    width: 100%;
-}
-.Motto {
+
+.quote {
     width: 70%;
     margin: auto;
     text-shadow: 1px 0 #fff, -1px 0 #fff, 0 1px #fff, 0 -1px #fff,
     1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
 }
-.resumeButton a {
-    display: flex;
-    flex-direction: column;
-    width: 20vw;
-    height: 100%;
-    text-decoration: none;
-    font-weight: 600;
-    color: #000;
-    align-items: center;
-    justify-content: center;
-   
-    
-}
+
 .resumeButton {
     display: flex;
     justify-self: center;
-    text-align: center;
-    
     margin-top: 1.25rem;
-    margin-bottom: 5vh;
     background-color: #fff;
-    width: 20vw;
+    width: 350px;
     text-shadow: #000 1px 1px 4px;
     border: #363636 2px solid;
     font-size: 1rem;
     border-radius: 15px;
-    transition: 0.5s;
-    /* min-height: 9vh; */
-    height:10vh
 }
+.resumeLink{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
 .resumeButton:hover {
     background: linear-gradient(to bottom, #fff 0%, #000 100%);
 }
+
+.resumeButton a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #000;
+    
+    
+}
+
 .resumeButton a:hover {
     color: #fff;
 }
+
 .bi-download {
     font-size: 2rem;
     color: #000;
+    
 }
 
 /**************************************************
@@ -496,10 +503,11 @@ body {
 ***************************************************/
 
 .skills {
-    
+    margin-top: 10rem;
     justify-content: center;
     text-align: center;
 }
+
 
 .skillHeader {
     text-align: center;
@@ -659,75 +667,7 @@ ul.serviceText {
     width: 50%;
     margin-left: 10vw;
 }
-/*
-.templateHead {
-    color: #000000;
-    text-shadow: #444849 3px 3px 5px;
-    font-size: 3vh;
-    text-align: center;
-    background-color: #6a859b;
-    color: #01011a;
-    padding: 1%;
-    box-shadow: #000 10px 5px 5px;
-    padding: 20px;
-}
-.templatePic {
-    width: 100%;
-    height: 100%;
-}
-#templatePicHusky {
-    background-image: url("pics/petCover.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
 
-.templateContainer {
-    margin-top: 100px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    column-gap: 4vw;
-    row-gap: 5vh;
-}
-
-.templateCard {
-    width: 20vw;
-    height: 30vh;
-    border-radius: 4%;
-    overflow: hidden;
-    cursor: pointer;
-    background-color: rgb(106, 133, 155, 1);
-    color: #000000;
-    text-shadow: #444849 3px 3px 5px;
-    transition: 0.4s;
-    border: #01011a 2px solid;
-}
-.templateTitle {
-    padding-top: 4%;
-    padding-bottom: 4%;
-    font-size: 3rem;
-    text-align: center;
-    border-bottom: #01011a 2px solid;
-}
-.templateCard:hover {
-    background-color: #01011a;
-    color: #fff;
-    filter: drop-shadow(0px 0px 15px rgba(255, 255, 255, 0.6));
-    transform: scale(1.08);
-    text-shadow: 2px 2px 5px 2px rgb(172, 179, 214);
-}
-.templateCard:active {
-    box-shadow: none;
-    transform: scale(1);
-    filter: none;
-}
-
-.templateCard h2:hover {
-    color: #fff;
-    background-color: #01011a;
-    text-shadow: 2px 2px 3px 2px rgb(172, 179, 214);
-} */
 
 /* 
     Footer Section 
@@ -855,62 +795,34 @@ footer {
 
 
 
-/********************************************************
-*********************************************************
-*********************************************************
-                ! Mobile Design Section
-*********************************************************
-*********************************************************
-*********************************************************/
+/***********************************************************************************************
+************************************************************************************************
+************************************************************************************************
+                                        ! Mobile Design Section
+************************************************************************************************
+************************************************************************************************
+************************************************************************************************/
 
 /*****************************************
 ******************************************
          Wide mobile
 ******************************************
 *****************************************/
+
+
+
+
+
+
 @media screen and (max-width: 1200px){
     
-    .navBarMobile{
-        display: block;
-        position: fixed;
-        list-style-type: none;
-        top: 0;
-        width: 100vw;
-        height: auto;
-        background-color: rgba(0, 0, 0, 1);
-        border-bottom:1px solid rgba(255, 255, 255, 0.1);
-        padding-bottom: .5vh;
-        box-shadow: rgba(25, 25, 255, 0.1) 0px 12px 15px;
-        z-index: 2;
-    }
-    .navBarMobile ul{
-        text-align: center;
-        display: none;
-        padding-bottom: 2vh;
-        width: 65%;
-        margin:auto ;
-        list-style-type: none;
-    }
-    .navBarMobile li{
-        border-bottom:1px solid rgba(255, 255, 255, 1);
-        box-shadow: rgba(255, 255, 255, 0.3) 2px 2px 3px;
 
-        margin-bottom: 2vh;
-        background-color: #363636;
-        padding: 1rem;
-        
-        
-    }
-    .navBarMobile li a{
-        text-decoration: none;
-        color: #fff;
-    }
 
     .menuIcon{
         display: block;
         margin-top: .5vh;
         margin-left: .75vh;
-        width: 10vw;
+        width: 7.5vw;
         padding:.75rem;
         margin-bottom: 1vh;
         border-radius: 10px;
@@ -1039,41 +951,7 @@ footer {
         padding: 0;
         box-sizing: border-box;
     }
-    .nav {
-        display: none;
-    }
-    .navBarMobile{
-        display: block;
-        position: fixed;
 
-        width: 100vw;
-        height: auto;
-        background-color: rgba(0, 0, 0, 1);
-        border-bottom:1px solid rgba(255, 255, 255, 0.1);
-        padding-bottom: .5vh;
-        box-shadow: rgba(25, 25, 255, 0.1) 0px 12px 15px;
-        z-index: 2;
-    }
-    .navBarMobile ul{
-        text-align: center;
-        display: none;
-        padding-bottom: 2vh;
-        list-style-type: none;
-    }
-    .navBarMobile li{
-        border-bottom:1px solid rgba(255, 255, 255, 1);
-        box-shadow: rgba(255, 255, 255, 0.1) 0px 5px 5px;
-
-        margin-bottom: 2vh;
-        background-color: #363636;
-        padding: 1rem;
-        
-        
-    }
-    .navBarMobile li a{
-        text-decoration: none;
-        color: #fff;
-    }
 
     .menuIcon{
         display: block;
@@ -1103,208 +981,128 @@ footer {
         text-align: center;
         padding: 0;
     }
-
-
-
-    .titleHeaderCol {
-        background-image: url("pics/header.jpg");
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: none;
-        color: #000000;
-        text-shadow: rgb(97, 97, 97) 3px 3px 5px;
-        font-size: 2.5rem;
-        padding: 2rem;
-        text-align: center;
-
-        /* z-index: -1; */
-    }
-    .profileHeadingGrid {
-        margin-top: 0;
-        height: 60vh;
-    }
-    .heading {
-        margin-top: 1.5rem;
-    }
-    .ProfTitle {
+    .headerBackground{
+        height: 30vh;
         font-size: 1.5rem;
     }
-    .Motto {
-        font-size: 1rem;
-        line-height: 3rem;
+    .name{
+        font-size: 1.75rem;
+    }
+    .title{
+        font-size: 1.5rem;
+    }
+    .quote{
+        margin-top: .75rem;
         width: 100%;
+        font-size: 1.25rem;
     }
-    .tagline {
-        width: 100%;
-        line-height: 8vh;
-    }
-    .resumeButton {
-        width: 50vw;
-        height: 10vh;
-        justify-content: center;
-    
-    }
+   
 
     /*************************
    ! About Section
 *************************/
-    .about{
-        margin-top: 30vh;
-    }
-    .glitch {
-        font-size: 2.5rem;
-        width: 100%;
-  }
-    .aboutRow {
-        display: flex;
-        flex-direction: column;
-
-        width: 100%;
-    }
-
-    .aboutCol {
-        width: 100%;
-        height: 100%;
-    }
-    #aboutRowF {
-        display: none;
-    }
-    #aboutRowM {
-        display: flex;
-    }
-
-    #paraPic1 {
-        background-image: url("pics/anthony-roberts-W_DCDWCL3Wo-unsplash.jpg");
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    #paraPic2 {
-        background-image: url("pics/motoMe.png");
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    #paraPic3 {
-        background-image: url("pics/motoMe.png");
-        background-attachment: fixed;
-        background-position: 10%;
-        margin-top: 5vh;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    .bio {
-        margin: 0 15% 0 5%;
-        width: 98%;
-        line-height: 2rem;
-        font-size: 1rem;
-        font-weight: 100;
-        text-align: left;
-    } 
+    
 
     /*************************
     ! Skill Section
 *************************/
 
-    .skills {
-        padding-bottom: 0;
-        margin-bottom: 0;
-        
-    }
+.skills {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    
+}
+
+
+.skillHeaderC {
+    display: flex;
+    flex-direction: row;
+    column-gap: 2rem;
+}
+.skillContainer {
+    max-width: 98%;
+    height: 100vh;
+}
+
+.bi-code-square {
+    font-size: 2.5rem;
+}
+.bi-ubuntu {
+    font-size: 2.5rem;
+}
+.bi-shop-window {
+    font-size: 2.5rem;
+}
+
+
+.langLevelSection{
+    width: 80%;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 10vw;
+
+}
+.langLevelContainer{
+    display: flex;
+    width: 100%;
+    margin-bottom: 5vh;
+    flex-wrap: wrap;
+    opacity: 0;
+    
+    
+}
+.languageHeader{
+    text-align: left;
+    margin-bottom: 5vh;
+    font-size: 1.5rem;
+}
+
+.techSkillHeader{
+    font-size: 1.25rem;
+}
+
+
+.languages {
+    font-size: 1.5rem;
+}
+.languageHead {
+    text-decoration: underline;
+    font-size: 1.5rem;
+}
+
+ul.languageText {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 100%;
+    column-gap: 4rem;
+    row-gap: 2rem;
+    list-style-type: circle;
+    margin-top:1vh ;
+    text-align: left;
+}
+.langList {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    list-style-type: circle;
+    text-align: left;
+    width: 100%;
+    margin-top:1vh ;
 
     
-    .skillHeaderC {
-        display: flex;
-        flex-direction: row;
-        column-gap: 2rem;
-    }
-    .skillContainer {
-        max-width: 98%;
-        height: 100vh;
-    }
+}
 
-    .bi-code-square {
-        font-size: 2.5rem;
-    }
-    .bi-ubuntu {
-        font-size: 2.5rem;
-    }
-    .bi-shop-window {
-        font-size: 2.5rem;
-    }
-
-
-    .langLevelSection{
-        width: 80%;
-        display: grid;
-        grid-template-columns: auto auto;
-        column-gap: 10vw;
-    
-    }
-    .langLevelContainer{
-        display: flex;
-        width: 100%;
-        margin-bottom: 5vh;
-        flex-wrap: wrap;
-        opacity: 0;
-        
-        
-    }
-    .languageHeader{
-        text-align: left;
-        margin-bottom: 5vh;
-        font-size: 1.5rem;
-    }
-    
-    .techSkillHeader{
-        font-size: 1.25rem;
-    }
-
-
-    .languages {
-        font-size: 1.5rem;
-    }
-    .languageHead {
-        text-decoration: underline;
-        font-size: 1.5rem;
-    }
-
-    ul.languageText {
-        display: grid;
-        grid-template-columns: auto auto;
-        width: 100%;
-        column-gap: 4rem;
-        row-gap: 2rem;
-        list-style-type: circle;
-        margin-top:1vh ;
-        text-align: left;
-    }
-    .langList {
-        display: grid;
-        grid-template-columns: auto auto;
-        column-gap: 2rem;
-        row-gap: 2rem;
-        list-style-type: circle;
-        text-align: left;
-        width: 100%;
-        margin-top:1vh ;
-
-        
-    }
-
-    ul.serviceText {
-        display: grid;
-        grid-template-columns: auto auto;
-        list-style-type: circle;
-        width: 100%;
-        margin-top: 1vh;
-        column-gap: 2rem;
-        row-gap: 2rem;
-        text-align: left;
-    }
+ul.serviceText {
+    display: grid;
+    grid-template-columns: auto auto;
+    list-style-type: circle;
+    width: 100%;
+    margin-top: 1vh;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    text-align: left;
+}
 
     /*************************
     ! Template Section
