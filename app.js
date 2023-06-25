@@ -17,20 +17,20 @@ const blogButton = document.getElementById("blogButton");
 
 
 //change color of download icon when the mouse enters and leaves the button area
-resume.style.borderRadius = "15px";
-resume.addEventListener("mouseover", ()=>{
-    downloadIcon.style.color="#fff";
-    resume.style.background = "linear-gradient(to bottom, #fff 0%, #000 100%)"});
-resume.addEventListener("mouseout",()=>{
-    downloadIcon.style.color = "#000";
-    resume.style.background = "#fff";
-});
-resume.addEventListener("mousedown",()=>{
-   resume.style.background = "linear-gradient(to top, #fff 0%, #000 100%)";    
-});
-resume.addEventListener("mouseup", ()=>{
-    resume.style.background = "linear-gradient(to bottom, #fff 0%, #000 100%)"; 
-})
+// resume.style.borderRadius = "15px";
+// resume.addEventListener("mouseover", ()=>{
+//     downloadIcon.style.color="#fff";
+//     resume.style.background = "linear-gradient(to bottom, #fff 0%, #000 100%)"});
+// resume.addEventListener("mouseout",()=>{
+//     downloadIcon.style.color = "#000";
+//     resume.style.background = "#fff";
+// });
+// resume.addEventListener("mousedown",()=>{
+//    resume.style.background = "linear-gradient(to top, #fff 0%, #000 100%)";    
+// });
+// resume.addEventListener("mouseup", ()=>{
+//     resume.style.background = "linear-gradient(to bottom, #fff 0%, #000 100%)"; 
+// })
 
 
 
@@ -76,8 +76,6 @@ function collapseNavLinks(){
 }
 function collapseOnScroll(){
     if(navLL.style.display != "none"){
-        navLL.style.transition = "all 1s";
-        navBar.style.transition = "all 1s";
         navLL.style.display = "none";
         navBar.style.height = "fit-content";
         menuIcon.style.backgroundColor = "#000";
@@ -157,8 +155,8 @@ function animateFadeIn(){
     
     for(i=0;i<innerLevelBars.length;i++){
         innerLevelBars[i].style.transition = "all 3s";
-        setTimeout(()=> (javaInnerBar.style.width = "95%",200));
-        setTimeout(()=> (cSharpInnerBar.style.width = "80%",200));
+        setTimeout(()=> (javaInnerBar.style.width = "98%",200));
+        setTimeout(()=> (cSharpInnerBar.style.width = "92%",200));
         setTimeout(()=> (cPlusInnerBar.style.width = "70%",200));
         setTimeout(()=> (jsInnerBar.style.width = "77%",200));
         setTimeout(()=> (pythonInnerBar.style.width = "84%",200));
