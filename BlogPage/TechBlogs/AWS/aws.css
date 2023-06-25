@@ -37,6 +37,13 @@ body{
     margin-top: 5vh;
 }
 
+.entryHeader{
+    margin-bottom: 5vh;
+    background-color: rgb(16, 24, 34);
+    padding: 1rem;
+
+}
+
 .entryPicC{
     display: flex;
     justify-content: center;
@@ -126,30 +133,55 @@ a{
     }
     .entryP{
         line-height: 1.5rem;
-        margin-bottom: 5vh;
+        margin-bottom: 1vh;
         width: 100%;
     }
+    .listP{
+        margin-left: 2.5vw;
+    }
+    .listP li{
+        margin-bottom: 1vh;
+    }
     .entryHeader{
-        margin-bottom: 5vh;
+        margin-bottom: 0vh;
         background-color: rgb(16, 24, 34);
         padding: 1rem;
+        border-radius: 10px 10px 0px 0px;
+        box-shadow: #ffffff59 1px 1px 1px;
 
+    }
+    .entryTitle{
+        font-size: 1.5rem;
+        text-decoration: underline;
+        font-weight: 100;
+        
     }
     .entryHeadline{
         font-size: 1.5rem;
         text-decoration: underline;
         font-weight: 100;
+        margin-top: 1vh;
+    }
+    .entrySubLine{
+        font-weight: 300;
+        font-size: 1.05rem;
+        text-decoration: underline;
+        margin-top: 1vh;
     }
     .entryDate{
         margin-bottom: 2vh;
     }
     .entryContent{
-        padding-bottom: 5vh;
+        padding: 1vh 1vw 5vh 1vw;
+        background-color: rgb(16, 24, 34);
+        border-radius: 0px 0px 10px 10px;
+        box-shadow: #ffffff59 1px 1px 1px;
+        
     }
     .subHeader{
         margin-top: 2vh;
         margin-bottom: 2vh;
-        font-size: 1.25rem;
+        font-size: 1.5rem;
     }
     .subSubject{
         text-decoration: underline;

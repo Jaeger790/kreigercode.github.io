@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title></title>
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="aws.css" />
+        <title></title>
+    </head>
+    <body>
+        <div class="entry">
+            <div class="entryHeader">
+                <h2 class="entryDate">06/25/2023</h2>
+                <h2 class="entryTitle">
+                    AWS Developer Certification Notes
+                </h2>
+            </div>
+
+            <div class="entryContent">
+
+
+                <h4 class="entryHeadLine">Technical Essentials</h4>
+                <h5 class="entrySubLine">Use Cases for File Storage</h5>
+                <ul class="listP">
+                    <li> <b>Web Serving:</b> Cloud file storage use common file protocols, naming conventions, and permissions.  This makes file storage easily integrated into web applications.</li>
+                    <li><b>Analytics: </b>Many analytics workloads interact with data through a file interface and rely on features such as file lock or writing to portions of a file. Cloud-based file storage supports common file-level protocols and has the ability to scale capacity and performance. </li>
+                    <li><b>Media and Entertainment:</b>Many businesses use a hybrid cloud deployment and need standardized access using file system protocols (NFS or SMB) or concurrent protocol access. Cloud file storage follows existing file system semantics. </li>
+                    <li><b>Home Directories:</b>Businesses wanting to take advantage of the scalability and cost benefits of the cloud are extending access to home directories for many of their users. Cloud file storage systems adhere to common file-level protocols and standard permissions models.</li>
+                </ul>
+
+                <h5 class="entrySubLine">Use Cases for Block Storage</h5>
+                <ul class="listP">
+
+                    <li><b>Transactional workloads: </b>Organizations that process time-sensitive and mission-critical transactions store such workloads into a low-latency, high-capacity, and fault-tolerant database. Block storage allows developers to set up a robust, scalable, and highly efficient transactional database. Because each block is a self-contained unit, the database performs optimally, even when the stored data grows.</li>
+
+                    <li><b>Containers: </b>Developers use block storage to store containerized applications on the cloud. Containers are software packages that contain the application and its resource files for deployment in any computing environment. Like containers, block storage is equally flexible, scalable, and efficient. With block storage, developers can migrate the containers seamlessly between servers, locations, and operating environments.</li>
+
+                    <li><b>Virtual Machines: </b>Block storage supports popular virtual machine (VM) hypervisors. Users can install the operating system, file system, and other computing resources on a block storage volume. They do so by formatting the block storage volume and turning it into a VM file system. So they can readily increase or decrease the virtual drive size and transfer the virtualized storage from one host to another.</li>
+                </ul>
+
+                <h5 class="entrySubLine">Use Cases for Object Storage</h5>
+                <ul class="listP">
+                    <li><b>Data Archiving</b></li>
+                    <li><b>Backup and Recovery</b></li>
+                    <li><b>Rich Media</b></li>
+                </ul>
+               
+            </div>
+        </div>
+
+        <script src="aws.js" async defer></script>
+    </body>
+</html>
