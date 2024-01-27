@@ -7,8 +7,6 @@ const navLL = document.getElementById("navLinkList");
 const menuIcon = document.getElementById("menuIcon");
 const downloadIcon = document.getElementById("downloadIcon");
 const resume = document.getElementById("resumeButton");
-
-
 const blogButton = document.getElementById("blogButton");
 
 
@@ -89,6 +87,9 @@ function blogClick(target) {
     location.href='BlogPage\\blog.html';
 };
 
+function snakeClick(target){
+    location.href="Snake\\snake.html";
+}
 expandNavLinks();
 
 
