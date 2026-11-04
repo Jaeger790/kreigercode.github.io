@@ -1,7 +1,5 @@
 
-window.onload = () =>{
-    observeSkillSection()
-};
+
 const navBar = document.getElementById("navBar");
 const navLL = document.getElementById("navLinkList");
 const menuIcon = document.getElementById("menuIcon");
@@ -9,91 +7,28 @@ const downloadIcon = document.getElementById("downloadIcon");
 const resume = document.getElementById("resumeButton");
 const blogButton = document.getElementById("blogButton");
 
-
-
-
-
-
-//change color of download icon when the mouse enters and leaves the button area
-// resume.style.borderRadius = "15px";
-// resume.addEventListener("mouseover", ()=>{
-//     downloadIcon.style.color="#fff";
-//     resume.style.background = "linear-gradient(to bottom, #fff 0%, #000 100%)"});
-// resume.addEventListener("mouseout",()=>{
-//     downloadIcon.style.color = "#000";
-//     resume.style.background = "#fff";
-// });
-// resume.addEventListener("mousedown",()=>{
-//    resume.style.background = "linear-gradient(to top, #fff 0%, #000 100%)";    
-// });
-// resume.addEventListener("mouseup", ()=>{
-//     resume.style.background = "linear-gradient(to bottom, #fff 0%, #000 100%)"; 
-// })
-
-
-
-
-
-
-
-
-//show navigation links when menu button is selected
-navLL.style.display = "none";
-
-function expandNavLinks(){
-    menuIcon.addEventListener("click",()=>{
-        if(navLL.style.display != "block"){
-            navLL.style.display = "block";
-            navBar.style.height = "fit-content";
-            menuIcon.style.color= "black";
-            menuIcon.style.backgroundColor = "white";
-            menuIcon.style.boxShadow = "rgba(255, 255, 255, 0.3) 2px 2px 5px";
-            menuIcon.style.border = "1px solid rgba(0, 0, 0, 1)";
-            
-        }
-        collapseNavLinks();
-    });
-
-    
+function setNavExpanded(expanded) {
+    navLL.style.display = expanded ? "block" : "none";
+    navBar.style.height = "fit-content";
+    menuIcon.style.backgroundColor = expanded ? "white" : "#000";
+    menuIcon.style.color = expanded ? "black" : "white";
+    menuIcon.setAttribute("aria-expanded", String(expanded));
 }
-function collapseNavLinks(){
-    menuIcon.addEventListener("click",()=>{
-        if(navLL.style.display != "none"){
-            navLL.style.display = "none";
-            navBar.style.height = "fit-content";
-            navLL.style.transition = "all 1s";
-            navBar.style.transition = "all 1s";
-            menuIcon.style.backgroundColor = "#000";
-            menuIcon.style.boxShadow = "rgba(255, 255, 255, 0.3) 2px 2px 5px";
-            menuIcon.style.border = "1px solid rgba(0, 0, 0, 1)";
-            
-        }
-        expandNavLinks();
-    });
-    
-}
-function collapseOnScroll(){
-    if(navLL.style.display != "none"){
-        navLL.style.display = "none";
-        navBar.style.height = "fit-content";
-        menuIcon.style.backgroundColor = "#000";
-            menuIcon.style.boxShadow = "rgba(255, 255, 255, 0.3) 2px 2px 5px";
-            menuIcon.style.border = "1px solid rgba(0, 0, 0, 1)";
-    }
-    expandNavLinks();
+
+setNavExpanded(false);
+menuIcon.addEventListener("click", () => setNavExpanded(navLL.style.display !== "block"));
+
+function collapseOnScroll() {
+    setNavExpanded(false);
 }
 
 function blogClick(target) {
-    location.href='BlogPage\\blog.html';
+    location.href='BlogPage/blog.html';
 };
 
 function snakeClick(target){
-    location.href="Snake\\snake.html";
+    location.href="Snake/snake.html";
 }
-expandNavLinks();
-
-
-
 
 //scroll functions
 function scrollToTop(){
@@ -119,8 +54,6 @@ function scrollSkills(){
 
 }
 
-
-
 /*
     Experience bar functions for programming languages
 */
@@ -141,8 +74,6 @@ let position = 0;
 javaInnerBar.style.left = "0";
 langHead.style.opacity = "0";
 
-
-
 function animateFadeIn(){
     langHead.style.transition = " 2s";
     setTimeout(()=>(langHead.style.opacity ++),300);
@@ -151,10 +82,10 @@ function animateFadeIn(){
     for (let i = 0; i < langLevelContainer.length; i++) {
         langLevelContainer[i].style.transition = " 2s";
         setTimeout(()=>(langLevelContainer[i].style.opacity ++),600);
-        langLevelContainer[i].style.transform = "translateX(10vw)";    
+        langLevelContainer[i].style.transform = "translateX(10vw)";
     }
-    
-    for(i=0;i<innerLevelBars.length;i++){
+
+    for(let i=0;i<innerLevelBars.length;i++){
         innerLevelBars[i].style.transition = "all 3s";
         setTimeout(()=> (javaInnerBar.style.width = "98%",200));
         setTimeout(()=> (cSharpInnerBar.style.width = "92%",200));
@@ -179,9 +110,9 @@ function fadeInSkillSection(){
     var observer = new IntersectionObserver(function(entries) {
         if(entries[0].isIntersecting === true){
             animateFadeIn();
-            
+
         }
-          
+
     }, { threshold: [0] });
     observer.observe(langHead);
     return true;
@@ -192,16 +123,14 @@ function fadeOutSkillSection(){
         if(entries[0].isIntersecting === false){
             animateFadeOut();
         }
-          
+
     }, { threshold: [0] });
     observer.observe(langHead);
     return true;
-    
+
 }
 
 fadeInSkillSection();
-
-
 
 // div level fade in for the rest of the skills section
 
@@ -212,11 +141,8 @@ languagesClass.forEach(languagesClass =>{
     languagesClass.style.opacity = "0";
 });
 
-
-
-
 function techSkillFI(){
-    
+
     var observer = new IntersectionObserver(function(entries) {
         if(entries[0].isIntersecting === true){
             setTimeout(()=>{
@@ -226,7 +152,7 @@ function techSkillFI(){
 
             },200);
         }
-          
+
     }, { threshold: [0] });
     observer.observe(languagesClass[0]);
     return true;
@@ -242,7 +168,7 @@ function skillFI(){
 
             },600)
         }
-          
+
     }, { threshold: [0] });
     observer.observe(languagesClass[1]);
     return true;
@@ -250,6 +176,4 @@ function skillFI(){
 
 techSkillFI();
 skillFI();
-
-
 
